@@ -1,0 +1,12 @@
+
+== Quick start ==[overview_quickstart]
+Let's say you don't have time to read the full user guide just yet. That's OK, we know it is huge, and so let's just give you a few tips on how to get started:
+
+- Read the [basic instructions to install and configure #basic_configuration_installconfigure] R and Tinn-R; ``it a small document and easy to follow``
+- Choose either Rgui or Rterm; ``it takes one mouse click``
+- Open //Help/English/Example of script.r//; ``another mouse click``
+- Use the //R toolbar// to control R; ``only takes one mouse click for each action``
+- Have fun!
+
+
+If you have any questions we suggest you consult this user guide.

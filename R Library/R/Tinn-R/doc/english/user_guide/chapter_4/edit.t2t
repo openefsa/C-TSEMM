@@ -1,0 +1,21 @@
+
+== Edit ==[menu_edit]
+[../../../res/menu_edit.png]
+
+|| Option                     | Description |
+ | Undo                       | Undoes the last action |
+ | Redo                       | Re-applies any actions undone using the Undo option |
+ | Copy                       | Copies the selected text and places it in the Windows clipboard |
+ | Cut                        | Cuts the selected text and places it in the Windows clipboard |
+ | Paste                      | Places any text in the Windows clipboard at position indicated by the cursor within the file |
+ | Copy formatted (to export) | //[See options ... #menu_edit_copyformatted]// |
+ | Select all                 | Selects all text contained within the file |
+
+
+=== Copy formatted (to export) ===[menu_edit_copyformatted]
+[../../../res/menu_edit_copyformated.png]
+
+|| Option | Description |
+ | Rtf    | Copies the selected text and places it in the Windows clipboard in Rtf format |
+ | Html   | Copies the selected text and places it in the Windows clipboard in Html format|
+ | TeX    | Copies the selected text and places it in the Windows clipboard in TeX format|

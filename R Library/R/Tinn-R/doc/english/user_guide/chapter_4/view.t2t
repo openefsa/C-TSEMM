@@ -1,0 +1,225 @@
+
+== View ==[menu_view]
+[../../../res/menu_view.png]
+
+|| Option                                 | Description |
+ | R                                      | //[See options ... #menu_view_r]// |
+ | Tools                                  | //[See options ... #menu_view_tools]// |
+ | Toolsbar                               | //[See options ... #menu_view_toolbars]// |
+ | Tabs                                   | //[See options ... #menu_view_tabs]// |
+ | Word wrap (show/hide)                  | //[See options ... #menu_view_wordwrap]// |
+ | Line numbers (show/hide)               | Toggles (show/hide) line numbers |
+ | Special characters (show/hide)         | Toggles (show/hide) special characters |
+ | Shortcuts (show)                       | Shows shortcuts interface (not implemented yet) |
+ | Status bar (show/hide)                 | Toggles (show/hide) status bar |
+ | Split                                  | //[See options ... #menu_view_split]// |
+ | Font of active control (not permanent) | //[See options ... #menu_view_fontsize]// |
+
+
+=== R ===[menu_view_r]
+[../../../res/menu_view_r.png]
+
+|| Option                        | Description |
+ | R resources (show/hide)       | Toggles (show/hide) all R resources |
+ | Organize screen (Tinn-R/Rgui) | Organizes the screen (Tinn-R and Rgui) according with the user set. //[See options ... #working_app_r]// |
+ | Rterm                         | //[See options ... #menu_view_r_rterm]// |
+
+
+==== Rterm ====[menu_view_r_rterm]
+[../../../res/menu_view_r_rterm.png]
+
+|| Option                                 | Description |
+ | Interface (show/hide)                  | Toggles (show/hide) Rterm interface |
+ | Size                                   | //[See options ... #menu_view_r_rterm_size]// |
+ | Split                                  | //[See options ... #menu_view_r_rterm_split]// |
+ | Syntax                                 | //[See options ... #menu_view_r_rterm_syntax]// |
+ | Word wrap                              | //[See options ... #menu_view_r_rterm_Wordwrap]// |
+ | Font of active control (not permanent) | //[See options ... #menu_view_r_rterm_fontsize]// |
+
+
+===== Size =====[menu_view_r_rterm_size]
+[../../../res/menu_r_rterm_size.png]
+
+|| Option           | Description |
+ | Rterm (maximize) | Maximizes the Rterm interface |
+ | Rterm (divide)   | Splits the Rterm interface |
+ | Rterm (minimize) | Minimizes the Rterm interface |
+
+
+===== Split =====[menu_view_r_rterm_split]
+[../../../res/menu_r_rterm_split.png]
+
+|| Option                                         | Description |
+ | Horizontal split (IO and Log in the same view) | Horizontally splits the Rterm interface placing //IO// and //Log// in the same view |
+ | Vertical split (IO and Log in the same view)   | Vertically splits the Rterm interface placing //IO// and //Log// in the same view |
+ | Remove split (IO and Log in distinct view)     | Removes split placing //IO// and //Log// in distinct view |
+
+
+===== Syntax =====[menu_view_r_rterm_syntax]
+[../../../res/menu_r_rterm_IOandLog.png]
+
+|| Option | Description |
+ | IO     | //[See options ... #menu_r_rterm_syntax_IO]// |
+ | Log    | //[See options ... #menu_r_rterm_syntax_Log]// |
+
+
+===== Syntax IO =====[menu_view_r_rterm_syntax_IO]
+[../../../res/menu_r_rterm_syntax_IOandLog.png]
+
+|| Option | Description |
+ | Text   | Sets the IO highlighter to Text |
+ | R      | Sets the IO highlighter to R |
+
+
+===== Syntax Log =====[menu_view_r_rterm_syntax_Log]
+[../../../res/menu_r_rterm_syntax_IOandLog.png]
+
+|| Option | Description |
+ | Text   | Sets the Log highlighter to Text |
+ | R      | Sets the Log highlighter to R |
+
+
+===== Word wrap =====[menu_view_r_rterm_wordwrap]
+[../../../res/menu_r_rterm_wordwrap.png]
+
+|| Option     | Description |
+ | IO         | Sets Word wrap to IO |
+ | Log        | Sets Word wrap to Log |
+
+
+===== Font of active control (not permanent) =====[menu_r_rterm_fontsize]
+[../../../res/menu_fontsize_generic.png]
+
+|| Option   | Description |
+ | Increase | Increase font size |
+ | Decrease | Decrease font size |
+
+
+=== Tools ===[menu_view_tools]
+[../../../res/menu_view_tools.png]
+
+|| Option            | Description |
+ | Tools (show/hide) | Toggles (show/hide) //Tools// interface |
+ | Size              | //[See options ... #menu_view_tools_size]// |
+ | Resources         | //[See options ... #menu_view_tools_resources]// |
+
+
+==== Size ====[menu_view_tools_size]
+[../../../res/menu_view_tools_size.png]
+
+|| Option           | Description |
+ | Tools (maximize) | Maximizes the //Tools// interface |
+ | Tools (divide)   | Divides the //Tools// interface |
+ | Tools (minimize) | Minimizes the //Tools// interface |
+
+
+==== Resources ====[menu_view_tools_resources]
+[../../../res/menu_view_tools_resources.png]
+
+|| Option                | Description |
+ | Misc                  | //[See options ... #menu_view_tools_resources_misc]// |
+ | Markup                | //[See options ... #menu_view_tools_resources_markup]// |
+ | Results               | //[See options ... #menu_view_tools_resources_results]// |
+ | Shortcuts (show/hide) | Toggles (show/hide) //Shortcuts// tab of //Tools// interface |
+ | Spell (show/hide)     | Toggles (show/hide) //Spell// tab of //Tools// interface |
+ | Database              | //[See options ... #menu_view_tools_resources_database]// |
+ | R                     | //[See options ... #menu_view_tools_resources_r]// |
+
+
+===== Misc =====[menu_view_tools_resources_misc]
+[../../../res/menu_view_tools_resources_misc.png]
+
+|| Option                    | Description |
+ | Misc (show/hide)          | Toggles (show/hide) //Misc// tab of //Tools// interface |
+ | Windows expl. (show/hide) | Toggles (show/hide) //Windows expl.// tab of //Misc// |
+ | Work expl. (show/hide)    | Toggles (show/hide) //Work expl.// tab of //Misc// |
+ | Project (show/hide)       | Toggles (show/hide) //Project// tab of //Misc// |
+
+
+===== Markup =====[menu_view_tools_resources_markup]
+[../../../res/menu_view_tools_resources_markup.png]
+
+|| Option               | Description |
+ | Markup (show/hide)   | Toggles (show/hide) //Markup// tab of //Tools// interface |
+ | Txt2tags (show/hide) | Toggles (show/hide) //Txt2tags// tab of //Markup// |
+ | LaTeX (show/hide)    | Toggles (show/hide) //LaTeX// tab of //Markup// |
+
+
+===== Results =====[menu_view_tools_resources_results]
+[../../../res/menu_view_tools_resources_results.png]
+
+|| Option              | Description |
+ | Results (show/hide) | Toggles (show/hide) //Results// tab of //Tools// interface |
+ | Ini log (show/hide) | Toggles (show/hide) //Ini log// tab of //Results// |
+ | Search (show/hide)  | Toggles (show/hide) //Search// tab of //Results// |
+
+
+===== Database =====[menu_view_tools_resources_database]
+[../../../res/menu_view_tools_resources_database.png]
+
+|| Option                  | Description |
+ | Database (show/hide)    | Toggles (show/hide) //Database// tab of //Tools// interface |
+ | R card (show/hide)      | Toggles (show/hide) //Rcard// tab of //Database// |
+ | R tip (show/hide)       | Toggles (show/hide) //Card// tab of //Database// |
+ | Completion (show/hide)  | Toggles (show/hide) //Card// tab of //Database// |
+
+
+===== R =====[menu_view_tools_resources_r]
+[../../../res/menu_view_tools_resources_r.png]
+
+|| Option               | Description |
+ | R (show/hide)        | Toggles (show/hide) //R// tab of //Tools// interface |
+ | Explorer (show/hide) | Toggles (show/hide) //Explorer// tab of //R// |
+
+
+=== Toolbars ===[menu_view_toolbars]
+[../../../res/menu_view_toolsbar.png]
+
+|| Option                 | Description |
+ | All bars (show/hide)   | Toggles (show/hide) //All bars// tab of //Tools bar// interface |
+ | File (show/hide)       | Toggles (show/hide) //File// tab of //Tools bar// interface |
+ | Edit (show/hide)       | Toggles (show/hide) //Edit// tab of //Tools bar// interface |
+ | Filter (show/hide)     | Toggles (show/hide) //Filter// tab of //Tools bar// interface |
+ | Macro (show/hide)      | Toggles (show/hide) //Macro// tab of //Tools bar// interface |
+ | Misc (show/hide)       | Toggles (show/hide) //Misc// tab of //Tools bar// interface |
+ | Processing (show/hide) | Toggles (show/hide) //Processing// tab of //Tools bar// interface |
+ | R (show/hide)          | Toggles (show/hide) //R// tab of //Tools bar// interface |
+ | Search (show/hide)     | Toggles (show/hide) //Search// tab of //Tools bar// interface |
+ | Syntax (show/hide)     | Toggles (show/hide) //Syntax// tab of //Tools bar// interface |
+ | Spell (show/hide)      | Toggles (show/hide) //Spell// tab of //Tools bar// interface |
+ | View (show/hide)       | Toggles (show/hide) //View// tab of //Tools bar// interface |
+
+
+=== Tabs ===[menu_view_tabs]
+[../../../res/menu_view_tabs.png]
+
+|| Option | Description |
+ | Files  | //[See options ... #menu_view_tabs_files]// |
+ | Tools  | //[See options ... #menu_view_tabs_tools]// |
+ | Rterm  | //[See options ... #menu_view_tabs_rterm]// |
+
+
+=== Word wrap ===[menu_view_wordwrap]
+[../../../res/menu_view_wordwrap.png]
+
+|| Option | Description |
+ | Editor (show/hide)    | Toggles (show/hide) //Editor// word wrap |
+ | Rterm/IO (show/hide)  | Toggles (show/hide) //Rterm/IO// word wrap |
+ | Rterm/Log (show/hide) | Toggles (show/hide) //Rterm/Log// word wrap |
+
+
+=== Split ===[menu_view_split]
+[../../../res/menu_view_split.png]
+
+|| Option     | Description |
+ | Horizontal | Horizontally splits the editor |
+ | Vertical   | Vertically splits the editor |
+ | Remove     | Removes split |
+
+
+=== Font of active control (not permanent) ===[menu_view_fontsize]
+[../../../res/menu_fontsize_generic.png]
+
+|| Option   | Description |
+ | Increase | Increase font size |
+ | Decrease | Decrease font size |

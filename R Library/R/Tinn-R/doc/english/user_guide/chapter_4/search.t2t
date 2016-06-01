@@ -1,0 +1,12 @@
+
+== Search ==[menu_search]
+[../../../res/menu_search.png]
+
+|| Option          | Description |
+ | Find            | Opens the [Find #working_findreplace] dialog |
+ | Find again      | Uses the previously entered search criteria to find the next occurrence, ie. one closer to the end of the file. This option is not available if a search has not been carried out. |
+ | Search in files | Opens the [Search in files #working_searchinfiles] dialog |
+ | Replace         | Opens the [Replace #working_findreplace] dialog |
+ | Go to           | This option produces the dialog below and allows you to move the cursor to the specified position |
+
+[../../../res/menu_search_goto.png]

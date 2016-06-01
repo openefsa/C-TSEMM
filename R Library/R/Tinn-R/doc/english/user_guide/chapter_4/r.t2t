@@ -1,0 +1,233 @@
+
+== R ==[menu_r]
+[../../../res/menu_r.png]
+
+|| Option                       | Description |
+ | Start/close and connections  | //[See options ... #menu_r_startcloseandconections]// |
+ | Rterm                        | //[See options ... #menu_r_rterm]// |
+ | Customize                    | //[See options ... #menu_r_customize]// |
+ | Configure                    | //[See options ... #menu_r_configure]// |
+ | Send                         | //[See options ... #menu_r_send]// |
+ | Editor: current line to top  | Brings the current line to the top of the editor interface |
+ | Control                      | //[See options ... #menu_r_control]// |
+ | Hotkeys (operational system) | Shows Tinn-R hotkeys (related with the operational system) dialog. [See Hotkeys (operational system) ... #working_hotkeys] |
+
+
+=== Start/close and connections ===[menu_r_startcloseandconections]
+[../../../res/menu_r_startcloseandconections.png]
+
+|| Option                         | Description |
+ | Rterm (start/close)            | Starts and Closes Rterm interface |
+ | Rgui (start/close)             | Starts and Closes Rgui application |
+ | Server (connections and tests) | Opens the dialog //R server: connections and tests// |
+
+Tip: The //Server (connections and tests)// dialog allows you to test the DDE and TCP/IP communication protocols used to establish a communication between R and Tinn-R.**
+
+
+=== Rterm ===[menu_r_rterm]
+[../../../res/menu_r_rterm.png]
+
+|| Option                                 | Description |
+ | Interface (show/hide)                  | Toggles (show/hide) Rterm interface |
+ | File                                   | //[See options ... #menu_r_rterm_file]// |
+ | Clear                                  | //[See options ... #menu_r_rterm_clear]// |
+ | Focus                                  | //[See options ... #menu_r_rterm_focus]// |
+ | Size                                   | //[See options ... #menu_r_rterm_size]// |
+ | Split                                  | //[See options ... #menu_r_rterm_split]// |
+ | Syntax                                 | //[See options ... #menu_r_rterm_syntax]// |
+ | Word wrap                              | //[See options ... #menu_r_rterm_Wordwrap]// |
+ | History                                | //[See options ... #menu_r_rterm_history]// |
+ | Workspace                              | //[See options ... #menu_r_rterm_workspace]// |
+ | Font of active control (not permanent) | //[See options ... #menu_r_rterm_fontsize]// |
+
+
+==== File ====[menu_r_rterm_file]
+[../../../res/menu_r_rterm_IOandLog.png]
+
+|| Option | Description |
+ | IO     | //[See options ... #menu_r_rterm_file_IO]// |
+ | Log    | //[See options ... #menu_r_rterm_file_Log]// |
+
+
+===== File IO =====[menu_r_rterm_file_IO]
+[../../../res/menu_r_rterm_file_IOandLog.png]
+
+|| Option  | Description |
+ | Save    | Saves the content of the IO interface |
+ | Save as | Saves the content of the IO interface as a new file |
+ | Print   | Opens the Tinn-R print dialog with the content from the IO interface |
+
+
+===== File Log =====[menu_r_rterm_file_Log]
+[../../../res/menu_r_rterm_file_IOandLog.png]
+
+|| Option  | Description |
+ | Save    | Saves the content of the Log interface |
+ | Save as | Saves as the content of the Log interface |
+ | Print   | Opens the Tinn-R print dialog with content from Log interface |
+
+
+==== Clear ====[menu_r_rterm_clear]
+[../../../res/menu_r_rterm_clear.png]
+
+|| Option     | Description |
+ | IO         | Clear IO |
+ | Log        | Clear Log |
+ | IO and Log | Clear IO and Log |
+
+
+==== Focus ====[menu_r_rterm_focus]
+[../../../res/menu_r_rterm_focus.png]
+
+|| Option | Description |
+ | Editor | Places the focus inside of the //editor// |
+ | IO     | Places the focus inside of the //IO// |
+ | Log    | Places the focus inside of the //Log// |
+
+
+==== Size ====[menu_r_rterm_size]
+[../../../res/menu_r_rterm_size.png]
+
+|| Option           | Description |
+ | Rterm (maximize) | Maximizes the Rterm interface |
+ | Rterm (divide)   | Divides the Rterm interface |
+ | Rterm (minimize) | Minimizes the Rterm interface |
+
+
+==== Split ====[menu_r_rterm_split]
+[../../../res/menu_r_rterm_split.png]
+
+|| Option                                         | Description |
+ | Horizontal split (IO and Log in the same view) | Splits horizontally the Rterm interface placing //IO// and //Log// on the same view |
+ | Vertical split (IO and Log in the same view)   | Splits vertically the Rterm interface placing //IO// and //Log// on the same view |
+ | Remove split (IO and Log in distinct view)     | Removes split placing //IO// and //Log// in distinct view |
+
+
+==== Syntax ====[menu_r_rterm_syntax]
+[../../../res/menu_r_rterm_IOandLog.png]
+
+|| Option | Description |
+ | IO     | //[See options ... #menu_r_rterm_syntax_IO]// |
+ | Log    | //[See options ... #menu_r_rterm_syntax_Log]// |
+
+
+===== Syntax IO =====[menu_r_rterm_syntax_IO]
+[../../../res/menu_r_rterm_syntax_IOandLog.png]
+
+|| Option | Description |
+ | Text   | Sets the IO highlighter to Text |
+ | R      | Sets the IO highlighter to R |
+
+
+===== Syntax Log =====[menu_r_rterm_syntax_Log]
+[../../../res/menu_r_rterm_syntax_IOandLog.png]
+
+|| Option | Description |
+ | Text   | Sets the Log highlighter to Text |
+ | R      | Sets the Log highlighter to R |
+
+
+==== Word wrap ====[menu_r_rterm_wordwrap]
+[../../../res/menu_r_rterm_wordwrap.png]
+
+|| Option     | Description |
+ | IO         | Sets Word wrap to IO |
+ | Log        | Sets Word wrap to Log |
+
+
+==== History ====[menu_r_rterm_history]
+[../../../res/menu_r_rterm_history.png]
+
+|| Option | Description |
+ | Save   | Saves the history |
+ | Load   | Loads the history |
+ | Prior  | Prior section of the history |
+ | Next   | Next section of the history |
+
+
+==== Workspace ====[menu_r_rterm_workspace]
+[../../../res/menu_r_rterm_workspace.png]
+
+|| Option | Description |
+ | Save   | Saves the workspace |
+ | Load   | Loads the workspace |
+
+
+==== Font of active control (not permanent) ====[menu_r_rterm_fontsize]
+[../../../res/menu_fontsize_generic.png]
+
+|| Option   | Description |
+ | Increase | Increase the font size |
+ | Decrease | Decrease the font size |
+
+
+=== Customize ===[menu_r_customize]
+[../../../res/menu_r_customize.png]
+|| Option        | Description |
+ | Rconfigure.r  | Opens the file //Rconfigure.r// for edition |
+
+
+=== Configure ===[menu_r_configure]
+[../../../res/menu_r_configure.png]
+
+|| Option                        | Description |
+ | Temporarily (current session) | Temporarily sets Rterm or Rgui to runs with Tinn-R (current session) |
+ | Permanent (Rprofile.site)     | Permanently sets Rterm or Rgui to runs with Tinn-R (Rprofile.site) |
+
+
+=== Send ===[menu_r_send]
+[../../../res/menu_r_send.png]
+
+|| Option                            | Description |
+ | File                              | Sends current file to R interpreter |
+ | File (``echo=TRUE``)              | Sends current file to R interpreter echoing the content |
+ | Selection                         | Sends current selection to R interpreter |
+ | Selection (``echo=TRUE``)         | Sends current selection to R interpreter echoing the content |
+ | Clipboard                         | Sends the clipboard content to R interpreter |
+ | Clipboard (``echo=TRUE``)         | Sends the clipboard content to R interpreter echoing the content |
+ | Marked block                      | Sends current marked block to R interpreter |
+ | Marked block (``echo=TRUE``)      | Sends current marked block to R interpreter echoing the content |
+ | Line                              | Sends current line to R interpreter echoing it |
+ | Lines to end page (``echo=TRUE``) | Sends all visible lines to end page echoing it |
+ | Cursor to beginning line          | Sends cursor position to beginning line |
+ | Cursor to end line                | Sends cursor position to end line |
+ | Sweave                            | Sends to R interpreter ``Sweave('Active file')`` instruction |
+
+
+=== Control ===[menu_r_control]
+[../../../res/menu_r_control.png]
+
+|| Option                                 | Description |
+ | Set work directory (current file path) | Sets the work directory of the R interpreter to the current file path |
+ | List all objects                       | Sends to R interpreter a ``ls()`` instruction |
+ | Print content (selected)               | Sends to R interpreter a ``selected`` word |
+ | List names (selected)                  | Sends to R interpreter a ``names(selected)`` instruction |
+ | List structure (selected)              | Sends to R interpreter a ``str(selected)`` instruction |
+ | Edit (selected)                        | Sends to R interpreter a ``edit(selected)`` instruction |
+ | Fix (selected)                         | Sends to R interpreter a ``fix(selected)`` instruction |
+ | Plot (selected)                        | Sends to R interpreter a ``plot(selected)`` instruction |
+ | Clear console                          | Sends and executes the virtual ``CTRL+L`` (clear screen) instruction |
+ | Close all graphic devices              | Sends to R interpreter a ``graphics.off()`` instruction |
+ | Remove all objects                     | Sends to R interpreter a ``rm(list=ls())`` instruction |
+ | Clear all                              | Sends to R interpreter a ``graphics.off()``; ``rm(list=ls())`` ``CTRL+L`` instructions |
+ | Escape                                 | Stops all computations in Rgui |
+ | Help (selected)                        | Sends to R interpreter a ``help(selected)`` instruction |
+ | Example (selected)                     | Sends to R interpreter a ``example(selected)`` instruction |
+ | Help                                   | Sends to R interpreter a ``help.start(update=FALSE)`` instruction |
+ | Packages                               | //[See options ... #menu_r_control_packages]// |
+ | TCP/IP connection                      | Sends to R interpreter an instruction to start: ``startSocketServer(port=portnumber)`` or stop: ``startSocketServer(port=portnumber)`` the TCP/IP connection |
+
+
+==== Packages ====[menu_r_control_packages]
+[../../../res/menu_r_control_packages.png]
+
+|| Option                   | Description |
+ | Available                | Sends to R interpreter a ``available.packages()`` instruction |
+ | Install                  | Sends to R interpreter a ``utils:::menuInstallPkgs()`` instruction |
+ | Install (from local zip) | Sends to R interpreter a ``utils:::menuInstallLocal()`` instruction |
+ | Installed                | Sends to R interpreter a ``installed.packages()`` instruction |
+ | Load                     | Sends to R interpreter a ``local({pkg <- select.list(sort(.packages(all.available = TRUE))); if(nchar(pkg)) library(pkg, character.only=TRUE)})`` instruction |
+ | New                      | Sends to R interpreter a ``new.packages()`` instruction |
+ | Remove                   | Sends to R interpreter a ``local({pkg <- select.list(sort(.packages(all.available = TRUE))); if(nchar(pkg)) remove.packages(pkg)})`` instruction |
+ | Update                   | Sends to R interpreter a ``update.packages(ask='graphics')`` instruction |
+ | Status                   | Sends to R interpreter a ``packageStatus()`` instruction |

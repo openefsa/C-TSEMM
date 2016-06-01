@@ -1,0 +1,21 @@
+Tinn-R User Guide
+Tinn-R Team
+%%date(%b/%d/%Y) - Optimized to Mozzila Firefox
+
+%!options: --css-sugar --toc --toc-level 3 --encoding iso-8859-1
+%!style: ../../config.css
+
+
+%!include: chapter_1/0_index_overview.t2t
+%!include: chapter_2/0_index_basic.t2t
+%!include: chapter_3/0_index_working.t2t
+%!include: chapter_4/0_index_menu.t2t
+%!include: chapter_5/what_is_new.t2t
+
+% ===========================================================
+% Replace
+% <DIV CLASS="toc" ID="toc">
+% by
+% <DIV style="-moz-column-width:20em; -moz-column-gap:2em;">
+% in the final Html file to column the TOC!
+% ===========================================================

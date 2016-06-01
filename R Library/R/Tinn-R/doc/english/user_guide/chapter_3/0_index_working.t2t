@@ -1,0 +1,19 @@
+
+====================
+= Working with =[working]
+This section provides information on how to work using Tinn-R.
+
+%!include: chapter_3/app_options.t2t
+%!include: chapter_3/editor_options.t2t
+%!include: chapter_3/selection_mode.t2t
+%!include: chapter_3/colors_preference.t2t
+%!include: chapter_3/shortcuts_customization.t2t
+%!include: chapter_3/hotkeys.t2t
+%!include: chapter_3/rterm_interface.t2t
+%!include: chapter_3/tools_interface.t2t
+%!include: chapter_3/file_tabs.t2t
+%!include: chapter_3/tools_bar.t2t
+%!include: chapter_3/find_replace.t2t
+%!include: chapter_3/search_in_files.t2t
+%!include: chapter_3/database.t2t
+%!include: chapter_3/regular_expressions.t2t

@@ -1,0 +1,82 @@
+
+== Options ==[menu_options]
+[../../../res/menu_options.png]
+
+|| Option                                                  | Description |
+ | Application                                             | Opens the [Application options #working_app] dialog |
+ | Editor                                                  | Opens the [Editor options #working_editor] dialog |
+ | Shortcuts                                               | Opens the [Shortcuts customization #working_shortcuts] dialog |
+ | Colors (preference)                                     | Opens the [Colors (preference) #working_colors] dialog |
+ | Syntax (highlighters)                                   | //[See options ... #menu_options_syntax]// |
+ | File (open maximized)                                   | When this option is set all files will be opened maximized |
+ | Return focus to editor (after send/control Rgui)        | When this option is set the focus will go back to the active editor after any Send or Control action |
+ | On top                                                  | Toggles Tinn-R's ability to be the topmost window on the desktop |
+ | Read only                                               | Toggles file read-only status. When set as read-only the file name on the file tab is among ``<``...``>`` |
+ | Selection mode                                          | //[See options ... #menu_options_selectionmode]// |
+
+
+=== Syntax (highlighter) ===[menu_options_syntax]
+[../../../res/menu_option_syntax.png]
+
+|| Option                 | Description |
+ | Set                    | //[See options ... #menu_options_syntax_set]// |
+ | Default (to new files) | //[See options ... #menu_options_syntax_default]// |
+
+
+
+==== Set ====[menu_options_syntax_set]
+[../../../res/menu_options_syntax_set.png]
+
+|| Option       | Description |
+ | All          | File without extension or not recognized extension |
+ | C#           | C# files |
+ | C/C++        | C/C++ files |
+ | Cascading SS | Cascading SS files |
+ | Deplate      | Deplate files |
+ | Fortran      | Fortran files |
+ | HTML         | Hypertext Markup Language (HTML) files |
+ | HTML complex | Hypertext Markup Language (HTML) complex (HTML & JavaScript) files |
+ | INI          | INI files |
+ | Java         | Java files |
+ | JScript      | JScript files |
+ | MS VBScript  | MS VBScript files |
+ | MS_DOS Bath  | MS_DOS Bath files |
+ | Pascal       | Pascal files |
+ | Perl         | Perl files |
+ | PHP          | PHP files |
+ | PHP complex  | PHP (HTML & JavaScript & PHP) complex files |
+ | Python       | Python files |
+ | R            | R files |
+ | R complex    | R complex (R & URI) files |
+ | Rd           | Rd files |
+ | Ruby         | Ruby files |
+ | SQL          | SQL files |
+ | Sweave       | Sweave (TeX & R) files |
+ | TclTk        | TclTk files |
+ | TeX          | TeX files |
+ | Text         | Text files |
+ | Txt2tags     | Txt2tags files |
+ | URI          | Uniform Resource Identifiers (URI) files |
+ | Visual Basic | Visual Basic files |
+ | x86 Assembly | x86 Assembly files |
+ | XML          | XML files |
+
+If necessary Select manually one of the list. Tinn-R recognizes automatically the syntax based on the file extensions.
+
+
+==== Default (to new files) ====[menu_options_syntax_default]
+[../../../res/menu_options_sintax_default.png]
+
+|| Option    | Description |
+ | R         | When this option is set the highlighter of all new files will be set as //R// |
+ | R complex | When this option is set the highlighter of all new files will be set as //R complex// |
+ | Text      | When this option is set the highlighter of all new files will be set as //Text// |
+
+
+=== Selection mode ===[menu_options_selectionmode]
+[../../../res/menu_options_selectionmode.png]
+
+|| Option | Description |
+ | Normal | [See selection type normal ... #working_selectionmode_normal] |
+ | Line   | [See selection type line ... #working_selectionmode_line] |
+ | Column | [See selection type column ... #working_selectionmode_column] |

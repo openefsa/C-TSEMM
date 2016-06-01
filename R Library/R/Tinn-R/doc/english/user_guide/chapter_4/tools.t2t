@@ -1,0 +1,171 @@
+
+== Tools ==[menu_tools]
+[../../../res/menu_tools.png]
+
+|| Option        | Description |
+ | Processing    | //[See options ... #menu_tools_processing]// |
+ | Database      | //[See options ... #menu_tools_database]// |
+ | Backup        | //[See options ... #menu_tools_backup]// |
+ | Restore       | //[See options ... #menu_tools_restore]// |
+ | Macro         | //[See options ... #menu_tools_macro]// |
+ | ASCII chart   | Allows you insert an active char to the active document |
+ | Differences   | Opens the nice TextDiff command by Angus Johnson integrated within Tinn-R |
+ | Spell         | Starts the speller ([see instructions ... #working_tools_spell]) |
+ | Sort          | //[See options ... #menu_tools_sort]// |
+ | Count         | Shows the result of the count action (words, characters + spaces, character - spaces and spaces) for files or a text selection |
+ | Match bracket | Search for matching bracket. See details below |
+
+: How to match:
+The cursor must be placed immediately before any of the bracket characters.  When this option is called the cursor will move to the point immediately before the matching bracket.
+
+: Recognized brackets:
+The bracket characters are (), [] and {}.
+
+
+=== Processing ===[menu_tools_processing]
+[../../../res/menu_tools_processing.png]
+|| Option                 | Description |
+ | Conversion             | //[See options ... #menu_tools_processing_conversion]// |
+ | Compilation (LaTeX to) | //[See options ... #menu_tools_processing_conversion_compilation]// |
+ | Viewer                 | //[See options ... #menu_tools_processing_viewer]// |
+
+
+==== Conversion ====[menu_tools_processing_conversion]
+[../../../res/menu_tools_processing_conversion.png]
+
+|| Option      | Description |
+ | Txt2tags to | //[See options ... #menu_tools_processing_conversion_txt2tags]// |
+ | Deplate to  | //[See options ... #menu_tools_processing_conversion_deplate]// |
+
+
+===== Txt2tags to =====[menu_tools_processing_conversion_txt2tags]
+[../../../res/menu_tools_processing_conversion_txt2tags.png]
+
+|| Option           | Description |
+ | LaTeX            | Converts a Txt2tags file to LaTeX |
+ | Sweave           | Converts a Txt2tags file to Sweave |
+ | Txt              | Converts a Txt2tags file to txt |
+ | HTML            | Converts a Txt2tags file to HTML |
+ | XHTML            | Converts a Txt2tags file to XHTML |
+ | SGML             | Converts a Txt2tags file to SGML |
+ | Lout             | Converts a Txt2tags file to Lout |
+ | Man page         | Converts a Txt2tags file to Man page |
+ | Wikipedia        | Converts a Txt2tags file to Wikipedia |
+ | Google code wiki | Converts a Txt2tags file to Google code wiki |
+ | Doku wiki        | Converts a Txt2tags file to Doku wiki |
+ | Moinmoin         | Converts a Txt2tags file to Moinmoin |
+ | Magic point      | Converts a Txt2tags file to Magic point |
+ | Page maker       | Converts a Txt2tags file to Page maker |
+
+Tip: [See details ... http://txt2tags.sourceforge.net/]
+
+
+===== Deplate to =====[menu_tools_processing_conversion_deplate]
+[../../../res/menu_tools_processing_conversion_deplate.png]
+
+|| Option                            | Description |
+ | LaTeX                             | Converts a Deplate file to LaTeX |
+ | LaYeX-dramatist                   | Converts a Deplate file to LaTeX-dramatist |
+ | Sweave                            | Converts a Deplate file to Sweave |
+ | Plain                             | Converts a Deplate file to Plain |
+ | HTML                              | Converts a Deplate file to HTML |
+ | HTML site                         | Converts a Deplate file to HTML site |
+ | HTML slides                       | Converts a Deplate file to HTML slides |
+ | XHTML 1.0 transitional (xhtml10t) | Converts a Deplate file to XHTML 1.0 transitional |
+ | XHTML 1.1 with MathML (xhtml11m)  | Converts a Deplate file to XHTML 1.1 with MathML |
+ | PHP                               | Converts a Deplate file to PHP |
+ | Dbk-article                       | Converts a Deplate file to Dbk-article |
+ | Dbk-book                          | Converts a Deplate file to Dbk-book |
+ | Dbk-ref                           | Converts a Deplate file to Dbk-ref |
+
+Tip: [See details ... http://deplate.sourceforge.net/Output.html]
+
+
+==== Compilation (latex to) ====[menu_tools_processing_conversion_compilation]
+[../../../res/menu_tools_processing_compilation.png]
+
+|| Option                                        | Description |
+ | Always shows console minimized when compiling | When this option is set the DOS console will be minimized when compiling |
+ | DVI (single)                                  | Compiles a LaTeX file to DVI in single way |
+ | DVI (bibtex)                                  | Compiles a LaTeX file to DVI in bibtex way (three compilation) |
+ | Pdf (single)                                  | Compiles a LaTeX file to PDF in single way |
+ | Pdf (bibtex)                                  | Compiles a LaTeX file to PDF in bibtex way (three compilation) |
+
+
+==== Viewer ====[menu_tools_processing_viewer]
+[../../../res/menu_tools_processing_viewer.png]
+
+|| Option | Description |
+ | DVI    | //[See options ... #menu_tools_processing_viewer_DVI]// |
+ | PDF    | //[See options ... #menu_tools_processing_viewer_pdf]// |
+ | HTML   | //[See options ... #menu_tools_processing_viewer_html]// |
+
+
+===== DVI =====[menu_tools_processing_viewer_DVI]
+[../../../res/menu_tools_processing_viewer_DVI.png]
+
+|| Option                                 | Description |
+ | Open always after compilation (option) | When this option is set the DVI file will be opened by the viewer after the compilation |
+ | Open file                              | Shows the //Windows Open dialog// to select a DVI file to be opened by the viewer |
+
+
+===== Pdf =====[menu_tools_processing_viewer_pdf]
+[../../../res/menu_tools_processing_viewer_pdf.png]
+
+|| Option                                 | Description |
+ | Open always after compilation (option) | When this option is set the Pdf file will be opened by the viewer after the compilation |
+ | Open file                              | Shows the //Windows Open dialog// to select a DVI file to be opened by the viewer |
+
+
+===== Html =====[menu_tools_processing_viewer_html]
+[../../../res/menu_tools_processing_html.png]
+
+|| Option                                | Description |
+ | Open always after conversion (option) | When this option is set the Html file will be opened by the viewer after the compilation |
+ | Open current file                     | Opens the current DVI file with the viewer |
+ | Open file                             | Shows the //Windows Open dialog// to select a DVI file to be opened by the viewer |
+
+
+=== Database ===[menu_tools_database]
+[../../../res/menu_tools_database.png]
+
+|| Option                | Description |
+ | R card                | Shows Rcard database (XML based) dialog |
+ | R tip                 | Shows Rtip database (SML based) dialog |
+ | Completion            | Shows Completion database (XML based) dialog |
+ 
+
+=== Backup ===[menu_tools_backup]
+[../../../res/menu_tools_backup.png]
+|| Option               | Description |
+ | System configuration | Backups Tinn-R configuration (ini files) |
+ | Database             | Backups database (card.xml and tips.xml) |
+
+
+=== Restore ===[menu_tools_restore]
+[../../../res/menu_tools_restore.png]
+
+|| Option               | Description |
+ | System configuration | Restores a prior Tinn-R backup (ini files) |
+ | Database             | Restores a prior database backup (card.xml and tips.xml) |
+
+
+=== Macro ===[menu_tools_macro]
+[../../../res/menu_tools_macro.png]
+
+|| Option | Description |
+ | Record | Toggles macro recording on and off. Note that when recording a macro the button changes |
+ | Play   | Plays a previous recorded macro |
+
+**It is not possible to save/edit macros, they are temporary**
+
+
+=== Sort ===[menu_tools_sort]
+[../../../res/menu_tools_sort.png]
+
+|| Option  | Description |
+ | Strings | Sorts strings |
+ | Numbers | Sorts numbers |
+ | Dates   | Sorts dates |
+
+**Sort works on the entire document unless some text is selected**

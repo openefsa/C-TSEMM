@@ -1,0 +1,460 @@
+
+== Keyboard shortcuts (default) ==[basic_card]
+This section provides information about keyboard shortcuts.
+
+
+=== The most commonly used shortcuts ===[basic_card_mostused]
+==== R interface ====
+```
+ALT   + DOWN        : R history: down (IO)
+ALT   + L           : Clear (Log)
+ALT   + UP          : R history: up (IO)
+CTRL  + ALT + DOWN  : IO: set focus
+CTRL  + ALT + RIGHT : Log: set focus
+CTRL  + ALT + UP    : Editor: set focus
+CTRL  + ENTER       : Send any prior line (IO)
+CTRL  + L           : Clear (IO)
+SHIFT + CTRL + B    : Clear (IO and Log)
+```
+
+
+==== Visualization ====
+```
+ALT   + LEFT        : Tools: align left
+ALT   + RIGHT       : Tools: align right
+ALT   + V           : R resourses: visible (show/hide)
+CTRL  + F8          : Tools: visible (show/hide)
+CTRL  + F9          : R interface: visible (show/hide)
+CTRL  + F10         : R interface: minimize
+CTRL  + F11         : R interface: optimize
+CTRL  + F12         : R interface: maximize
+CTRL  + ALT  + V    : Tool bars: all (show/hide)
+CTRL  + ALT  + K    : Special characters (show/hide)
+CTRL  + ALT  + L    : Line number (show/hide)
+CTRL  + TAB         : Change sequentially the active page (requires more than one)
+SHIFT + CTRL + UP   : Increase font size (text within the main interface)
+SHIFT + CTRL + DOWN : Decrease font size (text within the main interface)
+```
+
+
+==== Navigation ====
+```
+CTRL  + END  : End of a doc
+CTRL  + HOME : Beginning of a doc
+END          : End of a line
+HOME         : Beginning of a line
+```
+
+
+==== Search/Replace and Go ====
+```
+CTRL  + F        : Find
+F3               : Find again
+SHIFT + CTRL + F : Search in files
+CTRL  + R        : Replace
+CTRL  + G        : Go to line
+```
+
+
+==== Function keys ====
+```
+F1  : Help on selected word (requires a running R session)
+F2  : List the structure of selected objetc (requires a running R session)
+F3  : Find again
+F7  : Macro record
+F8  : Macro play
+F9  : Clear the R console (requires a running R session)
+F10 : Close all graphic devices (requires a running R session)
+F11 : Remove all objects (requires a running R session)
+F12 : Clear all (requires a running R session)
+```
+
+
+==== Edition ====
+```
+ALT   + C        : Block comment
+ALT   + N        : Block uncomment (first ocurrence)
+ALT   + Z        : Block uncomment (all ocurrence)
+CTRL  + ALT + C  : Block comment (LaTeX)
+CTRL  + ALT + N  : Block uncomment (first ocurrence, LaTeX)
+CTRL  + ALT + Z  : Block uncomment (all ocurrence, LaTeX)
+CTRL  + (        : Insert (or replace) (|)
+CTRL  + )        : Insert (or replace) ()
+CTRL  + A        : Select all
+CTRL  + C        : Copy
+CTRL  + END      : End doc
+CTRL  + HOME     : Beginning of a doc
+CTRL  + I        : Block ident
+CTRL  + T        : Delete word
+CTRL  + U        : Block unident
+CTRL  + V        : Paste
+CTRL  + X        : Cut
+CTRL  + Y        : Delete line
+CTRL  + Z        : Undo
+END              : End of a line
+HOME             : Beginning of a line
+SHIFT + CTRL + Z : Redo
+```
+
+
+==== Marks and go to marks ====
+```
+CTRL  + NUMBER[0..9]        : Go to mark (no numeric keypad)
+SHIFT + CTRL + NUMBER[0..9] : Mark (no numeric keypad)
+```
+
+
+==== Project ====
+```
+CTRL  + INS        : Add current file to selected group
+SHIFT + CTRL + INS : Add file(s) to selected group (with dialog)
+DEL                : Delete selected group or file
+```
+
+
+==== R script edition ====
+```
+CTRL + +     : Insert ->  (numeric keypad)
+CTRL + -     : Insert <-  (numeric keypad)
+CTRL + *     : Insert tip (numeric keypad)
+CTRL + ENTER : Send current line to R and insert a line break
+```
+
+
+==== Selection ====
+```
+CTRL  + ALT  + S : Mark block
+CTRL  + ALT  + Z : Unmark block
+CTRL  + ALT  + X : Unmark all
+SHIFT + CTRL + C : Selection: set to column mode
+SHIFT + CTRL + L : Selection: set to line mode
+SHIFT + CTRL + N : Selection: set to normal mode
+```
+
+
+==== Compilation ====
+```
+CTRL  + ALT  + D       : Compilation: LaTeX to DVI (single)
+CTRL  + ALT  + P       : Compilation: LaTeX to DVI (single)
+SHIFT + CTRL + ALT + D : Compilation: LaTeX to DVI (bibtex)
+SHIFT + CTRL + ALT + P : Compilation: LaTeX to PDF (bibtex)
+```
+
+
+==== Conversion and Visualization ====
+```
+SHIFT + CTRL + H       : Conversion: txt2tags to HTML
+SHIFT + CTRL + S       : Conversion: txt2tags to Sweave
+SHIFT + CTRL + T       : Conversion: txt2tags to LaTeX
+SHIFT + CTRL + O       : Open current HTML files with system setup browser
+SHIFT + CTRL + ALT + H : Conversion: deplate to HTML
+SHIFT + CTRL + ALT + S : Conversion: deplate to Sweave
+SHIFT + CTRL + ALT + T : Conversion: deplate to LaTeX
+```
+
+
+=== Main menu (systematically) ===[basic_card_mainmenu]
+
+```
+ALT + F : File
+ALT + P : Project
+ALT + E : Edit
+ALT + A : Format
+ALT + M : Marks
+ALT + I : Insert
+ALT + S : Search
+ALT + O : Options
+ALT + T : Tools
+ALT + R : R
+ALT + W : View
+ALT + D : Window
+ALT + B : Web
+ALT + H : Help
+```
+
+
+==== File ====
+```
+CTRL  + N        : New file
+CTRL  + O        : Open file
+CTRL  + P        : Print
+CTRL  + S        : Save file
+CTRL  + W        : Close file
+SHIFT + CTRL + R : Reload file
+SHIFT + CTRL + W : Close all files
+```
+
+
+==== Format ====
+```
+ALT  + C        : Block comment
+ALT  + N        : Block uncomment first ocurrence
+ALT  + Z        : Block uncomment all ocurrence
+CTRL + ALT + C  : Block comment (LaTeX)
+CTRL + ALT + N  : Block uncomment first ocurrence (LaTeX)
+CTRL + ALT + Z  : Block uncomment all ocurrence (LaTeX)
+CTRL + ALT + H  : Word invert case
+CTRL + ALT + J  : Word upper case
+CTRL + ALT + K  : Word lower case
+CTRL + B        : Match bracket
+CTRL + I        : Block ident
+CTRL + U        : Block unident
+```
+
+
+==== Marks ====
+```
+CTRL  + NUMBER[0..9]        : Go to mark (no numeric keypad)
+SHIFT + CTRL + NUMBER[0..9] : Mark (no numeric keypad)
+CTRL  + ALT  + S            : Mark block
+CTRL  + ALT  + Z            : Unmark block
+CTRL  + ALT  + X            : Unmark all
+```
+
+==== Insert ====
+```
+SHIFT + CTRL + I: Insert dimensional element (LaTeX)
+```
+
+
+==== Search ====
+```
+CTRL + F : Search text
+CTRL + G : Go to
+CTRL + R : Replace text
+F3       : Search again
+```
+
+
+==== Options ====
+```
+SHIFT + CTRL + C : Selection: set to column mode
+SHIFT + CTRL + L : Selection: set to line mode
+SHIFT + CTRL + N : Selection: set to normal mode
+```
+
+
+==== Tools ====
+```
+SHIFT + CTRL + H       : Conversion: txt2tags to HTML
+SHIFT + CTRL + S       : Conversion: txt2tags to Sweave
+SHIFT + CTRL + T       : Conversion: txt2tags to LaTeX
+SHIFT + CTRL + O       : Open current HTML files with system setup browser
+SHIFT + CTRL + ALT + H : Conversion: deplate to HTML
+SHIFT + CTRL + ALT + S : Conversion: deplate to Sweave
+SHIFT + CTRL + ALT + T : Conversion: deplate to LaTeX
+CTRL  + ALT  + D       : Compilation: LaTeX to DVI (single)
+CTRL  + ALT  + P       : Compilation: LaTeX to DVI (single)
+SHIFT + CTRL + ALT + D : Compilation: LaTeX to DVI (bibtex)
+SHIFT + CTRL + ALT + P : Compilation: LaTeX to PDF (bibtex)
+CTRL  + B              : Match bracket
+F7                     : Macro/Record
+F8                     : Macro/Play
+```
+
+
+==== R ====
+```
+ALT   + L            : Clear (Log)
+CTRL  + ALT  + DOWN  : IO: set focus
+CTRL  + ALT  + RIGHT : Log: set focus
+CTRL  + ALT  + UP    : Editor: set focus
+CTRL  + F10          : R interface: minimize
+CTRL  + F11          : R interface: optimize
+CTRL  + F12          : R interface: maximize
+CTRL  + F9           : R interface: visible (show/hide)
+CTRL  + L            : Clear (IO)
+SHIFT + CTRL + B     : Clear (IO and Log)
+```
+
+
+==== View ====
+```
+ALT  + V           : R resourses: visible (show/hide)
+CTRL + F9          : R interface: visible (show/hide)
+CTRL + F10         : R interface: minimize
+CTRL + F11         : R interface: optimize
+CTRL + F12         : R interface: maximize
+CTRL + ALT + UP    : Editor: set focus
+CTRL + ALT + DOWN  : IO: set focus
+CTRL + ALT + RIGHT : Log: set focus
+CTRL + F8          : Tools: visible (show/hide)
+ALT  + LEFT        : Tools: align left
+ALT  + RIGHT       : Tools: align right
+CTRL + ALT + V     : Tool bars: all (show/hide) 
+CTRL + ALT + L     : Line number (show/hide)
+CTRL + ALT + K     : Special characters (show/hide)
+```
+
+
+=== Call tip ===[basic_card_calltip]
+```
+CTRL + D : Possible option
+CTRL + Q : Possible option
+```
+
+
+=== Code completion ===[basic_card_codecompletion]
+```
+SHIFT + CTRL + D : Possible option
+SHIFT + CTRL + Q : Possible option
+```
+
+
+=== R explorer ===[basic_card_rexplorer]
+```
+CTRL  + E        : Refresh R environment
+SHIFT + CTRL + E : Refresh R explorer or filter
+```
+
+
+=== Alphabetically ===[basic_card_alphabetically]
+==== ALT + : A-Z ====
+```
+ALT + A     : Format
+ALT + B     : Web
+ALT + C     : Block comment
+ALT + D     : Window
+ALT + DOWN  : R history: down (IO)
+ALT + E     : Edit
+ALT + F     : File
+ALT + H     : Help
+ALT + I     : Insert
+ALT + L     : Clear (Log)
+ALT + LEFT  : Tools: align left
+ALT + M     : Marks
+ALT + N     : Block uncomment (first ocurrence)
+ALT + O     : Options
+ALT + P     : Project
+ALT + R     : R
+ALT + RIGHT : Tools: align right
+ALT + S     : Search
+ALT + T     : Tools
+ALT + UP    : R history: up (IO)
+ALT + V     : R resourses: visible (show/hide)
+ALT + W     : View
+ALT + Z     : Block uncomment (all ocurrence)
+```
+
+
+==== CTRL + : A-Z, 0-9, /, ( and ) ====
+```
+CTRL + -            : Insert <-  (numeric keypad)
+CTRL + (            : Insert (or replace) (|)
+CTRL + )            : Insert (or replace) ()
+CTRL + *            : Insert tip (numeric keypad)
+CTRL + +            : Insert ->  (numeric keypad)
+CTRL + A            : Select all
+CTRL + ALT + C      : Block comment (LaTeX)
+CTRL + ALT + D      : Compilation: LaTeX to DVI (single)
+CTRL + ALT + DOWN   : IO: set focus
+CTRL + ALT + H      : Word invert case
+CTRL + ALT + J      : Word upper case
+CTRL + ALT + K      : Special characters (show/hide)
+CTRL + ALT + K      : Word lower case
+CTRL + ALT + L      : Line number (show/hide)
+CTRL + ALT + N      : Block uncomment first ocurrence (LaTeX)
+CTRL + ALT + P      : Compilation: LaTeX to DVI (single)
+CTRL + ALT + RIGHT  : Log: set focus
+CTRL + ALT + S      : Mark block
+CTRL + ALT + UP     : Editor: set focus
+CTRL + ALT + V      : Tool bars: all (show/hide) 
+CTRL + ALT + X      : Unmark all
+CTRL + ALT + Z      : Block uncomment all ocurrence (LaTeX)
+CTRL + ALT + Z      : Unmark block
+CTRL + B            : Match bracket
+CTRL + C            : Copy
+CTRL + D            : Possible option
+CTRL + E            : Refresh R environment
+CTRL + END          : End doc
+CTRL + ENTER        : Send any prior line (IO)
+CTRL + ENTER        : Send current line to R and insert a line break
+CTRL + F            : Find
+CTRL + F10          : R interface: minimize
+CTRL + F11          : R interface: optimize
+CTRL + F12          : R interface: maximize
+CTRL + F8           : Tools: visible (show/hide)
+CTRL + F9           : R interface: visible (show/hide)
+CTRL + G            : Go to line
+CTRL + HOME         : Beginning doc
+CTRL + I            : Block ident
+CTRL + INS          : Add current file to selected group
+CTRL + L            : Clear (IO)
+CTRL + N            : New file
+CTRL + NUMBER[0..9] : Go to mark (no numeric keypad)
+CTRL + O            : Open file
+CTRL + P            : Print
+CTRL + Q            : Possible option
+CTRL + R            : Replace text
+CTRL + S            : Save file
+CTRL + T            : Delete word
+CTRL + TAB          : Change sequentially the active page (require most of one)
+CTRL + U            : Block unident
+CTRL + V            : Paste
+CTRL + W            : Close file
+CTRL + X            : Cut
+CTRL + Y            : Delete line
+CTRL + Z            : Undo
+```
+
+
+==== DEL ====
+```
+DEL (Project) : Delete selected group or file
+```
+
+
+==== END ====
+```
+END : End line
+```
+
+
+==== Function + : 3-8 ====
+```
+F1  : Help on selected word (requires a running R session)
+F2  : List the structure of selected objetc (requires a running R session)
+F3  : Find again
+F7  : Macro record
+F8  : Macro play
+F9  : Clear the R console (requires a running R session)
+F10 : Close all graphic devices (requires a running R session)
+F11 : Remove all objects (requires a running R session)
+F12 : Clear all (requires a running R session)
+```
+
+
+==== HOME ====
+```
+HOME : Beginning line
+```
+
+
+==== SHIFT + : A-Z, 0-9 and / ====
+```
+SHIFT + CTRL + ALT + D      : Compilation: LaTeX to DVI (bibtex)
+SHIFT + CTRL + ALT + H      : Conversion: deplate to HTML
+SHIFT + CTRL + ALT + P      : Compilation: LaTeX to PDF (bibtex)
+SHIFT + CTRL + ALT + S      : Conversion: deplate to Sweave
+SHIFT + CTRL + ALT + T      : Conversion: deplate to LaTeX
+SHIFT + CTRL + B            : Clear (IO and Log)
+SHIFT + CTRL + C            : Selection: set to column mode
+SHIFT + CTRL + D            : Possible option
+SHIFT + CTRL + DOWN         : Decrease font size (extensive texts of the main interface)
+SHIFT + CTRL + E            : Refresh R explorer or filter
+SHIFT + CTRL + F            : Search in files
+SHIFT + CTRL + H            : Conversion: txt2tags to HTML
+SHIFT + CTRL + I            : Insert dimensional element (LaTeX)
+SHIFT + CTRL + INS          : Add file(s) to selected group (with dialog)
+SHIFT + CTRL + L            : Selection: set to line mode
+SHIFT + CTRL + N            : Selection: set to normal mode
+SHIFT + CTRL + NUMBER[0..9] : Mark (no numeric keypad)
+SHIFT + CTRL + O            : Open current HTML files with system setup browser
+SHIFT + CTRL + Q            : Possible option
+SHIFT + CTRL + R            : Reload file
+SHIFT + CTRL + S            : Conversion: txt2tags to Sweave
+SHIFT + CTRL + T            : Conversion: txt2tags to LaTeX
+SHIFT + CTRL + UP           : Increase font size (extensive texts of the main interface)
+SHIFT + CTRL + W            : Close all files
+SHIFT + CTRL + Z            : Redo
+```

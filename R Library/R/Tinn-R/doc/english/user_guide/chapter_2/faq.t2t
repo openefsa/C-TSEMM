@@ -1,0 +1,208 @@
+
+== FAQ ==[basic_faq]
+This section provides information on **F**requently **A**sked **Q**uestions (FAQ).
+
+
+=== What is Tinn-R? ===
+- [Tinn http://tinn.solarvoid.com] is a small ASCII file editor primarily intended as a better replacement for the default Notepad running under the Windows OS. The name is the recursive acronym: __T__inn __i__s __n__ot __N__otepad.
+- [Tinn-R http://sourceforge.net/projects/tinn-r] is an extension of the original Tinn editor, providing additional functionality to control [R http://cran.r-project.org] running as Rgui (in SDI mode), Rterm, [SciViews R http://www.sciviews.org/SciViews-R] console and [JGR http://stats.math.uni-augsburg.de/JGR/].  And a whole lot of additional resources.
+- Tinn-R can also be thought of as feature-rich replacement of the basic script editor provided with Rgui. It provides syntax-highlighting, code submission as a whole or line-by-line, in addition to many other useful tools to ease the writing and debugging of R code.
+- Both Tinn and Tinn-R are distributed under the [GPL 2 http://www.gnu.org/copyleft/gpl.html] license or above.
+
+
+=== Feedback, suggestions and bug report ===
+**Please send your feedback to [José Cláudio Faria joseclaudio.faria@gmail.com]. If you submit a bug report, please provide as much detail as possible. This includes indicating the Tinn-R version, your operating system (Windows XP, Windows 7, etc) , and language (English, French, Portuguese). If the bug is related to an interface with R, please also indicate which version of R you are using, as well as whether you are running Rterm or Rgui. Ideally, please also add the content of the //Tools/Results/Ini log// interface since this will help us address the issue more promptly.**
+
+
+=== Tinn-R installation ===
+//[See details ... #basic_configuration]//
+
+
+==== Where can I get the latest version of Tinn-R? ====
+- The latest version of Tinn-R can be downloaded from [SourceForge https://sourceforge.net/projects/tinn-r/].
+
+
+==== How do I install Tinn-R? ====
+- Tinn-R uses a classical method of installation and runs on all versions of the Windows OS. You need administrative rights to install, although but you can install it as a regular user provided you have write on the directory where you will perform the installation.  If you have problems, please contact you computer or network administrator.
+- Note that if you install Tinn-R, you will likely want to use it along with R, and so R must be installed separately.  R can be obtained from [here http://cran.r-project.org].
+
+
+==== Can I get the source code? ====
+- Yes. You can get and modify the source code of Tinn-R as well as redistribute your changes as long as you respect the terms of the GPL license. The source code is available from [SourceForge https://sourceforge.net/projects/tinn-r/].
+
+
+==== How can I add a shortcut to Tinn-R in the start menu or in the desktop? ====
+- This is automatically done by the installer. If you want to do it manually later on, here are the steps:
+ + Under object explorer, right-click the file ``Tinn-R.exe`` and select ``Create shortcut``;
+ + Drag & drop this shortcut to the desktop or wherever you might want to place it.
+
+
+==== Can I save or reuse my preferences on another computer? ====[faq_preferences]
+- You have a save/restore configuration tool under ``Tools/Backup or Restore system configuration`` or ``Database``.  Just backup your config file on one computer, copy it to the computer where you intend to use the same preference then it restore them there
+- The restore funciton assumes that you are using same OS and user name.
+- Otherwise:
+ + Unzip the file Tinn-R_X.X.X.X_preferences_bkp in a place of your choice;
+ + Copy the folder Tinn-R;
+ + Paste it inside the directory with the Tinn-R folder;
+ + To find where that folder is located, from the main menu just select ``Help/Main/Ini files (path information)``.
+
+
+==== How can I open a file in Tinn-R by double-clicking it under Windows Explorer? ====
+- You need to register Tinn-R as the default program to open files with a given extension. You can either check this option during installation or follow the steps below:
+ + In order to open *.R files (R scripts) with Tinn-R, locate one such file in your disk;
+ + Right-click this file and select ``Open with/Choose program...`` in the context menu;
+ + Click ``Browse`` in the ``Open with`` dialog box and then select ``Tinn-R.exe``;
+ + Make sure the option ``Always use the selected program to open this kind of file`` is selected;
+ + Click ``OK``.
+
+- Now, when you double-click on a *.R file in the Windows explorer, it will be opened in Tinn-R.
+
+
+==== How to define the starting Rgui from within Tinn-R? ====
+- You can start you preferred Rgui directly from Tinn-R. To do that, go to ``Options/Application/R/Path``.
+- At the bottom of the dialog box, you can determine the path of the Rgui executable to start from within Tinn-R. Select ``Rgui.exe`` from, for instance, ``C:\Program Files\R\R-X.X.X\bin\Rgui.exe``).
+```
+Note: to use R from within Tinn-R, you must first install it from
+http://cran.r-project.org
+```
+- With Rgui, you still have the choice between the MDI or SDI mode. To switch from one to the other, in Rgui select ``Edit/GUI preferences``, switch between (MDI/SDI), click on ``Save``, and ``OK`` without changing the name of the file. Then click ``OK`` or ``Cancel`` in the ``Rgui Configuration Editor`` ignoring any possible messages, and restart Rgui.  Notice that changes will not be taken into account in your current session and so you do have to restart.
+- Try to use Rgui in both MDI and SDI mode within Tinn-R before deciding which configuration you prefer.
+```
+Remember that starting from version 1.18.X.X, Tinn-R is no longer compatible with Rgui in MDI mode (only SDI), nor with S-PLUS. The latest compatible version is 1.17.2.4.
+```
+
+
+==== Can I define Tinn-R as the default editor for R objects? ====
+- No, currently, it does not have that capability.  In order to do that, just use the internal script editor of Rgui to edit() or fix() R objects.
+
+
+==== Can I use Emacs or WinEdt style for syntax highlighting color? ====
+- Just set your preferred color scheme in ``Options/Colors (preference)``.  To change color scheme on other computers, just use the ``Options/Backup/Restore system options`` configuration functions (//[See details ... #faq_preferences]//).
+
+
+==== What does "Triggers" mean in Options/Application/R/General/Basic ====
+- Tips are tooltips displaying the syntax of the currently used R function.
+- By default, if you enter the name of a function followed by an open bracket such as ``sd(`` in a R code document, then Tinn-R recognizes that you call the ``sd`` R function and reminds you of its syntax by showing the following tip: ``x, na.rm=FALSE``, that is, ``sd`` accepts two arguments: ``x``, and ``na.rm`` with the latter having ``FALSE`` as the default value.
+- Tinn-R uses a database with the syntax of most common functions in R. However, neither functions in additional packages nor your custom functions are cached in this database.  Adding them all manually is tedious.
+- Tinn-R therefore offers a second mechanism: Direct requests to R. This is accomplished through DDE and/or TCP/IP protocols, using functions automatically loaded when you start the TinnR package you downloaded from CRAN. (//[See details ... #basic_configuration]//).
+- When a tip is showed (Editor, IO or Log interface) it is possible to add all arguments by typing the shortcut ``CTRL + *``.
+
+
+**On some computers, the delay for synchronization might need to be adjusted. If Tinn-R seems to freeze while querying R for tips and you get no results, increase the value a bit by setting ``Options/Application/R/Server/Computational synchronization (delay)``.**
+
+
+==== Can I start R and Tinn-R all at once? ====
+- There are many ways to accomplish this, but here is one: First, configure R so that it undersands that you want to use Tinn-R as your IDE (Integrated Development Environment). In order to do that, start a new R session and add the following command:
+```
+> options(IDE = "C:/Tinn-R/bin/Tinn-R.exe")
+```
+Replace the path by the present location of Tinn-R.exe on your computer if different from the location above. Then you will indicate that you want to start the DDE server automatically by setting:
+```
+> options(use.DDE = TRUE)
+```
+At this point, Tinn-R will be automatically started when you load svIDE, at the same time as the R call-tip server is installed (see FAQ 3.7):
+```
+> library(TinnR)
+```
+If those steps work well in manual mode, but you now want them to run whenever you start R, edit the ``Rprofile.site`` file (located in the \etc\ subdirectory of R.  File location varies, but it should be under something like C:\Program Files\R\R-X.X.X\etc\Rprofile.site). Add the above-mentioned three lines of code at the end of the Rprofile file.  From now on, Tinn-R will start every time you open a R session:
+```
+options(IDE = "C:/Tinn-R/bin/Tinn-R.exe")
+options(use.DDE = TRUE)
+library(TinnR)
+```
+A copy of ``Rprofile.site`` file created by José Cláudio Faria can be obtained from [SourceForge http://sourceforge.net/forum/forum.php?forum_id=620340], which you adapt according to your needs.  To make sure that everything works well and smoothly, close both R and Tinn-R and restart R. Tinn-R should start concomitantly. Now, create a very simple function in R such as:
+```
+> cube <- function(x) x^3
+```
+Switch to Tinn-R and type: ``cube(``. You should get a call-tip displaying ``x`` if the R call-tip server was correctly installed.
+
+
+=== Hotkeys (operational system) ===
+==== What is the difference between hotkeys (operational system) and shortcuts (Tinn-R) ====
+- The hotkeys are related to the operational system. In other words, they work without the focus on Tinn-R, whereas the shortcuts will only work with the focus on the Tinn-R interface.
+
+
+==== How do I define hotkeys for R tools in Tinn-R? ====
+- Go to ``R/Hotkeys of R``. There, define your favorite hotkeys for the various R tools and make sure to activate them (Option -> Active).
+
+
+==== Is there a shortcut for cycling through opened files? ====
+- Yes, you can use ``Ctrl+Tab`` to go to next file, and ``Ctrl+Shift+Tab`` to go to previous ones when several files are loaded simultaneously in Tinn-R.
+
+
+==== Is there a shortcut for '<-' and '->' for the S/R languages? ====
+- The (non user configurable) shortcut for ``->`` is ``Ctrl+Add`` key (numeric keypad). Similarly, ``Ctrl+Subtract`` (numeric keypad) is a shortcut for ``<-``. ``->`` and ``<-``, both being assignment symbols in the S/R languages.
+
+
+=== Miscellaneous ===
+==== I am editing a table. Can I select text in column mode? ====
+- Yes you can, but you must first make sure that this option is selected. Go to ``Options/Editor/Advanced options`` tab and check (x) ``Alt sets column modes``. Once this is done, by pressing ``Alt`` key while selecting your text with the mouse in Tinn-R, the  selection will be done in column mode.
+- Another option is to change the selection mode to column in a permanent way. This is done through the menu ``Options/Selection mode`` or by clicking on the selection mode place at the status bar. The available options are: ``smNormal``, ``smLine`` and ``smColumn``.
+
+
+==== Can I define bookmarks to facilitate the navigation through my documents? ====
+- Yes, you can define up to 10 bookmarks in each of your opened documents. To define the bookmark, use ``Ctrl+Shift+[0-9]`` (a key from 0 to 9).  Then, to go to the corresponding bookmark just use ``Ctrl+[0-9]``. A visual indicator appears in the right margin at the location of your bookmarks to remind you where they are.
+
+
+==== What is the left gutter used for? ====
+- In Tinn-R, bookmarks are visually displayed in the left gutter (use ``Ctrl+Shift+[0-9]`` to set bookmarks and then use ``Ctrl+[0-9]`` to navigate to them). It also displays the respective line numbers. You must set gutter ``Visible`` in ``Options/Main/Editor/Display tab`` (and also ``Show line numbers``) to activate this feature.
+
+
+==== Can I run my code step-by-step? ====
+- Yes, but for more convenient use of this function, you must place Tinn-R and R side by side on your screen and click on the 'Send line' icon with the mouse (seventh button from the left on the R toolbar).
+- If you use a shortcut, you can just submit one line since the R console gets the focus when code is sent to R. Alternatively, you can set Tinn-R as a ``topmost`` window on top of R using ``Options/On top``.  The downside is that Tinn-R will permanently hides the R console and there is a chance that you won't see a part of the output generated in R during your step-by-step code execution.
+
+
+==== Is there a graphical debugger for my R functions? ====
+- Not yet, but you can download the excellent ``debug`` package from CRAN and use the ``mtrace`` function available from there.
+
+
+==== What is the Tools panel? ====
+- It is a panel you can open at either the left or the right side of your text. It helps you manage large projects with multiple documents. The ``Computer`` tab allows you to explore your computer disks and open one or several files without using ``File/Open``, or switching to the Windows file explorer. The ``Project`` tab is a convenient manager for all files collected in a given project.
+
+
+==== Can I copy and paste syntax highlighted R code in Word/Web/LaTeX? ====
+- Syntax highlighted code enhances visibility of code. It is convenient in the code editor, but could also be useful for pieces of code presented elsewhere such as in a report, a Web page, or a LaTeX document. Tinn-R allows you to copy code while keeping syntax highlighting color through ``Edit/Copy formatted``. Three options are available: RTF, HTML and TeX.
+
+
+==== How can I fix incorrect icon displays on Windows after I have installed a new version of Tinn-R? ====
+- If you get an incorrect icon displayed on Windows after installing a new version of Tinn-R, just proceed as follows:
+ - In order to accelerate the display of program or file icons, Windows stores images in the ICON CACHE (ShellIconCache), a hidden icon cache file in your Windows directory.
+ - Sometimes the icon of the object changes, but Windows still shows the old icon instead of the new one. To solve this problem, use the shareware program called [IconChanger http://www.shelllabs.com/].
+ - If you have just installed Tinn-R with a new icon but Windows has not changed the image yet, use IconChanger and select REBUILD ICON CACHE.  If that still doesn't work, then select REMOVE ICON CACHE.
+ - If you have selected REBUILD the icon cache will start rebuilding from scratch. If you have select REMOVE, you will see a warning  message. Select YES and then restart your computer.
+
+
+==== Basic instructions about focus control ====
+- Tinn-R has a button within the //Options toolbar// [../../../res/focus.png] with the hint (//Options: return focus to editor after send/control Rgui//) that enables the user to configure out the focus control. When this option is ``checked`` Tinn-R will display the following behavior:
+ - If the editor has the focus, it will ``go back`` to the editor after any //send to// or //R control// action, otherwise it will remain on Rgui. This is also true when working with a dual-monitor display.
+- If the Rterm has the focus, it will be ``maintened`` in this interface (//IO//), ``disregarding`` the //Options: return focus to editor after send/control Rgui//.
+
+
+==== Why Tinn-R doesn't remember my syntax color preferences? ====
+Tinn-R has four multi-highlighters: //HTML complex//, //PHP complex//, //R complex// and //Sweave//, with each one behaving as follows:
+```
+ 1. HTML complex = HTML & JavaScript
+ 2. PHP complex  = HTML & JavaScript & PHP
+ 3. R complex    = R & URI ('<<<' begin URI
+                            '>>>'   end URI)
+ 4. Sweave       = TeX & R ('>>=' begin R
+                            '@'     end R)
+
+ URI      : Uniform Resource Identifiers.
+ R complex: The main syntax is R, '<<<' and '>>>' are the tags enabling the user to insert a block of URI syntax.
+ Sweave   : The main syntax is TeX, '>>=' and '@' are the tags enabling the user to insert a block of R syntax.
+```
+**These highlighters do not establish priorities when you set the syntax color preferences. Thus, if you change the color preferences for any of these multi-highlighters (//HTML complex//, //PHP complex//, //R complex// and //Sweave//) these settings will be valid only in the current Tinn-R session and will not be saved when Tinn-R is closed. If you would like to make these changes permanent, just set the  preferences from all simple highlighters (//R//, //TeX//, //HTML//, //JavaScript//, //PHP// and //URI//)**.
+
+
+==== How do I set a block as marked? ====
+ - **If the file has no marks**: the option will not be available (grayed out);
+ - **If the file has one or more marks and the cursor is either above the first mark or below  the last mark**: all text (above or below this mark) will be submitted in relation to the cursor position (above or below) the mark;
+ - **If the cursor is between any two adjacent marks**: all text between those two marks will be submitted.
+
+
+==== How do I can find errors in my script using Rterm interface? ====
+ - The ``Application options/R/Rterm`` is split in two tabs: ``Error`` and ``Options``. The tab Error has a option: ``Trying to find code errors (at the editor)*``. It enables the user to set Tinn-R in order to find code errors at the editor when sending instructions to Rterm. It may happen that the error will not be found at the right place, for example the error might be the same word appearing in a comment which comes before the actual along the code. In that case the user should use the shortcut ``F3 (Find again)``. The word will appear selected, than just press //OK// until finding the right error. The first search done internally by Tinn-R has //Case sensitive// and //Whole word only// as default, but, this is not passed to the search interface, therefore the user should just select them if convenient. If the error has number among letters //Whole word only// is not a good option.
+
+

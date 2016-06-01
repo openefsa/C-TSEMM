@@ -1,0 +1,35 @@
+
+== Tools bar ==[working_toolsbar]
+[../../../res/toolsbar.png]
+
+Unlike most applications of this category, this interface was projected to be as small and simple as possible. In other words, the full access to all resources of Tinn-R are available at the main menu and associated shortcuts (it takes time to learn all and most are user configurable).
+
+Two groups are available: main and R tool bar.
+
+The main toolbar interface is categorized and contain the most common tasks:
+|| Category   | Description |
+ | File       | New, open, save, save all, reload and print |
+ | Edit       | Undo and redo |
+ | Filter     | Create a new file with all occurrences of typed sequence of characters |
+ | Macro      | Record and play |
+ | Misc       | On top, focus control and block marks |
+ | Processing | Conversion, compilation and viewer |
+ | R          | Lots of options to send and control R |
+ | Search     | Current file, in files, replace and go to line |
+ | Syntax     | Drop down list of all syntaxes available |
+ | Spell      | Drop down list of installed dictionaries and a bottom to start the speller |
+ | View       | Organize screen, Tools (show/hide), Tools (size), Rterm (show/hide, Rterm (size), options to //IO// and //Log// and word wrap |
+
+The R toolbar has two basic division: Send (left side, finishing in the //Set work directory bottom//) and Control (right side, starting in the //List all objects bottom//).
+
+
+=== Show/Hide ===[working_toolsbar_showhide]
+[../../../res/toolsbar_pmenu.png]
+
+The Tools bar has its own pop-up menu enabling the user to choose what resources will be visible (show/hide). To see the pop-up menu, press the right mouse bottom inside any place of the main tools bar.
+
+
+=== Disposition ===[working_toolsbar_disposition]
+The interface allows also drag and drop. In other words, you can organize the order of the individual tool bar inside of the main container.
+
+It is better to do that with the main interface not maximized to avoid screen flicker (a small nuance related to some version of the Windows and Borland engine).

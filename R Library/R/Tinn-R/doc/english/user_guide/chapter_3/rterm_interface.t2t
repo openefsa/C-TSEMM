@@ -1,0 +1,77 @@
+
+== Rterm interface ==[working_rterm]
+[../../../res/rterm.png]
+
+The implementation of a Rterm interface in Tinn-R has the following aims:
+- To address some limitations (edition, navigation and control) imposed by the Rgui.exe interface;
+- To add more flexibility and power to the GUI/Editor;
+- To maintain the prior user knowledge associated with Tinn-R editor and the Rgui console;
+- To maintain the structural simplicity of the application;
+- To use a more efficient engine of Inter Process Communication (IPC) than the Windows clipboard used in previous versions.
+
+
+The //IO// and //Log// interfaces are instances of the class SynEdit. In other words, all prior user knowledge of the resources associated with the editor were preserved:
+- Free navigation with keyboard keys;
+- Marks;
+- Shortcuts;
+- Syntax;
+- Match brackets;
+- Tips;
+- Data completion;
+- Edition: copy, paste, cut, etc;
+- Selection/copy/paste in column mode: ``ALT + drag the mouse``, if this option is checked, [see editor options #working_editor]), etc.
+
+
+- //IO//: the aim was to add flexibility and power, i.e, joining the power of SynEdit (editor) and the functionality of a common console.
+
+- //Log//: has three basic objectives:
+ + To receive and show warnings and error messages;
+ + To makes the //IO// interface cleaner;
+ + To avoid synchronization difficulties with the inter process communication (IPC) called //pipe// used.
+
+
+When more than one recognized instance of R is running the priority order is:
+ + Rterm;
+ + Rgui;
+ + Rserver (remote);
+
+
+=== IO ===[working_rterm_io]
+[../../../res/rterm_io.png]
+
+The //IO// interface is used to receive output (SDTOUT) from the R environment.
+
+It is necessary to adjust some R options (for example: ``options(width=70)`` to obtain a suitable number of character in each single line, according to hardware and user preferences (side of //IO//, place of //IO//, length of //IO//, width of //IO//, type and size of font). Once you get a suitable result, it is a good practice to add this option to the ``Rprofile.site`` (located inside of the folder //etc// where the R was installed) file. In this way, your option will always be set when starting R.
+
+The IO is an instance of SynEdit. Therefore, it can be edited and used like the editor, allowing:
+|| Resource        | Description |
+ | Edition         | All resources available to the editor (copy, paste, cut, etc) can be used |
+ | Free navigation | Using keyboard keys : Home, Page Up, Page Down, End, Left, Top, Right and Bottom |
+ | Marks           | Can be used ``CTRL+[0..9] to mark`` and ``SHIFT+CTRL+[0..9] to go`` |
+ | Shortcuts       | All shortcuts available to the editor are also to the IO |
+ | Syntax          | Two options: Text and R |
+ | Match brackets  | It make easy to build more complex instructions like ``plot(sqrt(rnorm(1e3)), pch='.', cex=3)`` |
+ | Tips            | Are invoked using the same trigger as the editor |
+ | Data completion | Are invoked using the same trigger as the editor |
+
+If the //IO// has the focus, all actions of the R toolbar and main menu associated with control R can be used in the IO interface.
+
+The //IO// interface has a special pop-up menu allowing the most common tasks. It is auto-explicative. So, make a small tour (right mouse bottom inside of Rterm/IO) to find out about its options.
+
+Some details:
+- Shortcuts and pop-up menu make it easy to change among the interfaces: //Editor//, //IO// and //Log//:
+ + if //IO// and //Log// are in distinct tabs (views), the common Windows shortcut ``CTRL+TAB`` changes the active page (IO-Log).
+ + Any prior line can be sent another time by just putting the cursor in any place of it and typing: ``CTRL+ENTER``;
+- The last line of the //IO// interface (the prompt) has special features:
+ + It has some restrictions for edition and navigation;
+ + ``ALT+DOW`` and ``ALT+UP`` are the shortcut (prior/later) for command history. The history is continuous, cyclic and have 100 lines of limit.
+
+
+=== Log ===[working_rterm_log]
+[../../../res/rterm_log.png]
+
+The //Log// interface is used to receive warnings and error messages (SDTERR) from the R environment.
+
+It has a special pop-up menu that allows the most common tasks. It is auto-explicative. So, make a small tour (right mouse bottom inside of Rterm/Log) to know all options.
+
+The most resources available to the //IO// are also available to this interface.

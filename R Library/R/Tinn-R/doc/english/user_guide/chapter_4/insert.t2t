@@ -1,0 +1,74 @@
+
+== Insert ==[menu_insert]
+[../../../res/menu_insert.png]
+
+|| Option            | Description |
+ | LaTeX             | //[See options ... #menu_insert_latex]// |
+ | Completion        | Insert the completion                    |
+ | Date / Time stamp | Inserts the current system time and date |
+
+
+=== Latex ===[menu_insert_latex]
+[../../../res/menu_insert_latex.png]
+
+|| Option | Description |
+ | Math   | //[See options ... #menu_insert_latex_math]// |
+ | Header | //[See options ... #menu_insert_latex_header]// |
+ | Format | //[See options ... #menu_insert_latex_format]// |
+ | Font   | //[See options ... #menu_insert_latex_font]// |
+
+
+==== Math ====[menu_insert_latex_math]
+[../../../res/menu_insert_latex_math.png]
+
+|| Option      | Description |
+ | Dimensional | Opens a dialog to insert a dimensional element: Array, Matrix, Tabular or Tabbing |
+ | frac{}{}    | Inserts **frac{}{}**. If there are two selected elements , for example ``1 2``, it will place both elements in the correct position, i.e, **frac{``1``}{``2``}** |
+ | sqrt{}      | Inserts **sqrt{}**. If an element is selected, say ``9``, it will place this element in the correct position, i.e, **sqrt{``9``}** |
+ | sqrt[]{}    | Inserts **sqrt[]{}**. If there are two selected elements, for example ``3 27``, it will place both in the correct position, i.e, **sqrt[``3``]{``27``}** |
+
+
+==== Header ====[menu_insert_latex_header]
+[../../../res/menu_insert_latex_header.png]
+
+|| Option          | Description |
+ | Part            | Inserts **\part{}** if no selection or **\part{``selected``}** |
+ | Chapter         | Inserts **\chapter{}** if no selection or **\chapter{``selected``}** |
+ | Section         | Inserts **\section{}** if no selection or **\section{``selected``}** |
+ | Sub-section     | Inserts **\subsection{}** if no selection or **\subsection{``selected``}** |
+ | Sub-sub-section | Inserts **\subsubsection{}** if no selection or **\subsubsection{``selected``}** |
+ | Paragraph       | Inserts **\paragraph{}** if no selection or **\paragraph{``selected``}** |
+ | Sub-paragraph   | Inserts **\subparagraph{}** if no selection or **\subparagraph{``selected``}** |
+
+
+==== Format ====[menu_insert_latex_format]
+[../../../res/menu_insert_latex_format.png]
+
+|| Option      | Description |
+ | Itemization | Inserts itemization or itemizes a selection |
+ | Enumeration | Inserts enumeration or enumerates a selection |
+ | Left        | Inserts tag to align text left or make left the selection |
+ | Center      | Inserts tag to align text center or make center the selection |
+ | Right       | Inserts tag to align text right or make right the selection |
+
+
+==== Font ====[menu_insert_latex_font]
+[../../../res/menu_insert_latex_font.png]
+
+|| Option        | Description |
+ | Enphase       | Inserts **\emph{}** if no selection or **\emph{``selected``}** |
+ | Bold          | Inserts **\textbf{}** if no selection or **\textbf{``selected``}** |
+ | Italic        | Inserts **\textit{}** if no selection or **\textit{``selected``}** |
+ | Slatend       | Inserts **\textsl{}** if no selection or **\textsl{``selected``}** |
+ | Typewriter    | Inserts **\texttt{}** if no selection or **\texttt{``selected``}** |
+ | Small caps    | Inserts **\textsc{}** if no selection or **\textsc{``selected``}** |
+ | Tiny          | Inserts **{\tiny {}}** if no selection or **{\tiny {``selected``}}** |
+ | Script size   | Inserts **{\scriptsize {}}** if no selection or **{\scriptsize {``selected``}}** |
+ | Footnote size | Inserts **{\footnotesize {}}** if no selection or **{\footnotesize {``selected``}}** |
+ | Small         | Inserts **{\small {}}** if no selection or {\small **{``selected``}}** |
+ | Normal        | Inserts **{\normalsize {}}** if no selection or **{\normalsize {``selected``}}** |
+ | Large         | Inserts **{\large {}}** if no selection or **{\large {``selected``}}** |
+ | Larger        | Inserts **{\Large {}}** if no selection or **{\Large {``selected``}}** |
+ | Largest       | Inserts **{\LARGE {}}** if no selection or **{\LARGE {``selected``}}** |
+ | Huge          | Inserts **{\huge {}}** if no selection or **{\huge {``selected``}}** |
+ | Huger         | Inserts **{\Huge {}}** if no selection or **{\Huge {``selected``}}** |

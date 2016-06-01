@@ -1,0 +1,35 @@
+
+== Shortcuts customization ==[working_shortcuts]
+[../../../res/shortcuts_dlg.png]
+
+The //Shortcuts customization// allows the user to set the shortcuts related to the application, it works together with the //Editor keystrokes// and allows high level of customization.
+
+The difference between //Shortcuts// and //Hotkeys (operational system)// is that the former works only with the focus on Tinn-R, whereas the hotkeys works with the focus anywhere.
+
+Read below a brief description of available buttons.
+
+: Restore default:
+It restores the file ``Shortcuts.xml`` from the origin (InstallPath/data/data.zip). Any prior changes in the the file ``Shortcuts.xml`` in use will be lost.
+
+: Save as default:
+It opens the save dialog allowing to save the file. From this point, this file will be the new default shortcuts.
+
+: Load:
+It opens the open dialog allowing to load a shortcut file. From this point, this file will be the new default shortcuts.
+
+: Edit:
+It puts the table in edition mode.
+
+: Cancel current:
+It cancels any changes made in the current edition.
+
+: Cancel all:
+It cancels all changes made in the database prior to //Save// or //Save as default//.
+
+: Save:
+It saves to text file (XML) all changes made in the current table.
+
+: Close:
+It closes the dialog. All changes not saved will be lost.
+
+

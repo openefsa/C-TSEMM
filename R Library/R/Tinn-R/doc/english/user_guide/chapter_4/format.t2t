@@ -1,0 +1,33 @@
+
+== Format ==[menu_format]
+[../../../res/menu_format.png]
+
+|| Option    | Description |
+ | Selection | //[See options ... #menu_format_selection]// |
+ | Word      | //[See options ... #menu_format_word]// |
+
+
+=== Selection ===[menu_format_selection]
+[../../../res/menu_format_selection.png]
+
+|| Option                              | Description |
+ | Indent                              | Indents selected line(s) |
+ | Unindent                            | Unindents selected line(s) |
+ | Comment                             | Adds comments to selected line(s) |
+ | Uncomment firsts occurrence         | Removes the first occurrence of a comment in the selected line(s) |
+ | Uncomment all occurrence            | Removes all occurrences of a comment in the selected line(s) |
+ | Comment (LaTeX)                     | Adds a comment (LaTeX) to the selected line(s) |
+ | Uncomment firsts occurrence (LaTeX) | Removes a comment (LaTeX) from the selected line(s) |
+ | Uncomment all occurrence (LaTeX)    | Removes all occurrences of a comment (LaTeX) from the selected line(s) |
+ | Uppercase selection                 | Converts selected text to upper case |
+ | Lowercase selection                 | Converts selected text to lower case |
+ | Invert selection                    | Inverts the case of all selected text |
+
+
+=== Word ===[menu_format_word]
+[../../../res/menu_format_word.png]
+
+|| Option         | Description |
+ | Uppercase word | Converts the word under the cursor to upper case |
+ | Lowercase word | Converts the word under the cursor to lower case |
+ | Invert case    | Inverts the case of the word under the cursor |

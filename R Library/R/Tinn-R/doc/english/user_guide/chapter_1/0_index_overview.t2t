@@ -1,0 +1,16 @@
+
+====================
+= Overview =[overview]
+
+This section provides a brief overview of the Tinn-R project.
+
+%!include: chapter_1/quick_start.t2t
+%!include: chapter_1/what_is_tinn-r.t2t
+%!include: chapter_1/why_tinn-r.t2t
+%!include: chapter_1/what_you_get.t2t
+%!include: chapter_1/have_to_pay.t2t
+%!include: chapter_1/motivation.t2t
+%!include: chapter_1/phrase.t2t
+%!include: chapter_1/tools_used.t2t
+%!include: chapter_1/acknowledgments.t2t
+%!include: chapter_1/feedback.t2t

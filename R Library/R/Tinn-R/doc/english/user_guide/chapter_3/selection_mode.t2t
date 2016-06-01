@@ -1,0 +1,23 @@
+
+== Selection Mode ==[working_selectionmode]
+Allows the setting of the current selection mode.
+
+Select text by clicking and dragging with the left mouse button held down or moving the cursor with the shift key held down. The status bar will display an icon indicating the current selection mode.
+
+
+=== Normal ===[working_selectionmode_normal]
+[../../../res/selection_normal.png]
+
+This is the standard mode of selection found in many Windows applications.
+
+
+=== Line ===[working_selectionmode_line]
+[../../../res/selection_line.png]
+
+This selection mode allows only for complete lines to be selected.
+
+
+=== Column ===[working_selectionmode_column]
+[../../../res/selection_column.png]
+
+This selection mode allows vertical blocks of text to be selected. The option ``ALT`` sets column mode allowing the selection mode to be switched to Column Mode when selecting with the mouse by simply holding down the ``ALT`` key. [See editor/advanced options #working_editor_advanced_options].

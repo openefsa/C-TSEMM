@@ -1,0 +1,216 @@
+
+== Regular expressions ==[working_regularexpressions]
+This session is an adaptation. It is based on the help of the freewere [PSPad http://www.pspad.com/] editor.
+
+
+=== What are regular expressions? ===
+//Regular expressions// are a widely-used method of specifying patterns of text to search for. Special metacharacters allow you to specify, for instance, that a particular string you are looking for occurs at the beginning or end of a line, or contains n recurrences of a certain character.
+
+Regular expressions may look ugly to novices, but are actually a very simple, handy and powerful tool.
+
+
+=== Simple Matches ===
+Any single character matches itself, unless it is a metacharacter with a special meaning described below.
+
+A series of characters matches that series of characters in the target string, so the pattern ``bluh`` would match ``bluh`` in the target string.
+
+You can cause characters that normally function as metacharacters or escape sequences to be interpreted literally by ``escaping`` them. Do this by preceding them with a backslash ``\``. For instance: metacharacter ``^`` match beginning of string, but ``\^`` match character ``^``, ``\\`` match ``\`` and so on.
+
+: Examples:
+|| ER              | Matches |
+ | ``foobar``      | ``foobar`` |
+ | ``\^FooBarPtr`` | ``^FooBarPtr`` |
+
+
+=== Escape Sequences ===
+Characters may be specified using a escape sequences syntax much like that used in C and Perl: ``\n`` matches a newline, ``\t`` a tab, etc. More generally, ``\xnn``, where ``nn`` is a string of hexadecimal digits, matches the character whose ASCII value is ``nn``. If You need wide (Unicode) character code, you can use ``\x{nnnn}``, where ``nnnn`` is one or more hexadecimal (base 16) digits (1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F). Hex digit letters may be in upper or lower case.
+|| ER           | Description |
+ | ``\xnn``     | Char with hex code ``nn`` |
+ | ``\x{nnnn}`` | Char with hex code ``nnnn`` (one byte for plain text and two bytes for Unicode) |
+ | ``\t``       | Tab (HT/TAB), same as ``\x09`` |
+ | ``\n``       | Newline (NL), same as ``\x0a`` |
+ | ``\r``       | Carriage return (CR), same as ``\x0d`` |
+ | ``\f``       | Form feed (FF), same as ``\x0c`` |
+ | ``\a``       | Alarm (bell) (BEL), same as ``\x07`` |
+ | ``\e``       | Escape (ESC), same as ``\x1b`` |
+
+: Examples:
+|| ER             | Matches |
+ | ``foo\x20bar`` | ``foo bar`` (note space in the middle) |
+ | ``\tfoobar``   | ``foobar`` predefined by tab |
+
+
+=== Character Classes ===
+You can specify a character class, by enclosing a list of characters in ``[]``, which will match any one character from the list. If the first character after the ``[`` is ``^``, the class matches any character not in the list.
+
+: Examples:
+
+|| ER                | Matches |
+ | ``foob[aeiou]r``  | ``foobar``, ``foober``, etc. But not ``foobbr``, ``foobcr``, etc |
+ | ``foob[^aeiou]r`` | ``foobbr``, ``foobcr``, etc. But not ``foobar``, ``foober``, etc |
+
+Within a list, the ``-`` character is used to specify a range, so that ``a-z`` represents all characters between ``a`` and ``z``, inclusive.
+
+If you want ``-`` itself to be a member of a class, put it at the start or end of the list, or escape it with a backslash. If You want ``]`` you may place it at the start of list or escape it with a backslash.
+
+: Examples:
+
+|| ER            | Matches  |
+ | ``[-az]``     | ``a``, ``z`` and ``-`` |
+ | ``[az-]``     | ``a``, ``z`` and ``-`` |
+ | ``[a\-z]``    | ``a``, ``z`` and ``-`` |
+ | ``[a-z]``     | All twenty six small characters from ``a`` to ``z`` |
+ | ``[\n-\x0D]`` | Any of ASCII ``#10(Lf)``, ``#11``, ``#12(Ff)``, ``#13(Cr)`` |
+ | ``[\d-t]``    | Any digit, ``-`` or ``t`` |
+ | ``[]-a]``     | Any char from ``]``..``a`` |
+
+
+=== Metacharacters ===
+Metacharacters are special characters which are the essence of regular expressions. There are different types of metacharacters, described below.
+
+
+==== Metacharacters - Line Separators ====
+|| ER     | Description |
+ | ``^``  | Start of line |
+ | ``$``  | End of line |
+ | ``\A`` | Start of text |
+ | ``\Z`` | End of text |
+ | ``.``  | Any character in line |
+
+: Examples:
+|| ER           | Matches |
+ | ``^foobar``  | ``foobar`` only if it's at the beginning of line |
+ | ``foobar$``  | ``foobar`` only if it's at the end of line |
+ | ``^foobar$`` | ``foobar`` only if it's the only string in line |
+ | ``foob.r``   | ``foobar``, ``foobbr``, ``foob1r`` and so on |
+
+The ``^`` metacharacter by default is only guaranteed to match at the beginning of the input string/text, the ``$`` metacharacter only at the end. Embedded line separators will not be matched by ``^`` or ``$``. You may, however, wish to treat a string as a multi-line buffer, such that the ``^`` will match after any line separator within the string, and ``$`` will match before any line separator. You can do this by switching On the modifier ``/m``.
+
+The ``\A`` and ``\Z`` are just like ``^`` and ``$``, except that they won't match multiple times when the modifier ``/m`` is used, while ``^`` and ``$`` will match at every internal line separator.
+
+
+==== Metacharacters - Predefined Classes ====
+|| ER     | Description |
+ | ``\w`` | An alphanumeric character (including ``_``) |
+ | ``\W`` | A non alphanumeric |
+ | ``\d`` | A numeric character |
+ | ``\D`` | A non-numeric |
+ | ``\s`` | Any space (same as ``[ \t\n\r\f])`` |
+ | ``\S`` | A non space |
+
+You may use \w, \d and \s within custom character classes.
+
+: Examples:
+|| ER              | Matches |
+ | ``foob\dr``     | ``foob1r``, ``foob6r`` and so on but not ``foobar``, ``foobbr`` and so on |
+ | ``foob[\w\s]r`` | ``foobar``, ``foob r``, ``foobbr`` and so on but not ``foob1r``, ``foob=r`` and so on |
+
+TRegExpr uses properties SpaceChars and WordChars to define character classes ``\w``, ``\W``, ``\s``, ``\S``, so You can easily redefine it.
+
+
+==== Metacharacters - Word Boundaries ====
+||  ER    | Matches |
+ | ``\b`` | A word boundary |
+ | ``\B`` | A non-(word boundary) |
+
+A word boundary ``\b`` is a spot between two characters that has a ``\w`` on one side of it and a ``\W`` on the other side of it (in either order), counting the imaginary characters off the beginning and end of the string as matching a ``\W``.
+
+
+==== Metacharacters - Iterators ====
+Any item of a regular expression may be followed by another type of metacharacters - iterators. Using this metacharacters You can specify number of occurrences of previous character, metacharacter or subexpression.
+
+|| ER         | Matches |
+ | ``*``      | Zero or more ("greedy"), similar to {0,} |
+ | ``+``      | One or more ("greedy"), similar to {1,} |
+ | ``?``      | Zero or one ("greedy"), similar to {0,1} |
+ | ``{n}``    | Exactly n times ("greedy") |
+ | ``{n,}``   | At least n times ("greedy") |
+ | ``{n,m}``  | At least n but not more than m times ("greedy") |
+ | ``*?``     | At least n but not more than m times ("greedy") |
+ | ``+?``     | At least n but not more than m times ("greedy") |
+ | ``??``     | Zero or one ("non-greedy"), similar to {0,1}? |
+ | ``{n}?``   | Exactly n times ("non-greedy") |
+ | ``{n,}?``  | At least n times ("non-greedy") |
+ | ``{n,m}?`` | At least n but not more than m times ("non-greedy") |
+
+So, digits in curly brackets of the form ``{n,m}``, specify the minimum number of times to match the item n and the maximum m. The form ``{n}`` is equivalent to ``{n,n}`` and matches exactly n times. The form ``{n,}`` matches n or more times. There is no limit to the size of n or m, but large numbers will chew up more memory and slow down r.e. execution.
+
+If a curly bracket occurs in any other context, it is treated as a regular character.
+
+: Examples:
+|| ER              | Matches |
+ | ``foob.*r``     | ``foobar``, ``foobalkjdflkj9r`` and ``foobr`` |
+ | ``foob.+r``     | ``foobar``, ``foobalkjdflkj9r`` but not ``foobr`` |
+ | ``foob.?r``     | ``foobar``, ``foobbr`` and ``foobr`` but not ``foobalkj9r`` |
+ | ``fooba{2}r``   | ``foobaar`` |
+ | ``fooba{2,}r``  | ``foobaar``, ``foobaaar``, ``foobaaaar``, ... |
+ | ``fooba{2,3}r`` | ``foobaar``, or ``foobaaar`` but not ``foobaaaar`` |
+
+A little explanation about ``greediness``. ``Greedy`` takes as many as possible, ``non-greedy`` takes as few as possible. For example, ``b+`` and ``b*`` applied to string ``abbbbc`` return ``bbbb``, ``b+?`` returns ``b``, ``b*?`` returns empty string, ``b{2,3}?`` returns ``bb``, ``b{2,3}`` returns ``bbb``.
+
+
+==== Metacharacters - Alternatives ====
+You can specify a series of alternatives for a pattern using ``|`` to separate them, so that fee|fie|foe will match any of ``fee``, ``fie``, or ``foe`` in the target string (as would f(e|i|o)e). The first alternative includes everything from the last pattern delimiter (``(``, ``[``, or the beginning of the pattern) up to the first ``|``, and the last alternative contains everything from the last ``|`` to the next pattern delimiter. For this reason, it's common practice to include alternatives in parentheses, to minimize confusion about where they start and end.
+
+Alternatives are tried from left to right, so the first alternative found for which the entire expression matches, is the one that is chosen. This means that alternatives are not necessarily greedy. For example: when matching foo|foot against ``barefoot``, only the ``foo`` part will match, as that is the first alternative tried, and it successfully matches the target string. (This might not seem important, but it is important when you are capturing matched text using parentheses).
+
+Also remember that ``|`` is interpreted as a literal within square brackets, so if You write ``[fee|fie|foe]``. You're really only matching ``[feio|]``.
+
+: Examples:
+|| ER               | Matches |
+ | ``foo(bar|foo)`` | ``foobar`` or ``foofoo`` |
+
+
+==== Metacharacters - Subexpressions ====
+The bracketing construct ( ... ) may also be used to define r.e. subexpressions (after parsing, you can find subexpression positions, lengths and actual values in MatchPos, MatchLen and Match properties of TRegExpr, and substitute it in clip strings by TRegExpr.Substitute).
+
+Subexpressions are numbered based on the left to right order of their opening parenthesis. First subexpression has number ``1`` (whole r.e. match has number ``0`` - You can substitute it in TRegExpr.Substitute as ``$0`` or ``$&``).
+
+: Examples:
+|| ER                        | Matches |
+ | ``(foobar){8,10}``        | Strings which contain 8, 9 or 10 instances of the ``foobar`` |
+ | ``foob([0-9]|a+)r``       | ``foob0r``, ``foob1r`` , ``foobar``, ``foobaar``, ``foobaar``, ... |
+ | ``(abc(def)ghi(123))xzy`` | ``abcdefghi123xyz`` (the only match) |
+
+: Then backreferences:
+|| ER     | Description |
+ | ``\1`` | ``= abcdefghi123`` |
+ | ``\2`` | ``=def`` |
+ | ``\3`` | ``=123`` |
+ | ``\0`` | ``=abcdefghi123xyz (the whole match)`` |
+
+We could find the same string using metacharacter Iterators with: (``\w{3}([d-f]{3})...(\d*))xyz`` and the backreferences would have the same values. And yet the pattern would also match: ``123fdd@#$4444xyz``, ``bbbeeeabc1234567xyz``, ``ddddddaaaxyz``.
+
+
+==== Metacharacters - Backreferences ====
+Metacharacters ``\1`` through ``\9`` are interpreted as backreferences in the //Search text// box. When used outside of the regular expression, such as in the //Replace text// field, metacharacters ``$1`` through ``$9`` are interpreted as backreferences to the last find.
+
+``\<n>`` matches previously matched subexpression ``#<n>``.
+
+: Find Examples:
+|| ER                     | Matches |
+ | ``(.)\1+``             | ``aaaa`` and ``cc`` |
+ | ``(.+)\1+``            | ``abab`` and ``123123`` |
+ | ``(['"]?)(\d+)\1``     | ``"13"``(in double quotes), or ``'4'`` (in single quotes) or ``77`` (without quotes), ... |
+
+
+: Replace Examples:
+Date format change from ``dd.mm.yyyy`` to ``yyyy-mm-dd``. This will turn the European date style ``26.8.1994`` or ``26/8/1994`` into ``1994-8-26``.
+
+Search: ``([0-9]{1,2}).([0-9]{1,2}).([0-9]{4})``
+
+Replace: ``$3-$2-$1``
+
+**Make sure you check the box for //Regular Expression//.**
+
+
+=== Regular Expression Tutorials ===
+The following is a list of a few sites that contain tutorials on both regular expressions in general and their use in specific languages:
+
+- [General Tutorial http://www.regular-expressions.info/]
+- [Regular Expressions - User guide http://www.zytrax.com/tech/web/regex.htm]
+- [Regular Expression HOWTO http://www.amk.ca/python/howto/regex/]
+- [Perl Regular Expressions http://www.troubleshooters.com/codecorn/littperl/perlreg.htm]
+- [Regular Expression Basic Syntax Reference http://www.regular-expressions.info/reference.html]
+
+

@@ -1,0 +1,68 @@
+
+== Help ==[menu_help]
+[../../../res/menu_help.png]
+
+|| Option              | Description |
+ | Main                | //[See options ... #menu_help_main]// |
+ | English             | //[See options ... #menu_help_english]// |
+ | French              | //[See options ... #menu_help_french]// |
+ | Portuguese (Brazil) | //[See options ... #menu_help_portuguese]// |
+ | Spanish             | //[See options ... #menu_help_spanish]// |
+ | About               | Opens the //About// interface with information about Tinn-R |
+
+
+=== Main ===[menu_help_main]
+[../../../res/menu_help_main.png]
+
+|| Option                         | Description |
+ | User guide                     | //[See options ... #menu_help_main_userguide]// |
+ | Ini files (path information)   | Displays a single dialog with the path information of ini files for Tinn-R |
+ | Citation (put on clipboard)    | Places a text containing the Tinn-R citation in the clipboard |
+ | File conversion (introduction) | //[See options ... #menu_help_main_fileconversion]// |
+
+
+==== User guide ====[menu_help_main_userguide]
+[../../../res/menu_help_htmlt2t_generic.png]
+
+|| Option | Description |
+ | HTML   | Opens the HTML user guide |
+ | t2t    | Opens the main source file //user_guide.t2t// of the t2t user guide |
+
+
+==== File conversion (introduction) ====[menu_help_main_fileconversion]
+[../../../res/menu_help_conversion.png]
+
+|| Option           | Description |
+ | Txt2tags (*.t2t) | Opens the file //txt2tags_intro.t2t// |
+ | Deplate (*.dplt) | Opens the file //deplate_intro.t2t// |
+
+
+=== English ===[menu_help_english]
+[../../../res/menu_help_english.png]
+
+|| Option                | Description |
+ | Recognized words (R)  | Opens the file //Tinn-R_recognized words.r// |
+ | Example of script (R) | Opens the file //Tinn-r_example of script.r// |
+
+
+=== French ===[menu_help_french]
+[../../../res/menu_help_french.png]
+
+|| Option                | Description |
+ | Mots reconnus (R)     | Opens the file //Tinn-R_mots reconnus.r// |
+ | Exemple de script (R) | Opens the file //Tinn-r_exemple de script.r// |
+
+
+=== Portuguese (Brazil) ===[menu_help_portuguese]
+[../../../res/menu_help_portuguese.png]
+
+|| Option                    | Description |
+ | Palavras reconhecidas (R) | Opens the file //Tinn-R_palavras reconhecidas.r// |
+ | Exemplo de script (R)     | Opens the file //Tinn-R_exemplo de script.r// |
+
+
+=== Spanish ===[menu_help_spanish]
+[../../../res/menu_help_spanish.png]
+
+|| Option                   | Description |
+ | Palabras reconocidas (R) | Opens the file //Tinn-R_palabras reconocidas.r// |

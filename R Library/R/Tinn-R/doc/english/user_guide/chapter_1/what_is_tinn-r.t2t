@@ -1,0 +1,11 @@
+
+== What is Tinn-R? ==
+[../../../res/general.png]
+
+[Tinn http://tinn.solarvoid.com] is a small ASCII file editor primarily intended as a better replacement for the default Notepad running under the Windows OS. The name is the recursive acronym: __T__inn __i__s __n__ot __N__otepad.
+
+[Tinn-R http://sourceforge.net/projects/tinn-r] is an extension of the original Tinn editor, providing additional functionality to control [R http://cran.r-project.org] running as Rgui (in SDI mode), Rterm and [JGR http://stats.math.uni-augsburg.de/JGR/] and a whole lot of additional resources.
+
+Tinn-R can also be thought of as feature-rich replacement of the basic script editor provided with Rgui. It provides syntax-highlighting, code submission as a whole or line-by-line, in addition to many other useful tools to ease the writing and debugging of R code.
+
+Both Tinn and Tinn-R are distributed under the [GPL 2 http://www.gnu.org/copyleft/gpl.html] license or above.

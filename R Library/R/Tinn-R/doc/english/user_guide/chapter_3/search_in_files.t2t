@@ -1,0 +1,42 @@
+
+== Search in files ==[working_searchinfiles]
+The //Search in files// dialog allows you to match a criteria in all opened files and/or in files on disk:
+
+[../../../res/searchinfiles.png]
+
+=== Options ===
+: Case sensitive:
+When this option is set the search is case sensitive. For example, ``Ab``, ``AB`` and ``ab`` are all treated as different words.
+
+: Whole words only:
+When this option is set the system will only find complete words matching the search criteria. For example, if ``ab`` is the search string the system will not match occurrences of words such as ``abc`` or ``cab``.
+
+: Regular expressions:
+[See regular expressions ... #working_regularexpressions]
+
+
+=== Where ===
+: Opened files:
+When this option is set the search is performed on all opened files.
+
+: Directories:
+When this option is set the search is performed in disk files.
+
+
+=== Directory options ===
+: Directory:
+A dropdown list of previously searched directories.
+
+: File mask:
+A dropdown list of the previously searched file mask.
+
+: Search in sub directories:
+When this option is set the search is performed on all sub directories of the main directory.
+
+
+=== Results interface ===
+The associated results interface shows the following results:
+
+[../../../res/searchinfiles_results.png]
+
+A double click in a single occurrence (or dragging and dropping it into the editor interface) will open the file and results will be placed in the first line of the editor window.

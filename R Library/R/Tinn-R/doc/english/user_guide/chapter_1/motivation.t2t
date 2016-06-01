@@ -1,0 +1,9 @@
+
+== What was the motivation to start and maintain the Tinn-R project? ==
+: Motivation to start Tinn-R:
+We could not find a GUI/Editor for R running in the Windows OS that would give us all the ease of use and flexibility we wanted. So, we started this project using an open source editor called [Tinn http://tinn.solarvoid.com] as our initial platform.
+
+: Motivation to maintain Tinn-R:
+The most difficult stage of the project was getting started: Choosing the editor, all the preliminary performance and stability tests, understanding source structure, among many other struggles. Making it to run more and more smoothly and according to our daily needs was then a natural consequence. This is all to say that the open source movement has substantially changed our lives for better. We strongly believe in making software more widely available so that more people can benefit from it. We consider Tinn-R to be our small contribution to this fantastic open source initiative.
+
+

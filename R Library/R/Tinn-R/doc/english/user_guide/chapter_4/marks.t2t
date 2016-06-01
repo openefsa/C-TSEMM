@@ -1,0 +1,15 @@
+
+== Marks ==[menu_marks]
+[../../../res/menu_marks.png]
+
+|| Option     | Description |
+ | Block      | //[See options ... #menu_marks_block]// |
+ | Unmark all | Unmarks all marks of the current file |
+
+
+=== Block ===[menu_marks_block]
+[../../../res/menu_marks_block.png]
+
+|| Option | Description |
+ | Mark   | Marks selected block: ``0 to begin`` and ``1 to end`` |
+ | Unmark | Unmarks any previous marked block. It is not necessary to select the marked block |

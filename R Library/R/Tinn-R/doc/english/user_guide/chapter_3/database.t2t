@@ -1,0 +1,245 @@
+
+== Database ==[working_database]
+[../../../res/tools_database_shortcuts.png]
+[../../../res/tools_database_rcard.png]
+[../../../res/tools_database_rtip.png]
+[../../../res/tools_database_completion.png]
+
+This interface contains resources related to the internal Tinn-R database.
+
+Each tab (//Shortcuts//, //R card//, //R tip// and //Completion//) has its own tools bar and pop-up menu allowing for a fast control of the most common tasks.
+
+
+
+=== Shortcuts ===
+[../../../res/tools_database_shortcuts.png]
+
+: Help:
+It opens the //User Guide// on the section about the selected topic.
+
+: Edit:
+It opens the dialog //R card database (xml based)// below.
+
+
+[../../../res/shortcuts_dlg.png]
+
+Read below for a brief description of available buttons.
+
+: Restore default:
+It restores the file ``Shortcuts.xml`` from the origin (InstallPath/data/data.zip). Any prior changes in the the file ``Shortcuts.xml`` currently being used will be lost.
+
+: Save as default:
+It opens the save dialog allowing you to save the file. From this point on, this file will be the new default shortcut.
+
+: Load:
+It opens the open dialog allowing you to load a shortcut file. From this point on, this file will be the new default shortcut.
+
+: Edit:
+Places the table in edition mode.
+
+: Cancel current:
+Cancels any change made in the current edition.
+
+: Cancel all:
+Cancels all changes made in the database prior to //Save// or //Save as default//.
+
+: Save:
+Overwrites the text file (XML) saving all changes made to the current table.
+
+: Close:
+Closes the dialog. All non-saved changes will be lost.
+
+
+
+=== R card ===
+[../../../res/tools_database_rcard.png]
+
+: Help:
+Sends the following instruction to R: ``help('selected function')``.
+
+: Example:
+Sends the following instruction to R: ``example('selected function')``.
+
+: Copy function:
+Places the selected function in the clipboard.
+
+: Copy descrition:
+Places the descrition of the selected function on the clipboard.
+
+: Edit:
+Opens the dialog //R card database (xml based)// below.
+
+: Insert:
+Inserts the selected function in the active editor. A ``Double click`` or ``Enter`` performs the same function.
+
+
+[../../../res/rcard_dlg.png]
+
+: Restore default:
+Restores the file ``Rcard.xml`` from the origin at (``InstallPath/data/data.zip``). Any prior changes in the file ``Rcard.xml`` currently being used will be lost.
+
+: New:
+Places the table in insertion mode.
+
+: Delete:
+Delete the current registry from the table.
+
+: Edit:
+Places the table in edition mode.
+
+: Cancel current:
+Cancels any change made in the current edition.
+
+: Cancel all:
+Cancels all changes made to the database prior to //Save//.
+
+: Save:
+Overwrites the text file (XML) saving all changes made to the current table.
+
+: Close:
+Closes the dialog. All non-saved changes will be lost.
+
+
+=== R tip ===
+[../../../res/tools_database_rtip.png]
+
+: Help:
+Sends the following instruction to R: ``help('selected function')``.
+
+: Example:
+Sends the following instruction to R: ``example('selected function')``.
+
+: Copy function:
+Places the selected function in the clipboard.
+
+: Copy descrition:
+Places the descrition of the selected function in the clipboard.
+
+: Edit:
+Opens the dialog //R tip database (xml based)// below.
+
+: Insert:
+Inserts the selected funtion in the active editor. A ``Double click`` or ``Enter`` performs the same function.
+
+
+[../../../res/rtip_dlg.png]
+
+: Restore default:
+Restores the file ``Rtip.xml`` from the origin at (``InstallPath/data/data.zip``). Any prior change in the file ``Rtip.xml`` while being used will be lost.
+
+: New:
+Places the table in insertion mode.
+
+: Delete:
+Deletes the current registry from the table.
+
+: Edit:
+Places the table in edition mode.
+
+: Cancel current:
+Cancels any change made during the current editing session.
+
+: Cancel all:
+Cancels all changes made to the database prior to //Save//.
+
+: Save:
+Overwrites the text file (XML) while saving all changes made in the current table.
+
+: Close:
+Closes the dialog. All changes not previously saved will be lost.
+
+
+=== Completion ===
+[../../../res/tools_database_completion.png]
+
+This resource adds a granular level of user customization for editing functions within Tinn-R.
+
+The completion (database based) allows the user to add functions based on several programming languages such as R, TeX, among others.
+
+: Help:
+It sends the following instruction to R: ``help('selected function')``.
+
+: Example:
+Sends the following instruction to R: ``example('selected function')``.
+
+: Copy function:
+Places the selected function in the clipboard.
+
+: Copy descrition:
+Places the descrition of the selected function in the clipboard.
+
+: Edit:
+Opens the dialog //Completion database (xml based)// below.
+
+: Insert:
+Inserts the selected funtion in the active editor. A ``Double click`` or ``Enter`` performs the same function.
+
+The default shortcut is ``CTRL+J``, but this can be customized under //Options/Shortcuts// or //Tools/Database/Shortcuts//. To use it just push the keystrokes after any valid word:
+```
+  if<CTRL+J> to obtain:
+  if (| < )
+
+  ifc<CTRL+J> to obtain:
+  if (|< ) {
+
+  }
+
+  fo<CTRL+J> to obtain:
+  for (i in 1:|)
+
+  foc<CTRL+J> to obtain:
+  for (i in 1:|) {
+
+  }
+
+  sw<CTRL+J> to obtain:
+  switch(|,
+    a = ' ',
+    b = ' ',
+  )
+
+  wh<CTRL+J> to obtain:
+  i = 0
+  while (i < |) {
+
+    i = i + 1
+  }
+  
+  eq<CTRL+J> to obtain:
+  \begin{equation}\label{eq_01}
+    |  
+  \end{equation}
+```
+Observations:
+ + Only two letters were used to define the functions (for example: //fo// = //for//, //fu// = //function//);
+ + Therefore, we added the letter ``c`` for more complex structures (for example: //foc//, //fuc//);
+ + The ``|`` symbol is used to define where the cursor will first stop after auto-completion. The ``|`` symbol will be selected and marks the point where the user can start typing.
+
+
+[../../../res/completion_dlg.png]
+
+: Restore default:
+It restores the file ``Completion.xml`` from the origin at (``InstallPath/data/data.zip``). Any prior change in the file ``Completion.xml`` being used will be lost.
+
+: New:
+Places the table in insertion mode.
+
+: Delete:
+Deletes the current registry from the table.
+
+: Edit:
+Places the table in edition mode.
+
+: Cancel current:
+Cancels any change made to the current edition.
+
+: Cancel all:
+Cancels all changes made to the database prior to //Save//.
+
+: Save:
+Overwrites the text file (XML), saving all changes made to the current table.
+
+: Close:
+Closes the dialog. All non-saved changes will be lost.
+
+

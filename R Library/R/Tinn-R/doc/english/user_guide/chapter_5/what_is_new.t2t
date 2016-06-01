@@ -1,0 +1,1825 @@
+
+====================
+= What is new? =[whatisnew]
+This topic provides information about what is new in Tinn-R.
+
+% 10 versions released in 2010 /171
+% 16 versions released in 2009 /161
+% 14 versions released in 2008 /145
+% 26 versions released in 2007 /131
+% 64 versions released in 2006 /105
+% 25 versions released in 2005 /41
+% 16 versions released in 2004 /16
+
+``Total of versions released: 170``
+
+
+== 2010 (10 versions) ==
+=== 2.3.7.1 (Nov/24/2010) ===
+- Bug(s) fixed:
+ - A bug, accidentally introduced in version 2.3.7.0, which averted opening a file by ``Enter or Double click``, a recognized Tinn-R file from Windows environment, was fixed.
+
+
+=== 2.3.7.0 (Nov/22/2010) ===
+- Bug(s) fixed:
+ - A bug related to the intermittent lost of connection (or just appearing to freeze) occuring on Rgui.exe was fixed.
+- The versions 2.3.6.4, 2.3.6.5, 2.3.6.6 and 2.3.6.7 restricted to pre-release testers.
+- The ``Application options`` interface was a bit changed:
+ - The ``Application options/R/Rterm`` was split in two tabs: ``Error`` and ``Options``. The tab Error has a new option: ``Trying to find code errors (at the editor)*``. It enables the user to set Tinn-R in order to find code errors at the editor when sending instructions to Rterm. It may happen that the error will not be found at the right place, for example the error might be the same word appearing in a comment which comes before the actual along the code. In that case the user should use the shortcut ``F3 (Find again)``. The word will appear selected, than just press //OK// until finding the right error. The first search done internally by Tinn-R has //Case sensitive// and //Whole word only// as default, but, this is not passed to the search interface, therefore the user should just select them if convenient. If the error has number among letters //Whole word only// is not a good option.
+- This version is ``fully compatible with Windows 7 and R 2.12.0``.
+- The component XPmenu was removed from the project. Windows XP users might find the Tinn-R appearance less attractive, but the applicative is now more stable. As soon as possible, the project will get a better option for skins.
+- Parts of the source code were optimized.
+
+
+=== 2.3.6.3 (Nov/14/2010) ===
+- Bug(s) fixed:
+ - A small bug (introduced in the version 2.3.6.0) related to interactive use of Rterm interface, when R returns only one value, was fixed.
+- Parts of the source code were optimized.
+
+
+=== 2.3.6.2 (Nov/13/2010) ===
+- Bug(s) fixed:
+ - A bug (introduced in the version 2.3.6.1) related to automatic recognition (and setting) of the paths of Rterm and Rgui from R version 2.12.0 was fixed.
+- Parts of the source code were optimized.
+
+
+=== 2.3.6.1 (Nov/12/2010) ===
+- Bug(s) fixed:
+ - Permanent configuration of the file Rprofile.site from the menu option: ``R/Configure/Permanent (Rprofile.site)``.
+- Parts of the source code were optimized.
+
+
+=== 2.3.6.0 (Nov/10/2010) ===
+- Bug(s) fixed:
+ - Paths of Rterm and Rgui from R version 2.12.0 were fixed.
+- The ``Application options/R/Path`` has a new option: ``Architecture (bit)``. It enables the user to set R in order to run Rterm.exe or Rgui.exe in either 32 or 64 bit. They run independently one form the other. If the above dialog option ``Use latest version (always)`` is set to **No**, the dialog box ``Architecture (bit)`` becomes disabled. In other words, the path must be manually set. In this case, the user preference (if valid) will not be changed when Tinn-R is starting. If the dialog ``Use latest version (always)`` is set to **Yes**, the path of the latest R version (32 or 64) bit will found automatically. In case the user computer is 64 bit and it has latest R version installed with both options 32 or 64 bit the latest has preference.
+- Rterm interface now recognizes the single occurrence of a string pattern when using ``TAB`` in the prompt. The general behavior is not as friendly as in Rgui or in Linux console, but it is working.
+- Parts of the source code were optimized.
+
+
+=== 2.3.5.2 (Apr/11/2010) ===
+- The ``User guide`` was revised by ``Ricardo Pietrobon`` in an attempt to improve its flow and style. This is a work in progress, and so we should be improving it over time!
+
+
+=== 2.3.5.1 (Mar/28/2010) ===
+- Version restricted to developers.
+- The ``User guide`` was revised by ``Ricardo Pietrobon`` to improve its style and readability. So far, we have partial revisions implemented to chapters ``Overview, Basics, Working with, Menu description and parts of What is new``.
+- The ``Application options/R/Basic`` has a new option: ``Smart (all send)``. When this option is set to ``Yes``, all single line commands will not be send through ``source(...)`` but as instead as ``Send line``.
+
+
+=== 2.3.5.0 (Mar/04/2010) ===
+- Bug(s) fixed:
+ - Small corretions in the //Application options// interface.
+- Parts of the source code were optimized.
+- The Rterm interface has now a simple toolbar including the more usual options.
+- The ``User guide`` is being revised by ``Ricardo Pietrobon`` and soon will be more readable and intelligible. Up to now only chapters ``Overview and Basics`` have been worked out. Many thanks for his hard work!
+
+
+=== 2.3.4.4 (Jan/10/2010) ===
+- Bug(s) fixed:
+ - A bug related to the visibility of the buttons //Send contiguous//.
+
+
+== 2009 (16 versions) ==
+=== 2.3.4.3 (Dec/21/2009) ===
+- Parts of the source code were optimized.
+
+
+=== 2.3.4.2 (Dec/18/2009) ===
+- Bug(s) fixed:
+ - A bug related to the function ``debug (package base)`` in the Rterm interface was fixed. It was generating a exception ``Access violation at address NUMBER in module 'Tinn-R.exe'. Read of address FFFFFFFF``. This bug started in version 2.3.4.0 (Dec/06/2009).
+
+
+=== 2.3.4.1 (Dec/13/2009) ===
+- Bug(s) fixed:
+ - A bug related to ``Search in Files`` and its links in the //Tools// panel was fixed. It was not going to the correct line in the file. This bug was related to the implementation of the resource //Remember file state// in version 2.3.2.5 (Nov/03/2009).
+- The user can now hide/show the button ``Editor: current line to top`` in the //R toolbar//.
+
+
+=== 2.3.4.0 (Dec/06/2009) ===
+- Bug(s) fixed:
+ - A bug related with the package ``sem`` by Jonh Fox (functions: ``read.moments`` and ``specify.model``) which generated an error when submitting line by line within //Rterm// interface was fixed. Many thanks to ``Frank`` for pointing it out!
+- Parts of the source code were optimized.
+- The menu //R/Rterm/Clear// and the pop-up menu Rterm (IO and Log), both related to //Clear// option, were changed. This change allows more specific control over //IO// and //Log// of //Rterm// interface.
+- Two new options enable the user to send contiguous lines of script to the R interpreter.
+- The small script generated by Tinn-R in the file Rprofile.site was changed:
+ - The parameter ``dep=TRUE`` was removed from the line ``install.packages(necessary[!installed], dep=TRUE)``, since the Hmisc package, which enables Tinn-R to export R objects to TeX format, has several dependencies. This change will speed up the basic R configuration.
+```
+## Check necessary packages
+necessary <- c('TinnR', 'svSocket')
+installed <- necessary %in% installed.packages()[, 'Package']
+if (length(necessary[!installed]) >=1)
+    install.packages(necessary[!installed])
+```
+ - Under the //Rterm// interface the graphical menu should enable the user to choose the repository for a current session. However, this is inconsistent, sometimes showing this option and sometimes not. Therefore, the best option is to set the preferred repository from the file Rprofile.site.
+
+
+=== 2.3.3.1 (Nov/10/2009) ===
+- The menu //Tools/Utils// was removed from the executable: it is restricted only to developers and we forgot to make it not visible.
+
+
+=== 2.3.3.0 (Nov/09/2009) ===
+- Parts of the source code were optimized.
+- The menu //View// was enhanced with a new option //Word wrap//. It allows the user to control the //Editor//, //Rterm/IO// and //Rterm/Log// word wrap. Word wrap is a feature of most text editors, word processors, and web browsers, of breaking lines between and not within words, except when a single word is longer than a line.
+
+
+=== 2.3.2.6 (Nov/07/2009) ===
+- Bug(s) fixed:
+ - A bug related to //Rterm interface// and ``Auto hide`` option was fixed.
+- The automatic WordWrap option of Rterm interface is now off.
+
+
+=== 2.3.2.5 (Nov/03/2009) ===
+- Bug(s) fixed:
+ - A bug related to R identification, if //Options/Application/R/Path/Use latest installed version (always)// option is //Yes// was fixed. This bug was detected only after the R 2.10.0.
+- Parts of the source code were optimized.
+- Tinn-R now has the //Remember file state// setting option. The file states are: all marks (0..9), the position of the cursor and top line of the file. It was implemented using a XML database (Cache.xml). It can be found at //Options/Application/Main/General/Remember file state//.
+- The option Send //Marked block// was enhanced. Now it works as below:
+ - **The file has no marks**: the option will not be available (gray);
+ - **The file has one or more marks and the cursor is above the first mark, or below of the last**: all text (above or below from this mark) will be sent, according with the cursor position (above or below) from the mark;
+ - **The cursor is between any two adjacent marks**: all text between those two marks will be sent.
+- Under //Rterm// interface is possible to use the ``TAB`` as the following: ``> ba (followed by TAB)``. This procedure will send to R interpreter the instruction ``apropos('^bla', case.insensitive=FALSE)`` and it will not be visible. R  will returns a character vector giving the names of all objects in the search list matching ``ba``. For example: 
+```
+> ba (followed by TAB)
+ [1] "backsolve"             "backSpline"            "bacteria"             
+ [4] "balanceMethodsList"    "ballocation"           "bandwidth.kernel"     
+ [7] "bandwidth.nrd"         "barplot"               "barplot.default"      
+[10] "bartlett.test"         "base.-.POSIXt"         "base.+.POSIXt"        
+[13] "base.difftime"         "base.help"             "base.library"         
+[16] "base.loadhistory"      "base.lockEnvironment"  "base.rbind.data.frame"
+[19] "base.save.image"       "base.savehistory"      "baseenv"              
+[22] "basehaz"               "basename"             
+
+> ba
+```
+- The family //rmControls// of components was removed from the project.
+
+
+=== 2.3.2.3 (Ago/06/2009) ===
+- The //Application options interface// was enhanced.
+- Parts of the source code were optimized.
+
+
+=== 2.3.2.2 (Jul/20/2009) ===
+- Bug(s) fixed:
+ - A bug related with //Hotkeys (operational system)// when changing the status (Active not Active).
+
+
+=== 2.3.2.1 (Jul/19/2009) ===
+- Bug(s) fixed:
+ - A not desired and potentially danger option in the menu //Tools/Utils//, used only in the development, was removed.
+
+
+=== 2.3.2.0 (Jul/18/2009) ===
+- Bug(s) fixed:
+ - All bugs related to database pointed out by users.
+
+
+=== 2.3.1.0 (Jul/15/2009) ===
+- Bug(s) fixed:
+ - All bugs related to database pointed out by users.
+
+
+=== 2.3.0.0 (Jul/10/2009) ===
+- Bug(s) fixed:
+ - The error message when typing ``CTRL+TAB`` inside the //Rterm// interface whenever it was not split.
+ - It now remembers the position of the //Tabs files// (top or botton) when starting.
+ - It now properly organizes the //Tabs files// in relation to other toolbars whenever the user uses the ``show/hide`` option in the toolbars.
+ - The intermittency of completion resources.
+ - The //Auto completion// and //Data completion// now recognizes split by a dot as a complete word: for example ``my.function(`` and ``my.data$``.
+ - Under Windows Vista the option //R/Configure/Permanent (Rprofile.site// now checks if the user has administrative privileges to change the content of the file ``Rprofile.site``, before to insert the necessary script. If the user receive a message error, it necessary to change manually the security properties enabling ``Full control`` of the folder ``etc`` where the R is installed.
+- The //Completion// resource migrated to XML, it is more flexible and easy to use. Now it is located in the the menu //Tools/Database//.
+- //R card// and //R tip// are now located in a more conveniente place: //Tool/Database//.
+- The //R tip// resource was updated.
+- Menu //Format/Block// was removed and all associated resources were relocated to a more logic place: //Format/selection//.
+- The //User guide// was expanded/enhanced in various topics.
+- The //Application options interface// was enhanced.
+- A new option in the //Application options// allows more specific recognition of ``Rgui``. Now it is possible to avoid any windows caption with the word ``Console`` to be recognized as a R instance.
+- The interface //Tinn-R hotkeys// was fully reworked and it is now more simple and efficient.
+- Parts of the source code were optimized.
+- A new resource was added to the //R send//: ``Clipboard``. It enables the user to send the content of the clipboard easily to Rterm.
+- Sorry, due to bugs the highlighters //Deplate// and //Txt2tags// were removed from the project. We will make new ones in the future.
+
+
+=== 2.2.0.2 (Feb/09/2009) ===
+- Bug(s) fixed:
+ - Using ``TinnR package version 1.0.1 or 1.0.2`` Tinn-R did starts when R starts with the instructions below in the Rprofile.site:
+ 
+```
+# uncoment the line below if you want Tinn-R starts always R starts
+options(IDE='C:/Tinn-R/bin/Tinn-R.exe')
+```
+
+The origin of this bug was the change of the packages ``svIDE`` (and others no more necessaries) to TinnR package. One function that should do the job was not present (``TinnR package version 1.0.1 or 1.0.2``). In the ``new version of the TinnR package (1.0.3)``, this function ``trStartIDE`` was added. The option ``R/Configure/Permanent (Rpfile.site)`` will generates a new script:
+
+```
+##===============================================================
+## Tinn-R: necessary packages and functions
+## Tinn-R: >= 2.2.0.2 with TinnR package >= 1.0.3
+##===============================================================
+library(utils)
+
+## Check necessary packages
+necessary = c('TinnR', 'svSocket')
+installed = necessary %in% installed.packages()[, 'Package']
+if (length(necessary[!installed]) >=1)
+  install.packages(necessary[!installed], dep=T)
+
+## Load packages
+library(TinnR)
+library(svSocket)
+
+## Uncoment the two lines below if you want Tinn-R starts always R starts
+## (Observation: check the path of Tinn-R.exe)
+#options(IDE='C:/Tinn-R/bin/Tinn-R.exe')
+#trStartIDE()
+
+## Set options
+options(use.DDE=T)
+
+## Start DDE
+trDDEInstall()
+
+.trPaths <- paste(paste(Sys.getenv('APPDATA'), '\\Tinn-R\\tmp\\', sep=''),
+            c('', 'search.txt', 'objects.txt', 'file.r', 'selection.r', 'block.r', 'lines.r'), sep='')
+```
+
+If you uncomment this part:
+
+```
+## Uncoment the two lines below if you want Tinn-R starts always R starts
+## (Observation: check the path of Tinn-R.exe)
+options(IDE='C:/Tinn-R/bin/Tinn-R.exe')
+trStartIDE()
+```
+
+The new TinnR package will do the job!
+
+
+=== 2.2.0.1 (Feb/05/2009) ===
+- Bug(s) fixed:
+ - Latex font //Enphase// was fixed. It was inserting //\textbf{}// instead of //\emph{}//.
+ - Save and load workspace is now enabled only if Rterm is running.
+ - A bug associated with the //Colors preferences interface// related to //Txt2tags// and //Deplate// syntax, not allowing to change the background color of the root element in the correct way was fixed.
+- All prior documentation of the Tinn-R project was updated, some parts were expanded and others excluded, new ones were generated and, finally, all were joined in the new //User guide//. This //What is new// now is part of this user guide. The sources files (written in Txt2tags) of this User guide is available in the folder ``doc/english/user_guide`` where Tinn-R is installed. In this way, we hope that the user will be able to help us in making it better, day by day, by sending us any useful contribution.
+- The //R toolbar// can now be docked at left, top, right and bottom side of the main interface. Some issues related to //Rterm// and //Tools// interface when dragging the R tools bar, have not completely been solved yet. In order to fix any problem, hide and show again the //Rterm// or //Tools// interface.
+- The match brackets resource (default shortcut is ``CTRL+B``) was added also to the Rterm interface (//IO// and //Log//).
+- The //Tools// interface was a bit reworked and the menu //Views// was changed to accommodate the changes.
+- The menu //View// and ///Help// was a bit reworked.
+- The send and control R resources were extended to all instances of the synEdit class. In other words, if you put the cursor in any word, or select any text in the //Editor// (split or not), //IO// or //Log// (docked or not, in the same or distinct monitors) interface and, after this, select an action (print content, plot, etc) it will be executed.
+
+
+== 2008 (14 versions) ==
+=== 2.1.1.6 (Nov/17/2008) ===
+- Bug(s) fixed:
+ - All fonts of //Tools/Markup// interface are now visible.
+- The //Application options// was a bit reworked.
+- Due to focus changes behavior in the latest Tinn-R version (2.1.1.5), the focus control button (options toolbar ) will be not enabled if Rterm is running. In this case, the focus will be always returned to the interface (editor or Rterm) that has the prior focus before all send/control options.
+
+
+=== 2.1.1.5 (Nov/12/2008) ===
+- Bug(s) fixed:
+ - Related with //Inverse DVI Search//;
+ - Focus control working with dual monitor.
+- The latest [Windows installer http://txt2tags-win.sourceforge.net/index.html.pt-br] version is 2.3. Therefore, it was necessary to adapt Tinn-R to work with the
+interpreter Phyton for Windows (python.exe) and the python script to make the conversion (txt2tags). The current version of Txt2tags is 2.5.
+- To install and configure the necessary resources follow these single steps:
+ + Download and install the interpreter [Python http://www.python.org/download/];
+ + Download and unzip [Txt2tags http://txt2tags.sourceforge.net/] inside of any folder in any place of your computer;
+ + Inside of Tinn-R, go to 'Options/Application/Processing/Txt2tags' and inform the necessary: parameters (//-t// is the default) and the paths of interpreter (``python.exe``) and the conversor (``txt2tags python script``);
+ + It is enough to use these nice tools in the Tinn-R project.
+
+[../../../res/txt2tags.png]
+
+
+=== 2.1.1.4 (Nov/10/2008) ===
+- Bug(s) fixed:
+ - Closing the applicative if //Rterm// is runnig (random bug).
+ - //Options: return focus after sending to R//:
+  - If in editor, the focus shifts back after sending to R;
+  - If in //Rterm// (or //Rgui//), the focus does not jump back to editor when you press return: ``ENTER`` (prompt line), or ``CTRL+ENTER`` (any prior line).
+- The //Options/Application/Main// has a new ``Dock`` page. It enables the user to fix any possible problem related with visualization (//dock/hide//) and disposition of the ``Tools and Rterm`` interface.
+- The resources of //Rterm// interface were extended:
+ - All resources available enabling the control of  R are now also available to //IO// and //Log// interfaces: print content, plot, list names, etc;
+ - ``To all options enabling the control of R, THE FOCUS WILL BE MAINTENED IN THE CURENT WORK INTERFACE Editor or IO, DISREGARDING the Options: return focus to editor after send/control R (toogle)``.
+- Rterm interface and debug package:
+ - Changes were made in the debug package (1.0.2) on the message system (//stdout// and //stderr//). The default option is not compatible with Rterm interface implementation.
+ - The best way to make it compatible again is to add the option below in the Rprofile.site file:
+```
+options(debug.catfile = 'stdout')
+```
+
+
+=== 2.1.1.3 (Nov/04/2008) ===
+- Bug(s) fixed:
+ - //Application options/Appearance// when the user select //Cancel//.
+ - //R control: packages (both: Load and Remove)// and //Rterm interface//.
+ - Rterm interface under package //debug// of Mark V. Bravington when the user type ``qqq()`` to quits the debugger.
+- The interface //Go to line number// was a bit reworked.
+
+
+=== 2.1.1.2 (Oct/20/2008) ===
+- The appearance of the main menu and all pop-up menus were improved.
+- Tinn-R is now able to perform ``inverse DVI search``. It is only necessary to set in your DVI previewer the path of the binary of Tinn-R and the parameter for file and line. For example, using the YAP of Miktex, the necessary configuration will be (assuming the path default of Tinn-R):
+```
+C:\Tinn-R\bin\Tinn-R.exe "%f;%l"
+```
+be sure that there is not space between the parameters %f(related to file) and %l(related to line).
+
+Inside Tinn-R (//Options/Application/Processing/Latex/DVI//) it is necessary to add the compilation Miktex parameter: latex -c-style-errors ``--src-specials``.
+Tinn-R can do it automatically with the option //Restore default//. Now, it is:
+```
+latex -c-style-errors --src-specials
+and
+bibtex --src-specials
+```
+
+
+=== 2.1.1.1 (Oct/15/2008) ===
+- Bug(s) fixed:
+ - Bugs of the version 2.X.X.X (prior of this version) related with the //R/Configure/Temporary (current session)// and //R/Configure/Permanent (Rprofile.site)// were fixed.
+ - A bug related with //Rterm// interface with incomplete instructions ('+') was fixed. A not desirable *carriage return after the '+ CR'*, the origin of the bug, was eliminated.
+ - A bug related with the status (show/hide) of the toolbars //Spell// and //Search// when closing and starting the application was fixed.
+- Version restricted to pre-release testers.
+- The way as Tinn-R creates the variable ``.trPaths`` was changed. Now, it is automatic. It was posted on [Tinn-R forum https://sourceforge.net/forum/forum.php?thread_id=2219532&forum_id=481901] by KeithJ (keith_jewell) - 2008-09-15 16:00. It is very useful in laboratories where most of users have their own account but use the same computer. Now, it is no more necessary to adapt the file ``Rprofile.site`` for each user and R session. Many thanks to ``keith Jewell`` for the nice suggestion.
+```
+.trPaths <- paste(paste(Sys.getenv('APPDATA'), '\\Tinn-R\\tmp\\', sep=''),
+  c('', 'search.txt', 'objects.txt', 'file.r', 'selection.r', 'block.r', 'lines.r'), sep='')
+```
+- It was added the option //Save/Load// workspace to the Rterm interface. Many thanks to ``Maria Conceição`` for the suggestion.
+- The //Tools// and //Rterm// interfaces were reworked and now both are dockable. It makes the interface flexible and user customizable. Many thanks to ``Thomas Petzoldt`` for the suggestion.
+- A new option was added to the //Options//: ``max.deparse.length (echo=TRUE)``. It is used if ``echo is TRUE`` and gives the maximal number of characters output for the deparse of a single expression.
+- The weblinks links of the menu //Web// were all updated.
+- In order to attend to the request of some users, the menu (and related pop-up menu) //Edit// go back to the project interface with a new implementation. Due to the large frequency of the use of class SynEdit (editor, editor split, IO, Log, etc), the action will be apllied in the active (selected) instance of the class SynEdit.
+- The //font// of the //Rterm// interface is now updated after changes in //Options/Editor/Display/Font//.
+
+
+=== 2.0.0.7 (Sep/04/2008) ===
+- Bug(s) fixed:
+ - A bug related with the package //Rterm// interface was fixed.
+
+
+=== 2.0.0.6 (Aug/21/2008) ===
+- Bug(s) fixed:
+ - A bug related with the package //Matrix// was fixed. Many thanks to ``Frank`` for point it out!
+- The //Rterm// interface can be used to connect with R as remote server. Sorry, it is already running, but was not finished yet!
+
+
+=== 2.0.0.5 (Aug/17/2008) - pre-release ===
+- Bug(s) fixed:
+ - A bug related with the function //debug(base)// was fixed. Many thanks to ``Steven`` for point it out!
+
+
+=== 2.0.0.4 (Aug/12/2008) - pre-release ===
+- Small corrections and adaptations suggested by testers. Many thanks to ``Steven``.
+- The R history stores now up to 100 instructions.
+
+
+=== 2.0.0.3 (Aug/05/2008) - pre-release ===
+- The version 2.0.0.2 (Jul/23/2008) was released to some selected users for tests and was the last version compiled under the IDE ``Delphi 7`` of Borland.
+- This version, and from now, all versions will be compiled under the IDE ``Code Gear 2007``, the latest of Borland.
+
+
+=== 2.0.0.2 (Jul/23/2008) - pre-release ===
+- Small corrections suggested by pre-release testers. Many thanks to ``John``, ``Steven`` and ``Frank`` for the tests and suggestions.
+- This version, unlike 2.0.0.1, is fully compatible with the very useful package //debug// (of Mark Bravington). It remains an unsolved problem to submit, when debuging, an external script with incomplete line, like the one below:
+```
+plot(rnorm(1e2),
+     main: 'It will cause error!')
+```
+
+
+=== 2.0.0.1 (Jul/22/2008) - pre-release ===
+- Version restricted to pre-release testers.
+- The structure of the //ini// and the //routine of initialization// were deeply reworked:
+  - The old backups ``will not be compatible anymore with this one and future versions``;
+  - In the first time it is used, this version will try to recognizes almost all prior user preferences.
+- A new folder, ``bkp``, was added to the ini files structure. It contains all backups of all prior user preferences not (or partially compatible) with the news version. The control of all default resources are now individual, i.e: //custom//, //data//, //latex//, //shortcuts// and //syntax//.
+- The //R explorer// functionality was reworked:
+  - The functions (``trObjSearch`` and ``trObjList``) were reworked. These functions are distributed with the package svMisc (>= 0.9.40) of Philippe Grosjean;
+  - To make the R interface cleaner, a new variable ``.trPath`` is used as additional parameter to the two functions above. It will avoid a long string like //path="C:/Documents and settings/User/Application Data/Tinn-R/Tmp/..."// to Windows XP or //"C:/Users/jcfaria/AppData/Roaming/Tinn-R/tmp/..."// on Windows Vista;
+  - The R object ``.trPath`` is a //list// described below:
+```
+.trPath=list(
+  Tmp      ='C:/Users/jcfaria/AppData/Roaming/Tinn-R/tmp/',
+  Search   ='C:/Users/jcfaria/AppData/Roaming/Tinn-R/tmp/search.txt',
+  Objects  ='C:/Users/jcfaria/AppData/Roaming/Tinn-R/tmp/objects.txt',
+  File     ='C:/Users/jcfaria/AppData/Roaming/Tinn-R/tmp/file.r',
+  Selection='C:/Users/jcfaria/AppData/Roaming/Tinn-R/tmp/selection.r',
+  Block    ='C:/Users/jcfaria/AppData/Roaming/Tinn-R/tmp/block.r',
+  Lines    ='C:/Users/jcfaria/AppData/Roaming/Tinn-R/tmp/lines.r'
+)
+```
+  - The best way to set the variable ``.trPath`` inside of R is using the options: ``R/Configure/Temporary`` or ``R/Configure/Permanent``, both can be found in the main menu of Tinn-R ``R/Configure``;
+- The options to send //File//, //Selection//, //Block// and //Lines to end page//, were reworked:
+  - The objective was to maintain the R interface cleaner thus avoiding long strings;
+  - All above are also dependent on the variable ``.trPath``;
+  - As has already been said, the best way to set the variable ``.trPath`` inside R is using the options: ``R/Configure/Temporary`` or ``R/Configure/Permanent``, both can be found in the main menu of Tinn-R ``R/Configure``
+- The source code of Tinn-R was deeply reworked. The aim was to maintain the prior user knowledge, the stability and the structural simplicity but, add more flexibility and power to the GUI, mainly associated with the new ``Rterm`` interface. The //IO// and //Log// interfaces are instances of the class synEdit:
+  - ``IO``: the aim was to add flexibility and power, i.e, joining the power of synEdit (editor) and the functionality of a common console. All prior user knowledge of the resources associated with the editor were preserved: marks, shortcuts, syntax, match brackets, tips, code completion, data completion, etc;
+  - ``Log``: has two basic objectives:
+    + To makes the //IO// interface cleaner;
+    + To avoid synchronization difficulties with the inter process communication (IPC) called //pipe// used.
+  - Shortcuts and pop-up menu make it easy to change among the interfaces: //Editor//, //IO// and //Log//:
+    + The common Windows shortcut ``CTRL+TAB`` changes the active page (IO-Log).
+    + Any prior line can be sent another time by just putting the cursor in any place of it and typing: ``CTRL+ENTER``;
+  - The last line of the //IO// interface (the prompt) has special features:
+    + It has some restrictions for edition and navigation;
+    + ``ALT+DOW`` and ``ALT+UP`` are the shortcut (prior/later) for command history. Both are continuous, cyclic and have 50 lines of limit (we think it is sufficient, but if necessary, it can be augmented to 100 or more).
+- When more than one recognized instance of R is running the priority order is:
+  + Rterm;
+  + Rgui;
+  + Rserver (remote);
+- The use of the clipboard as IPC was removed for all. It was an old request of users to avoid conflict with other application, mainly with the ``Open Office`` suit.
+- The communication with ``Rterm`` is more specific and efficient than with ``Rgui``. Therefore, it will receive more attention from the developers from now on. The interface with //Rterm// is not finished yet, but it is running nice...
+  - If some problem happens: press ENTER;
+  - If it is not solved, type anything and press ENTER;
+  - If it still not solved, sorry: close and restart the //Rterm// instance;
+  - Remember: it is not finished yet!
+- The TCP/IP resources now are used only with two objectives:
+  + ``Local``: to make the //Rterm// and //Rgui// console cleaner;
+  + ``Remote``: for all: send, control and output.
+- A new interface //Work expl.// was added to the //Tools// interface. It will always show the folder and files of the latest file opened.
+  It is simpler and has resources complementary to the //Windows expl.// interface.
+- The menu //Edit// and associated pop-up menu were removed, but, all the functionality was preserved under shortcuts. To set the preferences see //Options/Editor/Keystrokes//.
+- The //Tools// interface was a bit reworked and has new resources.
+- The main menu was a bit reworked.
+- The interface of the application options was a bit reworked.
+- Due to new resources (//IO// interface related with ``Rterm``) the default shortcuts to view //Line numbers// and //Special characters// were changed to ``CTRL+ALT+L`` and ``CTRL+ALT+K`` respectivally. ``CTRL+L`` now clear the //IO// and //Log// interface, likes ``Rgui``.
+- The main component synEdit was updated to the latest stable version and minors bugs were fixed.
+- The description of the synEdit editor options are:
+|| Option                       | Description |
+ | Auto indent                  | Will indent the caret on new lines with the same amount of leading white space as the preceding line |
+ | Auto size scroll width       | Automatically resizes the MaxScrollWidth property when inserting text |
+ | Drag and drop editing        | Allows you to select a block of text and drag it within the document to another location |
+ | Alt sets column mode         | Holding down the <ALT> key will put the selection mode into columnar format |
+ | Maintain caret column        | When moving through lines w/o cursor past EOL, keeps the X position of the cursor |
+ | Want tabs                    | When active <TAB> and <SHIFT><TAB> act as block indent, unindent when text is selected |
+ | Smart tabs                   | When tabbing, the cursor will go to the next non-white space character of the previous line |
+ | Smart tab delete             | Similar to Smart Tabs, but when you delete characters |
+ | Enhance home key             | Enhances HOME key positioning, similar to visual studio |
+ | Enhance end Key              | Enhances END key positioning, similar to JDeveloper |
+ | Hide scrollbars as necessary | If enabled, then the scrollbars will only show when necessary. If you have ScrollPastEOL, then it the horizontal bar will always be there (it uses MaxLength instead) |
+ | Disable scroll arrows        | Disables the scroll bar arrow buttons when you can't scroll in that direction any more |
+ | Half page scroll             | When scrolling with page-up and page-down commands, only scroll a half page at a time |
+ | Scroll by one less           | Forces scrolling to be one less |
+ | Scroll past end of file      | Allows the cursor to go past the end of file marker |
+ | Scroll past end of line      | Allows the cursor to go past the last character into the white space at the end of a line |
+ | Show scroll hint             | Shows a hint of the visible line numbers when scrolling vertically |
+ | Scroll hint follows mouse    | The scroll hint follows the mouse when scrolling vertically |
+ | Tabs to spaces               | Converts a tab character to a specified number of space characters |
+ | Trim trailing spaces         | Spaces at the end of lines will be trimmed and not saved |
+ | Group undo                   | When undoing/redoing actions, handle all continuous changes of the same kind in one call instead undoing/redoing each command separately |
+ | Right mouse moves cursor     | When clicking with the right mouse for a pop-up menu, move the cursor to that location |
+ | Show special chars           | Shows the special characters |
+
+
+== 2007 (26 versions) ==
+=== 1.19.4.7 (Dec/23/2007) ===
+- //Application option// was a bit improved. Now, in the //Processing/Latex/More// options it is posssible to set Tinn-R to close previous instance of the viewer (PDF or DVI). It makes more easy to compile under Latex due that Miktex will not gives the message: ``I can't write the file ...`` in the DOS prompt. Note that ``any instance of the viewer (if opend)`` with the caption ``'FileBeeingCompiled'.pdf`` will be closed.
+
+
+=== 1.19.4.6 (Dec/17/2007) ===
+- A very simple splash screen was added to application starting.
+- The functionality of //Latex/Accents// was improved. Now if you have a selection in the editor it will be filled inside the brackets '{}', otherwise, the simple accent will be inserted.
+
+
+=== 1.19.4.5 (Dec/14/2007) ===
+- Bug(s) fixed:
+ - A couple of bugs related with prior version //1.19.4.4 (Dec/13/2007)// were fixed.
+- Parts of the source code were optimized.
+
+
+=== 1.19.4.4 (Dec/13/2007) ===
+- The appearance of //Latex symbols// has now a better disposition and it is alphabetical ordered. The structure of ini file, related with this, was also changed.
+- This version enables the user to set two comment(s) character(s): the main (used for all syntax) and to latex. The options were added to main menu //Format/Block//: it is possible to //comment all//, //uncomment first// and //uncomment all//. The //Application options// was a bit reworked to allow the user to set the preferred latex comment (%, %%, %%%, etc).
+- Some default shortcuts were changed. The //ini file related// will be updated to reflect these changes and a backup of the old resource file will be made at first use of this version.
+
+
+=== 1.19.4.3 (Dec/12/2007) ===
+- Bug(s) fixed:
+ - A bug related with the new resource //Count// in latest version //1.19.4.2 (Dec/11/2007)// was fixed.
+- The tool //Markup/Latex// was improved.
+- //Latex Itemization and Enumeration// procedures were a bit improved.
+- The color of the ``matched brackets`` are now user configurable. Set it at //Options/Syntax and colors/Preferences/Brackets(FG)//.
+
+
+=== 1.19.4.2 (Dec/11/2007) ===
+- The tool //Markup/Latex// was improved by adding a toolbar.
+- Parts of the source code were optimized.
+- The //Application options// interface was a bit reworked.
+
+
+=== 1.19.4.1 (Dec/01/2007) ===
+- Bug(s) fixed:
+ - A couple of bugs related with prior version //1.19.4.0 (Nov/29/2007)// were fixed.
+- The structure of the //Tinn.ini// file and the //routine of initialization// were a bit reworked. So, the old backups ``will not be compatible anymore with that one and future versions``. This version will recognize the basic old system configurations, but not all preferences. Sorry for the inconvenience.
+
+
+=== 1.19.4.0 (Nov/29/2007) ===
+- The //Main menu// was a bit reworked and some options have now a better logic place.
+- The tool //Markup// was improved by adding a graphical interface to //Latex// symbols:
+  - This is the first approach to a functional latex symbol classification:
+```
+Functional LaTeX Symbols Classification Criteria (according with the KISS principle):
+
+ 1. Empty
+ 2. Natural order (ex: Greek: alpha, beta...; Solar system: Sun, Mercury...)
+ 3. Usability
+ 4. Structural simplicity
+ 5. Number of straight lines
+ 6. Number of curved lines
+ 7. Number of sloped lines
+ 8. Clock wise rotation
+
+Authors: José Cláudio Faria and Jorge Alexandre Wiendl
+Date   : 11/27/2007 00:55:20
+KISS   : Keep it simple, stupid
+```
+  - We would like that advanced latex users to help us with this classification;
+  - The graphical interface is based on the text files organization of the folder //latex//, located at ``Ini files``;
+  - Once the order of the symbols (number controlled) in each folder is changed, after restarting Tinn-R, it will reflect this order and maintain all functionality. Therefore, it is very flexible;
+  - It is recommended to maintain the numeration criteria used in the classification (ex: ``001_mysymbol1.gif``, ``002_mysymbol2.gif``);
+  - With exception of ``png``, a lot of image format can be used;
+  - ``Please, don't remove or rename any of the folders or their names``;
+  - It was a hard task, so, we don't consider the job finished yet: all users will be welcome with their contributions.
+- The main menu has a new option //Insert/Latex//. It enables the user to make //Numerical elements//: ``Array, Matrix, Table and Tabbling``.
+
+
+=== 1.19.3.1 (Nov/15/2007) ===
+- Bug(s) fixed:
+ - A couple of bugs related with //ini file// were fixed.
+
+
+=== 1.19.3.0 (Nov/12/2007) ===
+- Bug(s) fixed:
+ - A couple of bugs related to the //Project// interface were fixed and its interface was enhanced.
+ - A bug related to the //Most Recent Used (MRU)// files was fixed.
+- All prior Tinn-R version of the release 1.19.3.X were considered pre-released (restricted to beta testers only). Many thanks to all testers.
+- Good news for Sweave users: debug, i.e, send line by line a ``Sweave script``, was enhanced. Now, Tinn-R will ``search automatically only inside of the chunks`` and will disregard all LaTeX texts. ``You must start this resource inside of any chunk``.
+- The structure of the //Tinn.ini// file was a bit reworked. So, the old backups ``will not be compatible anymore with that one and future versions``. This version will recognize the basic old system configurations, but not all preferences. Sorry for the inconvenience.
+- The default //ini// file for main shortcuts was changed from //shortcuts.bin// to //shortcuts.txt//. Therefore, ``any old preferences will be lost``. It will be needed to define all the personal preferences again. Sorry for the inconvenience.
+- The main component //SynEdit// was updated to the latest stable version (2.0.6).
+- The //Search// results have now the same appearance of the //Text// highlighter.
+- In //Tools// the interface //Tags// was renamed to //Markup//. The next resource (we are working in it) will be related with //LaTeX//.
+- Parts of the source code were optimized.
+- The //Application options// interface was a bit reworked.
+- The pop-up menu of //Project// interface was a bit enhanced.
+- The //status bar// functionality was a bit enhanced. Now, you can click inside a specific panel to change the options.
+- The way as //Tinn-R// close the //Rgui// was enhanced.
+- The way the brackets are highlight (parent matching) was changed. It now will contrast with the color with the //Active line highlighted//; see in (Options/Main/Application).
+- The //Results// interface was a bit reworked and has now new resources: //Ini log// and a new button enabling full expansion. It is a good idea to see the content of //Ini log// if any thing is wrong.
+
+
+=== 1.19.2.3 (Mar/05/2007) ===
+- Parts of the source code were optimized.
+- This version enables you to compile ``LaTeX`` files with ``bibtex`` option:
+
+	[../../../res/1.19.2.3.png]
+
+
+=== 1.19.2.2 (Feb/22/2007) ===
+- Parts of the source code were optimized.
+
+
+=== 1.19.2.1 (Feb/19/2007) ===
+- Parts of the source code were optimized.
+- The first approach to a easy R package manager was implemented:
+
+	[../../../res/1.19.2.1.png]
+
+- To avoid R flicker, if TCP/IP connection is active and the //R output// is visible, the //Clear console (F9)// and //Clear all (F12)// will not work on the R console. We will be searching for the best solution.
+
+
+=== 1.19.2.0 (Feb/16/2007) ===
+- Bug(s) fixed:
+ - A bug related to the prior version and //R toolbar// was fixed.
+
+
+=== 1.19.1.13 (Feb/13/2007) ===
+- Bug(s) fixed:
+ - A bug that occurred when organizing the //main toolbar//, in the first use, was fixed.
+- Parts of the source code were optimized.
+- An experimental graphical interface for tags was added to the program. It was made by adding a new tab named //Tags// on the panel //Tools// and it will aid the user to write Txt2tags, TeX, HTML and others from Tinn-R in graphical mode. In the current version only Txt2tags interface was implemented.
+- The structure of the //Tinn.ini// file was a bit reworked. So, the old backups will not be compatible anymore with this and future versions. This version will recognize the basic old system configurations, but not all preferences. Sorry for the inconvenience.
+- The main menu //View/Tools// was a bit reworked and has new resources.
+- The //Tools// has now a new pop-up. It enables you to choose the visible pages:
+
+	[../../../res/1.19.1.13.png]
+
+
+=== 1.19.1.12 (Feb/11/2007) ===
+- //Search// and //Replace// interface was a bit reworked.
+
+
+=== 1.19.1.11 (Feb/07/2007) ===
+- Bug(s) fixed:
+ - A bug related to the prior version and //R toolbar// (flicker) was fixed.
+
+
+=== 1.19.1.10 (Feb/04/2007) ===
+- Parts of the source code were optimized.
+- The ``Tinn-R card`` was updated.
+- The //Application options// interface was a bit reworked and the //R resource visibles// was enhanced. Now if this options is not marked, all R resources will not be visible.
+- A new option was added to the main menu //View: R resources visible//.
+
+
+=== 1.19.1.9 (Jan/25/2007) ===
+- Bug(s) fixed:
+ - A bug related to //R toolbar// was fixed.
+- Parts of the source code were optimized.
+
+
+=== 1.19.1.8 (Jan/24/2007) ===
+- Parts of the source code were optimized.
+
+
+=== 1.19.1.7 (Jan/23/2007) ===
+- Bug(s) fixed:
+ - Bugs, related to selection in 'smLine' mode, were fixed. Many thanks to ``SynEdit team``.
+- Parts of the source code were optimized.
+- The main component //SynEdit// was updated to the latest version.
+
+
+=== 1.19.1.6 (Jan/21/2007) ===
+- Bug(s) fixed:
+ - A bug related to the project interface was fixed.
+ - Small bugs, related to the editor in split mode (vertical or horizontal), were fixed.
+- Parts of the source code were optimized.
+
+
+=== 1.19.1.5 (Jan/09/2007) ===
+- Parts of the source code were optimized.
+- Small adjustments were made in the program interface.
+
+
+=== 1.19.1.4 (Jan/05/2007) ===
+- Parts of the source code were optimized.
+- The use of clipboard between R and Tinn-R was enhanced. For example, instructions like the below is now possible:
+
+```
+a = round(rnorm(1000), 2)
+b = round(rnorm(1000), 2)
+c = round(rnorm(1000), 2)
+d = data.frame(a, b, c)
+write.table(d, file="clipboard")
+```
+Tinn-R is frozen until R releases the clipboard. Thanks to ``Igor Kojanov`` for pointing out the problem and the direction of the solution.
+- In the first use of the program, default options were changed.
+- The //R/Database// interface was reworked:
+ - A new option enabling the user to restore the original database was added.
+ - After changes it is necessary to type //Save//. Otherwise, all changes will be lost when closing the interface.
+ - The button //Save and close// was removed.
+
+
+=== 1.19.1.3 (Jan/04/2007) ===
+- Parts of the source code were optimized.
+- Menu //R// was a bit reworked.
+- Icons were changed.
+- In the first use of the program, default options were changed.
+- The //R/Database// interface was a bit reworked. It now has a new option enabling the user to restore the original database.
+
+
+=== 1.19.1.2 (Jan/01/2007) ===
+- The menu //R// was a bit reworked and has a new option: //Customize//. It enables the user to customize the files ``Rcompletion.r`` and ``Rconfigure.r``. Before that, it was necessary administrator privileges to personalize these very useful files.
+- The folder where Tinn-R stores its internal files has now a new sub-folder named //custom// that stores the files ``Rcompletion.r`` and ``Rconfigure.r``. It will be also included in backups of the system configuration.
+
+
+== 2006 (64 versions) ==
+=== 1.19.1.1 (Dec/27/2006) ===
+- Bug(s) fixed:
+ - A bug related with version ' 1.19.1.0' and 'midas.dll' was fixed: the content of this dll was compiled inside the binary code to avoid redistributing it.
+
+
+=== 1.19.1.0 (Dec/26/2006) ===
+- Parts of the source code were optimized.
+- The DBase database (RCard and RTip) was upgraded to the native XML engine provided by Borland. It is very small, stable and fast.
+ - Therefore, do not restore the database from old versions to the new ones.
+ - It will be easier to integrate R and Tinn-R in the future.
+
+
+=== 1.19.0.18 (Dec/13/2006) ===
+- The //Print// resource was a bit reworked: it will always close the print dialogue after pressing the //Print// option.
+- The //Application options// was a bit reworked.
+- Two non configurable shortcuts were added:
+ + ``CTRL + (``: Insert (or replace) (|)
+ + ``CTRL + )``: Insert (or replace) ()
+- A new folder named //custom// was added to the program folders. It contains two customizable files: ``Rcompletion.r`` and ``Rconfigure.r``:
+ + ``Rcompletion.r``: allows the user to customize the new //auto completion// resource (described below);
+ + ``Rconfigure.r``: allows the user to customize the R configuration.
+- The first approach of //auto completion// was implemented and the default keystroke is ``CTRL+J``, but the user can customize it in the //Editor// options: //Options/Main/Editor/Keystrokes//. Use it, after any valid word, by pressing the keystroke. For example:
+```
+  if<CTRL+J> to obtain:
+  if ( < .. )
+
+  ifc:
+  if ( < .. ) {
+
+  }
+
+  fo:
+  for (i in 1:= )
+
+  foc:
+  for (i in 1:= ) {
+
+  }
+
+  sw:
+  switch(,
+    a = ' ',
+    b = ' ',
+  )
+
+  wh:
+  i = 0
+  while (i < ) {
+
+      i = i + 1
+  }
+```
+Observations:
+ + Only two letters were used to define simple structures (for example: //fo// = //for//, //fu// = //function//);
+ + Considering the above, it was added the letter ``c`` to the complete or more complex structures (for example: //foc//, //fuc//);
+ + If no conflict exists among the names in the //Rcompletion file//, the first letter is enough. For example: //s// = //swc//, if conflict exists, it will necessary more letters up to complete diferentiation;
+ + The ``|`` symbol is used to define where the cursor will first stop after the auto completion;
+ + To better understand it, have a look at the file ``Rcompletion.r`` within the folder //custom// where the program was installed and do your own tests.
+
+
+=== 1.19.0.17 (Dec/10/2006) ===
+- Bug(s) fixed:
+ - When both options //Organize screen// and //Return focus// were marked, it triggered a bug, which has been fixed.
+
+
+=== 1.19.0.16 (Dec/08/2006) ===
+- The //Main menu// was reworked and several options have now a better logic place.
+
+
+=== 1.19.0.15 (Dec/07/2006) ===
+- The //Main menu// was reworked and several options have now a better logic place.
+
+
+=== 1.19.0.14 (Dec/06/2006) ===
+- //Search text// and //Replace text// interface were reworked.
+- Parts of the source code were optimized.
+- It is now possible to increase and decrease (non-permanent) the font size of any individual file easily:
+```
+  <SHIFT+CTRL++> (plus  (+) on the numeric keypad): INCREASE (upper limit is 50)
+  <SHIFT+CTRL+-> (minus (-) on the numeric keypad): DECREASE (lower limit is  1)
+```
+
+
+=== 1.19.0.13 (Dec/04/2006) ===
+- All images of the documentation were updated to the latest version.
+
+
+=== 1.19.0.12 (Dec/04/2006) ===
+- Parts of the source code were optimized.
+- The way as the opened files are closed was enhanced. Now, if any file was changed and the user choose //Cancel//, the current procedure will be canceled too. For example closing: projects, all right, all left, etc.
+
+
+=== 1.19.0.11 (Nov/30/2006) ===
+- The //Application options// was a bit reworked. The user can now set the initialization parameters of Rgui. Set it at //Application options/R/General/Rgui (Parameters and path)//.
+
+
+=== 1.19.0.10 (Nov/30/2006) ===
+- The //Project// interface was a bit enhanced.
+- Parts of the source code were optimized.
+
+
+=== 1.19.0.9 (Nov/29/2006) ===
+- Bug(s) fixed:
+ - A bug related to the //Project// and associated with the prior version of Tinn-R (1.19.0.8) was fixed.
+
+
+=== 1.19.0.8 (Nov/28/2006) ===
+- The pop-up menus related to the //Project//, and to the //Editor//, were a bit reworked with respect to //Put full path in the clipboard// option.
+- Parts of the source code were optimized.
+- //Search text// and //Replace text// interface were reworked.
+
+
+=== 1.19.0.7 (Nov/27/2006) ===
+- If the variable //rGuiPreferred// is empty (as in the first use) in the //ini file//, Tinn-R will check in the Windows registry at //HKLM\R-core\R// to find the path where Rgui.exe was installed. So, if the user want to use ``Tinn-R with R console``, it is no more necessary to set it in the //Application options//.
+
+
+=== 1.19.0.6 (Nov/23/2006) ===
+- The command //Send line// to R was enhanced. Now, whenever the user set it not to send comment lines, and the current line is either commented or empty, Tinn-R will search below toward the end of file, for the first not commented or empty line and will send it automatically. Also, it will always search below toward the end of file, for the first not commented or empty line. So, it will reduce the user labour when sending line by line.
+
+
+=== 1.19.0.5 (Nov/21/2006) ===
+- The //Application options// was a bit reworked. The user can now decide whether the position of the Tinn-R and Rgui windows will be organized automatically or not, when Rgui is running. Set it at //Application options/R/Organize//.
+
+
+=== 1.19.0.4 (Nov/18/2006) ===
+- Bug(s) fixed:
+ - A bug associated with the use of ``CTRL+`` to insert content of the tip with 'R complex' and another was fixed.
+
+
+=== 1.19.0.3 (Nov/17/2006) ===
+- Tinn-R has now four multi-highlighters: //HTML complex//, //PHP complex//, //R complex// and //Sweave//:
+```
+ 1. HTML complex = HTML & JavaScript
+ 2. PHP complex  = HTML & JavaScript & PHP
+ 3. R complex    = R & URI ('<<<' begin URI
+                            '>>>'   end URI)
+ 4. Sweave       = TeX & R ('>>=' begin R
+                            '@'     end R)
+
+ URI      : Uniform Resource Identifiers.
+ R complex: The main syntax is R, '<<<' and '>>>' the tags enable the user to insert a block of URI syntax.
+ Sweave   : The main syntax is TeX, '>>=' and '@' the tags enable the user to insert a block of R syntax.
+```
+```
+The SynHighlighterURI unit implements an URI syntax highlighter for SynEdit.
+
+Recognition of URIs is based on the information provided in the document
+"Uniform Resource Identifiers (URI): Generic Syntax" of "The Internet Society",
+that can be found at http://www.ietf.org/rfc/rfc2396.txt.
+
+Also interesting is http://www.freesoft.org/CIE/RFC/1738/33.htm which describes
+general URL syntax and major protocols.
+
+These protocols are recognized:
+-------------------------------
+ http://
+ https://
+ ftp://
+ mailto:
+ news: or news://
+ nntp://
+ telnet://
+ gopher://
+ prospero://
+ wais://
+
+As well as commonly used shorthands:
+------------------------------------
+ someone@somewhere.org
+ www.host.org
+
+```
+Example of R complex:
+```
+# <<< http://www.r-project.org/ >>>
+# <<< joseclaudio.faria@terra.com.br >>>
+# <<< phgrosjean@sciviews.org >>>
+
+ mean(rnorm(100))
+```
+ or
+```
+# <<< http://www.r-project.org/
+#     joseclaudio.faria@terra.com.br
+#     phgrosjean@sciviews.org >>>
+
+ mean(rnorm(100))
+```
+Therefore, by pressing ``CTRL`` and right button of the mouse on any valid link, it is possible to follow the link (browser, client of email, etc).
+- Menu //Options// was a bit reworked to enable the user to set //R// or //R complex// as the default syntax.
+
+
+=== 1.19.0.2 (Nov/09/2006) ===
+- The option ``Automatically configure R (Rprofile.site)`` was enhanced. The user can now decide whether the changes will be ``temporary`` (on the current session only) or ``permanent`` (editing automatically the Rprofile.site file). For both, if necessary, the user can edit (customize) the file //Rconfigure.r// in the folder //doc/English// where Tinn-R is installed. So we think this new resource is now more powerful and flexible.
+- The //Application options// was reworked. It is now possible to set the position of the Tinn-R window (top, bottom, left or right with respect to the Rgui), __left or right are recommended only for very large screens__. Set it at //Application options/R/Organize//.
+
+
+=== 1.19.0.1 (Nov/07/2006) ===
+- One new option ``Automatically configure R (Rprofile.site)`` was added in the //R// main menu. It will enable the user to automatically configure the Rprofile.site file with all packages which are necessary to work efficiently. If any of those are not found, R will download and install them when starting.
+
+
+=== 1.19.0.0 (Nov/06/2006) ===
+- Bug(s) fixed:
+ - Bugs when opening files in Tinn-R by double clicking from //Windows Explorer// were fixed. In other words, the interaction with //Windows Explorer// was enhanced.
+ - A bug associated with ``SHIFT+ESPACE`` was fixed.
+- Tinn-R has now a new logo/image identity which reflects its natural evolution.
+- The sources codes were deeply remade and optimized.
+
+
+=== 1.18.7.3 (Oct/30/2006) ===
+- Bug(s) fixed:
+ - A small bug was fixed: from now on, whenever the user starts ``R`` inside ``Tinn-R``, it will open automatically in the ``SDI mode``, otherwise, in the default mode defined in the //Rconsole// configuration file. Also, if any file happens to be open, __and active__, the ``R Working Directory`` will be set to its path. Otherwise, it will be set to the default path (../bin) where R was installed.
+ - Bugs with TCP/IP protocol (associated with the prior version 1.18.7.2) were fixed: sorry for this. By the way, we would like to remember the users there are still some unsolved problems with //R output// under this protocol. For example, the codes below:
+```
+f = function(x) {
+    x/10 + 1
+}
+
+```
+
+or, i.e, ``any instruction with more than one single line``,
+
+```
+a = 0
+for (i in 1:20) {
+  a = i
+  if(a <= 5 ) {
+    cat('a = ', a, '(<= 5)'); cat('\n')
+    next
+  }
+  if(a == 18) {
+    cat('a = ', a, '(= 18)'); cat('\n')
+    break
+  }
+}
+```
+will always to generate errors. We've been working hard in order to solve it, but it is not easy!
+Moreover, consider that the main aim of this protocol is to be used with R explorer interface and __any other use is still experimental__.
+
+
+=== 1.18.7.2 (Oct/30/2006) ===
+- Bug(s) fixed:
+ - A small bug, when closing the //Rgui// and the choice of //Cancel//, was fixed.
+- The //Application options// was reworked a little bit. The options enabling the user to set Tinn-R to always show //Tips// and //Completion// were removed. We think it was an annoyance. Now, the triggers can be used to do that.
+- One new function was added both in the //R toolbar// and the //R// menu: //Toogle start/close//. It will enable the user to start/close the preferred user //Rgui//.
+- From now on, whenever the user starts ``R`` inside ``Tinn-R``, it will open automatically in the ``SDI mode``, otherwise, in the default mode defined in the //Rconsole// configuration file. Also, if there is any opened file, the ``R Working Directory`` will be set to its path. Otherwise, it will be set to the default path (../bin) where R was installed.
+- Several parts of the source code were optimized.
+- The performance of the communication with the //R server// (under all protocols) was enhanced. Now the user can to try to set the delay for computational synchronization (//Options/Main/Application/R/R server//) to small values (50, 80 or 100 ms, in harmony with the hardware). We recommend testing different delays until a good performance is obtained.
+- Icons of //Controlling R// were remade.
+
+
+=== 1.18.7.1 (Oct/26/2006) ===
+- A lot of cosmetic changes were made in the program interface and documentation.
+
+
+=== 1.18.7.0 (Oct/25/2006) ===
+- All the HTML documentation of Tinn-R was easily remade, we became very tired of the //blue colour//: [txt2tags http://txt2tags.sourceforge.net/] is an exceptional tool!
+- A new Tinn-R member (Enio Jelihovschi) is from now on, the responsible for the production and quality of all Tinn-R documentation. Welcome Enio, we wish you have a good work on board.
+- One new function was added both in the R toolbar and the R menu: //TCP/IP toogle connetion//.
+
+
+=== 1.18.6.13 (Oct/24/2006) ===
+- Parts of the source code were optimized.
+- //Tools/Sort// was enhanced: it now enables you to sort by //Strings//, //Numbers// and //Dates//.
+- Popup menu associated with tabs was a bit reworked.
+- The speller now will advise whenever it finishes the corrections.
+
+
+=== 1.18.6.12 (Oct/22/2006) ===
+- Several parts of the source code were optimized.
+- Popup menu associated with the //Tabs// was enhanced. It now additionally enables you to close all files located at the ``right`` or ``left`` from the active tab.
+- Main menu //File// was a bit remade.
+- //Popup menu editor// was a bit remade.
+
+
+=== 1.18.6.11 (Oct/20/2006) ===
+- Bug(s) fixed:
+ - A small bug associated with main menu, //Tools// was fixed.
+
+
+=== 1.18.6.10 (Oct/20/2006) ===
+- Several parts of the source code were optimized.
+- R explorer performance was enhanced. Now you can to try to set the delay for computational synchronization (//Options/Main/Application/R/R server//) to small values (50, 80 or 100 ms, in harmony with your hardware). We recommend testing different delays until you obtain a good performance.
+- We also recommend you to use the resources of //R explorer// under TCP/IP protocol (it makes the Rgui console cleaner). By the way, there are still some unsolved problems with //R output// under this protocol.
+- Window //About// was remade.
+
+
+=== 1.18.6.9 (Oct/17/2006) ===
+- Bug(s) fixed:
+ - A small bug associated with ``CTRL+W`` shortcut, it was closing two files instead of just one, was fixed.
+- The //Application options// was reworked little bit . When closing it, the screen will not be organized. Therefore it wil be necessary to toggle it on the main menu //View/Organise screen// or in the toolbar //Tools//.
+- The options //Send selection// will be enabled only if any selection was done.
+
+
+=== 1.18.6.8 (Oct/10/2006) ===
+- Bug(s) fixed:
+ - A small bug associated with //Status bar// was fixed.
+- The //Application options// was reworked. It is now possible to set the position of R (top or bottom) on //Organize screen// resource by using //Application options/R/General/settings//.
+- Clipboard actions were enhanced.
+
+
+=== 1.18.6.7 (Oct/08/2006) ===
+- A new option //Organize screen// was added to the menu //View// and the button associated to it was added to the bar //Tools//. This has been, up to now, an old user's request, and it enables you to put, in a fast way, the ``R Console on the top`` of the screen and the ``Tinn-R on the bottom``.
+- //Tools/Sort// was enhanced: it now maintain the file in the original //Top line// position.
+- The way project files (*.tps) are opened, was changed: the textual file (by default) will not be opened anymore. The user, now, can easily edit the file in the //Project// interface.
+
+
+=== 1.18.6.6 (Oct/06/2006) ===
+- A new option //Sort// was added to menu //Tools//. This enables the user to sort an entire file (any selection mode) or selection (for while only for //smNormal// and //smColumn//).
+- //Popup menu editor// was reworked.
+- Icons of //R explorer// were changed.
+
+
+=== 1.18.6.5 (Oct/03/2006) ===
+- Bug(s) fixed:
+ - A bug related to //Spell//, that always broke down when finding ``<`` or ``<-`` symbol, was fixed. The origin of this bug was a component conflict (hard coded) among the HTML brackets, declared as below:
+ - A bug associated to //Project/Close entire project// was fixed.
+```
+const
+  OpenBracket: array[THTMLBracket] of PChar=('<', '<!--', '<%');
+  CloseBracket: array[THTMLBracket] of PChar=('>', '-->', '%>');
+```
+and the R assign symbols:
+```
+<-
+<<-
+->
+->>
+```
+Therefore, if any file has HTML syntax (with any of those tags above) all text among the declared brackets is free of speller. We think it now will work nicely.
+
+
+=== 1.18.6.4 (Oct/01/2006) ===
+- The //Shortcuts customization// interface was reworked.
+
+
+=== 1.18.6.3 (Sep/29/2006) ===
+- The //Shortcuts customization// interface was remade, we think it is now more user friendly.
+- There is a new button in the interface above, that enables the user to restore the main default Tinn-R shortcuts.
+
+
+=== 1.18.6.2 (Sep/28/2006) ===
+- Bug(s) fixed:
+ - A small bug associated with the buttons icons of //Tools/R explorer// related with version 1.18.6.1 was fixed.
+
+
+=== 1.18.6.1 (Sep/28/2006) ===
+- The version 1.18.6.0 was updated, due to some problems detected in the file //default.bin// . So that, it is ``strongly recommended`` that, before using this new version, the user should remove ``manually`` that file. In order to help the user in finding out where Tinn-R stores all the ``ini files``, a new option was added to the main menu //Tools// named //Ini files//. The //default.bin// file is located in the sub-folder //shortcuts//. Therefore, go to the folder and delete it. Sorry for the inconvenience.
+
+
+=== 1.18.6.0 (Sep/26/2006) ===
+- Several parts of the source code were optimized.
+- Menu and pop-up menu options were remade and some icons replaced/changed.
+- A new option //Shortcuts customization// was added to the menu //Options//. This will enable the user to manage (edit, load and save) all actions of Tinn-R interface. The latest in use will be always reloaded when restarting the program.
+
+
+=== 1.18.5.12 (Sep/15/2006) ===
+- Bug(s) fixed:
+ - A few small bugs pointed out by users were fixed.
+
+
+=== 1.18.5.12 (Sep/13/2006) ===
+- Bug(s) fixed:
+ - A small bug, which has been happening whenever the user opens the first file located in the floppy drive and access this floppy in subsequent files, was fixed.
+
+
+=== 1.18.5.11 (Sep/12/2006) ===
+- Bug(s) fixed:
+ - A small bug, related to versions 1.18.5.9 and 1.18.5.10, associated with menu //File/Save as//, was fixed.
+
+
+=== 1.18.5.10 (Sep/11/2006) ===
+- The command //Send line// to R was enhanced. Now, whenever the user set it to not send comment lines, and the current is either commented or empty, Tinn-R will search below to the end of file, for the first not commented or empty line.
+
+
+=== 1.18.5.9 (Sep/10/2006) ===
+- Bug(s) fixed:
+ - A small bug associated with dragging files in project interface was fixed. Before, whenever you changed files among groups it would not be associated with changes.
+- One new function was added both to the R toolbar and the R menu: //Set work directory (current file path)//.
+- The icons associated with //Computer// interface (//Add// and //Remove// favorite folder) were replaced.
+- Tinn-R now recognizes all valid extensions for any syntax when saving files. For example, the new valid R extensions are: *.r, *.Rhistory, *.q, *.s and *.ssc; so, whenever you type:
+ - ``Myfile`` - it will be saved as ``Myfile.r`` (the first extension is the default);
+ - ``Myfile.R`` - it will be saved as ``Myfile.R`` (``R`` is a valid extension and Tinn-R is now case insensitive for that purpose);
+ - ``Myfile.Rhistory`` - it will be saved as ``Myfile.Rhistory`` (Rhistory is a valid extension);
+ - ``Myfile.help`` - it will be saved as ``Myfile.help.r`` (``help`` it is not a valid extension and *.r is the default);
+ - PS: In order to save any file with any extension, you must choose //All// syntax.
+- Whenever the //tab file// has the focus, a new associated pop-up menu is available with the following options: //Close//, //Close others// and //Close all//.
+- The way Tinn-R open and close a project, was changed. Now, any *.tps (from any source) will be also open in the //Project// interface and all files of the project will be closed only and only if you choose the option //Close entire project//.
+- The //Project// interface was a bit enhanced. Now, the user can type ``DELETE`` to delete either groups or files, ``INSERT`` in adding files to selected groups and <**CTRL+INSERT**> to add the current to the selected group.
+
+
+=== 1.18.5.8 (Ago/03/2006) ===
+- Tinn-R version 1.18.5.7 was pre-released (restricted to developers only).
+- The conflict between the //Editor option/Alt sets column mode// and the possible user option //Format/Selection mode/Column// was fixed.
+
+
+=== 1.18.5.7 (Ago/01/2006) ===
+- A first approximation to build a speller in Tinn-R was made.
+- To install the this new resource do the following:
+ + Close Tinn-R;
+ + Download the dictionaries [http://www.luziusschneider.com/Speller/English/index.htm] that you want and install it from the installer (for example ISpEnFrGe.exe).
+- It is very simple, works nice, has power and all resources are opensource.
+- For awhile, this component does not recognize the main SynEdit component used for edition. So that, it was necessary to do the spelling in two steps, making the correction in a new page (//Spell//) on //Results// interface.
+- __Whenever it finds any selection__, the correction will be made only for it, as well as, the posterior update.
+- The basic edition resources of the //Spell// are available in a pop-up menu.
+- Please, meanwhile, consider this new resource __still experimental__ and yet in development.
+
+
+=== 1.18.5.6 (Jun/24/2006) ===
+- The highlighters //All// and //Text// were remade.
+
+
+=== 1.18.5.5 (May/29/2006) ===
+- //Save// and //Save as// were remade. Many thanks ``John`` for the good suggestion.
+- The user can change the selection mode by clicking the mouse in any place of the //Main status bar//. The order of the changes is sensitive to:
+ - ``Left`` - corresponds to the menu //Format/Selection mode// ``bottom to top order``;
+ - ``Right`` - correspond to ``top to bottom order``.
+- Tinn-R now recognizes the RGUI JGR. Please, meanwhile, consider this is as __still experimental__.
+
+
+=== 1.18.5.4 (May/28/2006) ===
+- Bug(s) fixed:
+ - Small bugs (detected in version 1.18.5.3) were fixed.
+
+
+=== 1.18.5.3 (May/27/2006) ===
+- Bug(s) fixed:
+ - Small bugs (detected in prior versions) were fixed:
+  - Open //PDF// files;
+  - Appearance of the panel //Results//;
+  - Icons association from the pop-up menu //RCard//.
+- Small changes with the icons were done.
+- A single click mouse in the editor gutter now selects the entire line.
+- Window //About// was reworked.
+- Window //Credits// (before, called //Information//) was updated to reflect the last changes.
+- The echo of the instructions sent to R interpreter (visible in //R output// window) is now optional in Tinn-R. In order to set it up, you can mark/unmark the option //R output echo on// in //Options/Main/Application/R/General/Settings//. If it is marked the R output window will show the instructions (not for all options of //send to R//) and the R output. Please, remember that all these resources are __still experimental__ and not too interactive.
+
+
+=== 1.18.5.2 (May/22/2006) ===
+- Bug(s) fixed:
+ - Small icon changes and bugs corrections.
+
+
+=== 1.18.5.1 (May/20/2006) ===
+- Bug(s) fixed:
+ - A small bug related with //reload// was fixed. Many thanks to ``Michael Prager`` for pointing this out to us.
+ - A couple of small bugs (pointed out by users) were fixed.
+- Tinn-R versions 1.18.4.6 and 1.18.5.0 were considered pre-released (restricted to developers only).
+- All icons were changed. Thanks to ``Philippe`` for the hard work of its selection and organization. We hope you like this new look.
+- All syntax are now alphabetically ordered.
+- Whenever the user chooses //Save// or //Save as// Tinn-R will to try to recognize the active syntax and the related file extension.
+- The images of the files //ReadMe.html//, //LizesMoi.html//, //LeiaMe.html// and //LeaMe.html// were changed so that they reflect the latest changes.
+- Several parts of the source code were optimized.
+- //Editor options// interface was a bit reworked.
+- The //Search in files// and //R output// interface were reworked.
+- Menu //R// was a bit reworked.
+- The user can now choose which R resources, related with //Send to R// and //Controlling R//, will be visible. To do that, two options are available: //Application options/R/R menu and toolbar// and a pop-up menu associated to R toolbar.
+
+
+=== 1.18.4.5 (Apr/07/2006) ===
+- The recommendation that under Windows XP the user should configure the appearance of windows and buttons to ``Classic style of Windows`` (__not for XP style)__ is now ``DEPRECATED``. In another words, the old conflict among the XPMenu component that Tinn-R uses and Windows the XP skins, was fixed.
+
+
+=== 1.18.4.4 (Apr/02/2006) ===
+- The menu //Help// was reworked and new options added to it. The basic idea is to show how that the ``HTML`` files are created by using the tool conversor ``txt2tags`` and, the most important, it now enables the users __to help us with the constructions and corrections of these files__. So, sorry for any language mistake, but my native language (José Cláudio Faria) is not English and I don't want to annoy anyone, anymore, with English corrections. Please, if possible, help us, because these documents could be useful to many other users.
+- Tool //Computer// has now two new buttons that enables the user to add and remove favorite folders.
+- Application options interface was reworked. It now enables the user to set how the DOS console will be showed for compilation.
+- As a consequence, the //Tools// menu and //Processing// toolbar have also the related options.
+- For both file compilation ('.tex' to '.dvi') or ('.tex' to '.pdf') whenever the //Open always after compilation (option)// ``is marked``, Tinn-R will freeze while waiting for the MikTeX compilation to open the compiled file, in the other way it will not. In another words, whenever the //Open always after compilation (option)// ``isn't checked`` Tinn-R will not freeze and the user can continue normally his job.
+- Tinn-R now is closed with ``//Yap (Yet Another Previewer)// as DVI viewer``, because it is the default released with [MikTeX http://www.miktex.org] distribution, and it is a very nice and fast DVI viewer. Tinn-R will open only a single instance of the Yap, but allowing as many files as the user whishes.
+- If the user use the function //utils:::setWindowTitle(paste("-",getwd()))// in Rprofile.site, Tinn-R still recognizes Rgui in SDI mode (it was not the case in previous versions between 1.18.X.X and 1.18.4.3).
+
+
+=== 1.18.4.3 (Mar/28/2006) ===
+- Tinn-R versions 1.18.3.1, 1.18.3.2, 1.18.4.0, 1.18.4.1 and 1.18.4.2 were considered pre-released (restricted to developers only).
+- The structure of the Tinn-R ini files was changed again:
+```
+..\Tinn-R               : ReadMe.txt file;
+..\Tinn-R\data          : dbRcard.dbf, dbRcard.dbt, dbRCard.ndx, dbRtip.dbf,
+                          dbRtip.dbt, dbRTip.ndx and ReadMe.txt files;
+..\Tinn-R\ini           : Shortcuts.tinn, Tinn.ini and ReadMe.txt
+..\Tinn-R\ini\colors    : customColors.ini and ReadMe.txt
+..\Tinn-R\ini\syntax    : C#.ini, C++.ini, ... , XML.ini and ReadMe.txt;
+..\Tinn-R\ini\syntax bkp: temporary syntax file and ReadMe.txt;
+..\Tinn-R\syntax        : deplate.xml, txt2tags.xml and ReadMe.txt.
+..\Tinn-R\temp          : temporary files.
+```
+	So, the old backups will not be compatible anymore with this and future versions. This version will recognize the basic old system configurations, but not all syntax preferences. Sorry for the inconvenience, but, it was necessary. From now on, Tinn-R will make real system (all ini files) backup of your settings and preferences.
+- Two useful tools for file conversion were added: [deplate http://deplate.sourceforge.net/index.php] and [txt2tags http://txt2tags.sourceforge.net]. For deplate was proposed the extension ``.dlpt`` and for txt2tags Tinn-R recognizes ``.t2t``. The basic highlighters, based in XML, were proposed for both, __we hope the users help us in the development__. Also, the interface for syntax colors preferences for both are different of the already known Tinn-R interface. So, consider that it is working nice but will be temporary.
+- Tinn-R now enables you to compile ``LaTeX`` files with [MikTeX http://www.miktex.org] and view the ``DVI`` and ``PDF`` results (Yap and Acrobat) and also to see ``HTML`` files in your preferred browser starting from Tinn-R.
+- Application options interface was reworked. It now enables you to set the basic preferences for file conversion, file compilation and viewers.
+- As a consequence the //Tools// menu and toolbar have new options to file conversion, compilations and file view.
+- All help files were changed from '.txt' to '.html' using the new txt2tags tool inside Tinn-R: we hope you like the new resources.
+- Several parts of the source code were optimized.
+- Menu //Web// was reworked.
+- Menu //Help// was reworked.
+
+
+=== 1.18.3.0 (Mar/16/2006) ===
+- The structure of the Tinn-R ini files was changed:
+```
+..\Tinn-R               : ReadMe.txt file;
+..\Tinn-R\data          : dbRcard.dbf, dbRcard.dbt, dbRCard.ndx, dbRtip.dbf,
+                          dbRtip.dbt, dbRTip.ndx and ReadMe.txt files;
+..\Tinn-R\ini           : Shortcuts.tinn, Tinn.ini and ReadMe.txt
+..\Tinn-R\ini\colors    : customColors.ini and ReadMe.txt
+..\Tinn-R\ini\syntax    : C#.ini, C++.ini, ... , XML.ini and ReadMe.txt;
+..\Tinn-R\ini\syntax bkp: temporary syntax file and ReadMe.txt;
+..\Tinn-R\temp          : temporary files.
+```
+	So, old backups will not be compatible anymore with this and next versions. This version will recognizes the basic old system configurations, but not the syntax preferences. Sorry for the inconvenience, but, it was necessary. From now, Tinn-R will make real system (all ini files) backup of your settings and preferences.
+- //Syntax color preferences// interface was reworked and it has new options.
+- Tinn-R has three multi-highlighters: Sweave, HTMLcomplex and PHPcomplex:
+ + Sweave       = TeX  & R
+ + HTML complex = HTML & JavaScript
+ + PHP complex  = HTML & JavaScript & PHP
+	These highlighters haven't priorities when you set the syntax color preferences. Thus, if you change the colors' preferences of any of these multi-highlighters (Sweave, HTML complex and PHP complex) these settings will be valid only in the current Tinn-R session and will not be saved when Tinn-R is closed. So, if you want to make permanent changes, set the  preferences from all simple highlighters (R, TeX, HTML, JavaScript and PHP).
+
+- Menu //Option/Syntax// was reworked.
+- A lot of the source code was optimized.
+- All Tinn-R color dialogs were reworked and they automatically save and recover all preferred colors.
+
+
+=== 1.18.2.1 (Mar/08/2006) ===
+- Some aspects of //Syntax color preferences// interface were optimized.
+- //Replace text// and //Search text// interface now recognize if more than one text line were selected and set the option //Selected text only// automatically.
+
+
+=== 1.18.2.0 (Mar/06/2006) ===
+- Tinn-R has now three multi-highlighters: Sweave, HTMLcomplex and PHPcomplex:
+ + Sweave      = TeX  & R
+ + HTMLcomplex = HTML & JavaScript
+ + PHPcomplex  = HTML & JavaScript & PHP
+	``DEPRECATED!`` These highlighters have priorities when you set the syntax color preferences. Thus, if you change the colors' preferences of any of these simple highlighters (TeX, R, HTML, JavaScript or PHP) these settings will be valid only in the current Tinn-R session and will not be saved when Tinn-R is closed. So, if you want to make permanent changes, set the preferences of all these simple highlighters (R, TeX, HTML, JavaScript and PHP) from the multi-highlighters (Sweave, HTMLcomplex and PHPcomplex) respectively. ``DEPRECATED!``
+- Several parts of the source code were optimized.
+- //Tools/Project// interface was reworked and has now new and resources.
+
+
+=== 1.18.1.10 (Feb/18/2006) ===
+- Bug(s) fixed:
+ - A small bug with Sweave highlighter related to color preferences was fixed. In fact, Sweave highlighter is a multi-highlighter made from prior R and TeX highlighters. So, if you set the color of the background to all TeX elements (comment, space, etc) with the same color (gray for example), you can get the Sweave syntax with two background colors: one for TeX (gray) and another to R (white).
+ - A small bug with //View/Line numbers// was fixed.
+
+
+=== 1.18.1.9 (Feb/18/2006) ===
+- Bug(s) fixed:
+ - A small bug with menu //Edit/Undo// and //Edit/Redo// was fixed. Many thanks to the users for pointing this.
+ - A small bug with menu //Edit/Undo// and //Edit/Redo// was fixed. Many thanks to the users for pointing this.
+- Sweave syntax highlighter was added to Tinn-R with .rnw and .snw extensions. For Tinn-R the delimiters are:
+```
+>>=  start a R block
+@    close it.
+```
+- Sweave provides a flexible framework for mixing text and S code for automatic document generation. A single source file contains both documentation text and S code, which are then woven into a final document containing:
+ + The documentation text together with
+ + The S code and/or
+ + The output of the code (text, graphs) by running the S code through an S engine like R.
+	Hence, the full power of LaTeX (for high-quality typesetting) and S (for data analysis) can be used simultaneously. For more information see ``?Sweave`` from R.
+- All combo-box related with files and extensions were reworked and they are simpler.
+
+
+=== 1.18.1.8 (Feb/12/2006) ===
+- Bug(s) fixed:
+ - Small bug with //Copy// of pop-up menu //R card// was fixed.
+ - A couple of small bugs (pointed by users) were fixed.
+- Main menu //Help// and //Web// were reworked.
+- Tinn-R and SciViews-R GUI performance was enhanced.
+- Small correction with //R explorer// interface related to enabled/disabled options.
+- In menu //R// and //R toolbar// two new options were added: //Edit// and //Fix//. These options enables you to edit or to fix R objects (if they exist in the R environment).
+
+
+=== 1.18.1.7 (Jan/14/2006) ===
+- Small correction with //R card// and //R explorer// interface related to enabled/disabled options.
+
+
+=== 1.18.1.6 (Jan/10/2006) ===
+- Bug(s) fixed:
+ - Small bugs pointed for user were fixed. Many thanks users!
+- A new option //GUI Wiki// was added to menu //Web/R-information on line//. This Wiki is mainly dedicated to deal with R beginners problems. Although we would like to emphasize using R GUIs (Graphical User Interfaces), this Wiki is not restricted to those GUIs: one can also deal with command-line approaches. The main idea is thus to have material contributed by both beginners, and by more advanced R users, that will help novices or casual users of R.
+- In menu //R// and //R toolbar// the position of the buttons was a little changed for a more logical arrangement and some icon were changed and a new and very useful option was added: //Example//.
+- Print/preview, R explorer and R card Interface were reworked.
+- Under TCP/IP some functions to //Controlling R// were reworked and it is now more user friend.
+- Horizontal and vertical split were deeply reworked and is now more user friend. In consequence main menu //View// was changed.
+- The pop menu of the open files was enhanced and two new options were added: //Close all// and //Close others//. The //Close others// was also added in Main menu //File//. The first enabled you to close all files and the second all except the active (current) file. Note that both will be enabled only if two or more files were opened.
+- A lot of procedures and functions were optimized.
+
+
+=== 1.18.1.5 (Jan/01/2006) ===
+- A Tinn-R card, //Help/Tinn-R card (PDF)//, was added to the project. Many thanks to ``Suresh Krishna``.
+- New interface/options for printing, it now enables you to print preview with new resources. In consequence menu //File/Print preview// was removed.
+
+
+== 2005 (25 versions) ==
+=== 1.18.1.4 (Dec/24/2005) ===
+- The extensions '*.s' and '*.ssc' were added to R syntax.
+- New interface/options for printing, it now enables you to choose the range to print the file: All, Selection and Pages.
+
+
+=== 1.18.1.3 (Dec/17/2005) ===
+- The changes (since Tinn-R 1.17.2.6) have been considered stabilized.
+- A new option //R syntax as default// was added to the main options and menu //Options//. It enables you to choose if a new file and file without extension will be opened for edition with //R// or //General// syntax as default.
+
+
+=== 1.18.1.2 beta (Dec/11/2005) ===
+- Tinn-R version 1.18.1.1 BETA was considered pre-released (restricted to beta testers only). Many thanks to all testers.
+- The pop menu of the //R explorer// was enhanced and new options were added.
+- You can now drag and drop objects from the //R explorer// to editor.
+- A lot of procedures and functions were optimized.
+
+
+=== 1.18.1.1 beta (Dec/03/2005) ===
+- Bug(s) fixed:
+ - A small bug with install program (related with desktop shortcut creation) was fixed. The old shortcut was pointing to //Tinn-R.exe.manifest// file and not to //Tinn-R.exe//.
+- An experimental R explorer was added to the program. It was made adding a new tab named //R explorer// on the panel //Tools// and it enables you to see R objects from Tinn-R. Meanwhile, this explorer must be updated by the user, because it is still not automatically done by the R server. It was based in the SciViews R explorer, but it is not exactly equal.
+- The speed of the procedures/updates with the panel //Tools//: //Computer// and //Project//, were enhanced.
+- A new option //Send to R// was added to the pop-up menu of //Project//. It enables you to send the whole project, individual groups or individual files to the server without opening it for edition.
+- A new menu option was added to the //R// menu: //Server: connections and tests//. This menu will open a new window of the program that allows you to connect and test R as server using TCP/IP and DDE protocol.
+ - The window //Application options// was a little reworked to reflect the new features of the program (specially TCP/IP protocol to communicate with R server). This resource is still experimental and, under tests, shows instability. So, if any problem occurs, disconnect the server //Server: connections and tests// and all new resources (using another options - DDE    and/or temporary files) will work. In the future the use of TCP/IP protocol by Tinn-R will be enhanced.
+- An experimental code completion was added. For the basic use of this:
+ + Set the options on //Application options//;
+ + Like //Tip//, if you check //Always showed//, after the data object type and '$' related completion will be showed;
+ + Select the desired completion and press ENTER to make it work.
+```
+A tip: my preferred shortcuts are: ``CTRL+D`` for tip after //(//
+and ``CTRL+SHIFT+D`` after '$' for code completion.
+```
+- A new menu option was added to the //View// menu: //R output//. This menu will open a new window on the bottom of the program that allows you to receive the output of the R as server using only TCP/IP protocol. It is still experimental.
+- The communication with R under DDE protocol was enhanced: it is now faster and more stable.
+- Tool //Computer// now allows you to open (with double click or drag and drop) any type of files and no more, only the recognized ones.
+- Two new syntax highlighters were added to Tinn-R:
+ + Fortran: useful to R developers;
+ + Visual basic: it still lives.
+- A new pop menu was added to the list view of Tools //Computer// that enables you to refresh and to choose the view style.
+- A lot of procedures and functions were optimized.
+
+
+=== 1.17.2.6 (Oct/27/2005) ===
+- Bug(s) fixed:
+ - A small bug related to //On top// checked and Tinn-R sometimes minimizes others doesn't (hides in the task-bar), was fixed. Many thanks ``Mihai Nica`` for pointing us.
+
+
+=== 1.17.2.5 (Oct/25/2005) ===
+- The increases of memory usage (16 k every second) related with some prior versions was fixed. Many thanks users for pointing us.
+- The SynEdit.pas unit component was updated to the latest version 1.428 2005/10/07 21:16:10. So, gutter width was always calculated using editor font was fixed.
+- Shortcut for //Format/Block/Mark// was changed from ``CTRL+ALT+B`` to ``CTRL+ALT+S``.
+
+
+=== 1.17.2.4 (Oct/08/2005) ===
+- Bug(s) fixed:
+ - A small bug with //Options/Syntax/Color preferences// related to //Cancel// option was fixed.
+- The //TeX highlighter// was a little reworked: it now is matching bracket. Thanks ``Sheldon Kelly`` for suggest it.
+- The //Restore// procedure was a little changed: it now checks if any file or project was changed (and not saved) prior to restart the program.
+- The database was a little reworked. So, if you had any old Tinn-R version installed, we recommend to make a restore of the data from this version. For this, select //Tools/Restore/Database// from the main menu and choose the //data// folder where Tinn-R was just installed, as a prior backup.
+- Main program icon was a little changed (the R is now more dark).
+
+
+=== 1.17.2.3 (Oct/03/2005) ===
+- Bug(s) fixed:
+ - A small bug with database (related with version 1.17.2.2 only) was fixed.
+
+
+=== 1.17.2.2 (Oct/02/2005) ===
+- Bug(s) fixed:
+ - A bug with messages below:
+```
+"Severe problem! The program cannot be initiated. Please, contact the
+developers."
+
+"Access violation at address 'hexa number' in module 'Tinn-R'. Read address
+'hexa number'."
+
+It was now fixed. This bug was related to more than one file were selected
+from the explorer to be opened and Tinn-R was not running.
+So, if Tinn-R is not running (if and only if), avoid to make it because it
+will open one instance of Tinn-R and one file (the first in alphabetic
+order) only. BTW, if Tinn-R is running, you can select simultaneously any
+desired number of files.
+```
+ - A small bug when you did a global replace in Tinn-R, i.e., Search -> Replace -> OK -> Yes to all, and get the following error message: Assertion failure (D:\...\SynEdit.pas, line 1460), was fixed: Thanks ``John``!
+- Tinn-R versions 1.17.1.2 and 1.17.2.1 were considered pre-released (restricted to beta testers only). Many thanks to all testers.
+- The picture, when opening the program, doesn't appear anymore.
+- Main program icon was changed: I hope you like the new one. BTW, I got problems because some parts of the Windows showed the old icon and others the new. I spent a lot of time to find the original problem: ShellIconCache.
+```
+SO, IF YOU GET INCORRECT ICON DISPLAYED ON WINDOWS, AFTER INSTALLING THE NEW
+VERSION OF TINN-R, PLEASE, READ THE INSTRUCTIONS BELOW:
+
+For acceleration of the show of the icons Windows stores images in the ICON
+CACHE (ShellIconCache) a hidden icon cache file in your windows directory.
+
+Sometimes the icon of the object changes, but Windows shows the old icon
+instead of the former one. To solve this problem we suggest to use the
+program IconChanger (shareware available at http://www.shelllabs.com/).
+
+If you have just installed Tinn-R with new icon but Windows has not changed
+the image, the program manual advises you to choose REBUILD ICON CACHE and if
+it will not help then choose REMOVE ICON CACHE.
+
+If you have chosen REBUILD – the icon cache will start reconstructing at
+once. If you have chosen REMOVE, you will see the warning  message.
+Choose YES, and then you should restart your computer.
+```
+- If Tinn-R is closed when maximized, when restarted, it will open maximized but it will remember the last position when not maximized.
+- A new shortcut ``CTRL+ENTER`` was added. When pressed, Tinn-R sends the current line (entire) to R interpreter and adds a line break at cursor position.
+- A new toolbar with Undo and Redo was added.
+- A new button was added to the //Misc toolbar// that allows you to choose how Tinn-R will behave after sending anything to R interpreter, if checked, the focus will return to Tinn-R.
+- The function //Clear all// was updated and it is now faster. If any problem occur with different machines and OS, please, tell us.
+- The menu //Web// was a little reworked and a new option is available: //Web/Tinn-R// with links to home page (sciViews), sourceforge server and check for update (from sciViews server).
+- A new menu option //Help/Tinn-R citation// was added. It enable you to put the Tinn-R citation in the clipboard.
+- After making a restore of the configurations file, Tinn-R now can close and restart itself.
+
+
+=== 1.17.1.1 (Aug/28/2005) ===
+- Bug(s) fixed:
+ - A small bug with recent files was fixed.
+- Tinn-R versions 1.16.1.9 beta and 1.16.1.10 beta were considered pre-released (restricted to beta testers only): thanks to all testers.
+- The SynEdit component was updated to the latest version (v2.0.1 beta).
+- The windows //Application options// and //Editor options// were a little reworked.
+- The main menu //File// was a little reworked.
+
+
+=== 1.16.1.8 (Aug/07/2005) ===
+- Bug(s) fixed:
+ - A small bug with restore database was fixed.
+
+
+=== 1.16.1.7 (Aug/05/2005) ===
+- Tinn-R version 1.16.1.6 beta was considered pre-released (restricted to beta testers only): thanks to all testers.
+- The //R highlighter// was a little reworked: identifiers with the minus signal '-' (ex: codes-deprecated) will not be recognized, any more.
+- Tinn-R team has a new member working on the source code: welcome Huashan Chen.
+- Tinn-R project (source and bin) is now also available from [SourceForge https://sourceforge.net/projects/tinn-r]. Thanks ``Huashan``.
+- The incompatibility of Tinn-R with WinNT 4.0/SP6 has been solved. Thanks ``Uwe``.
+- In //R toolbar// the position of the buttons was a little changed for a more logical arrangement.
+- After installation, the //Tinn-R/data// folder contains data.zip (102 KB). When starting Tinn-R, the files it contains are be automatically unpacked by and, for each user, four files are generated: dbRcard.dbf, dbRcard.dbt, dbRtip.dbf and dbRtip.dbt plus two (dbRcard.ndx and dbRtip.ndx) index files. This way, each user has an independent database.
+- Also, each user now has independents configurations files.
+- Considering the two topics above, Tinn-R is now multiuser. So, for instance, you can have an administrator account with full access to all files for installing programs and maintaining the machine. But for everyday work, you can log in as ``main user`` or ``normal user`` (with restricted access) and run Tinn-R without problems in those restricted environments. This feature is very useful to educational purposes in statistical laboratories.
+- Only three folder are generated by Tinn-R for each user:
+  - Windows XP:
+    - //Drive:\Documents and settings\UserName\Application data\Tinn-R\ini\// with two files //Tinn.ini// and //Shortcuts.tinn//;
+    - //Drive:\Documents and settings\UserName\Application data\Tinn-R\data\// with six database files (see above);
+    - //Drive:\Documents and settings\UserName\Application data\Tinn-R\temp// for essential temp files (will be automatically removed by Tinn-R after each session).
+  - Windows NT:
+    - //Driver:\Winnt\Profiles\UserName\Application data\Tinn-R\ini//;
+    - //Driver:\Winnt\Profiles\UserName\Application data\Tinn-R\data//;
+    - //Driver:\Winnt\Profiles\UserName\Application data\Tinn-R\temp//.
+- The database component (TDBF) was updated to the latest version.
+- Menu //Tools// was reworked a little and new options were added to backup/restore your personal database and configuration files.
+
+
+=== 1.16.1.5 (Jul/15/2005) ===
+- Bug(s) fixed:
+ - A small bug with project (//Save// and //Save as//), related to automatic extension '.tps', was fixed.
+- Tinn-R now works with R in MDI mode if the device graphic is maximized with no more limitations of the number of device graphic, as pointed in the Tinn-R 1.15.1.7 (07 Apr 2005).
+- If you use the function //utils:::setWindowTitle(paste("-",getwd()))// in Rprofile, Tinn-R still recognizes Rgui (was not the case in previous versions).
+- A new menu option (and respective button and hotkey) was added to the main menu: //R/Controlling R/List structure of selected variable// that allows you to list the structure of any R object/variable.
+- A new menu (and respective pop-up menu) was added to the main menu: //File/Put full path in clipboard//. This option allows you to put the full path of the file in the clipboard with two options: Unix mode (../..) or Windows (..\..) (useful to get full path of data files).
+- In //R toolbar// the position of the buttons were a little changed for a more logical arrangement.
+- The menu //Format/Block// was a little reworked.
+
+
+=== 1.16.1.4 (May/29/2005) ===
+- Bug(s) fixed:
+ - Small bug with //Send marked block// was corrected.
+ - Small bug with //Search// and //Search in files// were corrected.
+- A new button was added to the //Misc toolbar// that allow you unmark all marks.
+- Menu //Format//  was reworked a little bit.
+
+
+=== 1.16.1.3 beta (May/22/2005) ===
+- Tinn-R versions 1.15.1.8, 1.15.1.9, 1.15.1.10, 1.15.1.11, 1.16.1.1 and 1.16.1.2 were considered pre-released (restricted to beta testers only).
+- The Tinn-R installer now proposes to associate Tinn-R with '.Rd' files (the R help source code).
+- The menu //Format// was changed. There are now two new options:
+ + //Format/Block/Mark//;
+ + //Format/Block/Unmark//.
+	The first menu allows you to select a given block of code (line start and line end) to send it at once to the R interpreter and the last menu entry allows you to clear an existing marked block.
+	Bookmark ``0`` is used to mark the beggining of a marked block and bookmark ``1`` is used to mark its end. //Unmark// remove them only if they were marked with the //Block/Mark// tool. Otherwise, they are treated as simple bookmarks. Note that, whatever the way you defined them, you can always change their position as usual.
+	There is a distinct marked block defined for each open file, and the tools are enabled only if a block is marked for the current active document.
+- As a consequence the //R// menu and toolbar have new tools to send the marked block at once //R/Send to R/Marked block (source)// or line by line //R/Send to R/Marked block// to the R interpreter.
+- Another new tool was also added to send the current selected text as a source file to R (and not line by line, as usual).
+- The //Main toolbar// was a little reworked to support the new mark block option.
+- The accuracy of all functions (send to, or, control R ) interacting with R was enhanced.
+- The stability of the databases, respect to duplication of keys, was enhanced.
+- The option //Spanish// was added to the menu //Help/From this version//. It contains:
+ + Lea me.html;
+ + FAQ.txt;
+ + Palabras reconocidas.r.
+	The translation was made by ``Jairo Cugliari``: thanks ``Jairo``, very much!
+- A R card was added to the program. It was made adding a new tab named //R card// to the panel //Tools//. The R card was based on two R card already published: R/Rpad Reference Card by Tom Short and R reference card by Jonathan Baron.
+ + It was made using a user-expandable database (DBase);
+ + The component used is named TDBF, it is free (open source), does not use BDE and it is not necessary to have the database server. The DB engine code is compiled right into the Tinn-R executable. TDBF is a native data access component for Delphi, BCB, Kylix and FreePascal. More information can be found [here https://sourceforge.net/projects/tdbf/].
+- As a consequence, the //R// menu was a little reworked. You have now two options for the databases:
+ + //R/Database/Tip// for tip management;
+ + //R/Database/Card// for R card management.
+- A freeware resource provided by ``Angus Johnson`` was added to the program. It is a very useful Generic Diff Format (GDIFF) named TextDiff. The GDIFF format can be used to efficiently describe the differences between two arbitrary files or folders. The format does not make any assumptions about the type or contents of the files, and thus can be used to describe the differences between text files as well as binary files. The work was made adapting the sources code of the demo project of the component to the Tinn-R project: Thanks ``Angus``, very much!
+- As a consequence, the //Tools// menu has a new tool: //Tools/Differences//.
+- Tinn-R is now more flexible if the screen is split: the functions //Send to R// and //Controlling R// works for both (top or below, left or right) frames.
+- The //Ascii chart// is now more flexible.
+- The menu //Format/Selection mode// was reworked, new and useful shortcuts were added (see in //Main/Editor/Keystrokes//): thanks ``Zoltan Butt``.
+- A new field (third field from left) was added in the status bar with three possible values corresponding to the current selection state of the editor:
+ + smNormal : selection in normal mode;
+ + smLine   : selection in line mode;
+ + smColumn : selection in column mode.
+- The files //Tinn-R_Read me.html//, //Tinn-R_Leia me.html// (in Portuguese) and //Tinn-R_Lisez moi.html// (in French) in the //\doc// subdirectory of Tinn-R were updated.
+- Seven new syntax highlighters were added to Tinn-R:
+ + Rd files (based on the existing TeX highlighter);
+ + Tcl/Tk;
+ + Ruby;
+ + TeX;
+ + Python;
+ + Bat;
+ + HP48.
+- The picture, when opening the program, was changed. Tinn-R program is searchings a new logo/image identity. This "tinny" (two n intentionally) little, but colorful bird, is a good symbol for the "tinny" Tinn-R, but rich in nice features regarding the edition of R code!
+- The program user interface was reworked a little bit.
+- Two hotkeys were changed:
+```
+<ALT+LEFT>  : Tools align left;
+<ALT+RIGHT> : Tools align Right.
+```
+- The automatic extensions for all //Save// action was improved. Now, if you select //All files (*.*)// you can save the file with any desired extension or even with no extension at all. Thanks ``Posta Giovanni``.
+- The structure of the //Tip database// was improved. The tip is no more limited to 254 character, because it is now of //memo// type.
+
+
+=== 1.15.1.7 (Apr/07/2005) ===
+- Bug(s) fixed:
+ - Minor bug with //View/Toolbars/Macro// was corrected.
+- Tinn-R now works with R in MDI mode if the device graphic is maximized:
+ + You can work with 1..11 device graphic //ACTIVE// maximized;
+ + You can work with 1..10 device graphic //inactive// maximized.
+```
+The caption of R can be:
+  RGui - [R Graphics: Device 1..11 (ACTIVE)] or
+  RGui - [R Graphics: Device 1..10 (inactive)]
+```
+- The state of the Caps Lock key (keyboard) doesn't influence any more the //Send to R// and //Controlling R// functions.
+- //Tools/Project// interface was improved with the replacement of the combo-box by a new dropdown button.
+- A new toolbar named //Tools// with two buttons (//Toogle tools visible// and //Align tools right/left//) was added to the main toolbar, in consequence the pop-up //Tools// was removed.
+- //Project/Recent// is now checking for changes in current project.
+- The //View/Tabs// icon was changed.
+- The delay for DDE communication with R (for call tips) is now user-selectable in the //Options/Main/Application// dialog box (you need to load svIDE package from SciViews bundle to use this feature). If Tinn-R seems to freeze and you got no call tip, just increase the delay.
+- Menu //Web// and //Help// were a little reworked and new informations in French and Portuguese were added.
+
+
+=== 1.15.1.6 beta (Mar/19/2005) ===
+- Open files in Tinn-R with //Tools panel// was reworked:
+ + A file must have no extension or one that Tinn-R recognize;
+ + If the file is not opened there, you can open a copy by double clicking or dragging it into the main form;
+ + With file already opened, you can now open a copy by double clicking or dragging it in the editor area in Tinn-R;
+ + You can drag a project (all files of the project will be opened), a group (all files of the group will be opened) or an individual file.
+- A new pop-up menu is available for //Tools//. This menu is related with visibility and position of the //Tools panel//.
+- The menu //Options// and //View// were reworked.
+
+
+=== 1.15.1.5 beta (Mar/17/2005) ===
+- //Project// interface was a little reworked and two new options were added: //Expand all//  and //Collapse all// groups.
+
+
+=== 1.15.1.4 beta pre-release (Mar/12/2005) ===
+- //Application options// was reworked and an option //Delay for synchronization// was added. Because DDE (Dynamic Data Exchange) through tcltk and svIDE packages consumes a certain time - that is variable between different computers - this option allows the user to customize the Tinn-R delay with the R as server with call-tip. So, it is very important to adjust this delay until getting high functionality and performance.
+- //Project// interface was reworked:
+ + Only the file names is now showed (no more full paths);
+ + All node of the project can be dragged:
+  + If you drag a project all file will be opened;
+  + If you drag a group all files of this group will be opened;
+  + if you drag a single file it will be opened.
+- The //Search results// interface was reworked and two old bugs (all versions of Tinn-R that I don't knew) were fixed.
+- In //Tools panel/Computer// a double click on the Tinn-R project files (*.tps) will open the project interface. On the counterpart, if you drag this file, the context of the project file will be opened for manual edition.
+
+
+=== 1.15.1.3 beta pre-release (Mar/06/2005) ===
+- Changes in projects is now monitored.
+- To open files in Tinn-R with //Tools panel//:
+ + A file must have no extension or one that Tinn-R recognize;
+ + If the file is not opened there, you still can drag it into the main form;
+ + If any file is already opened, you can open a copy by double clicking or dragging it to the page control or to the main menu.
+- The R highlight dictionary was updated and about 270 new functions were added to be compatible with R parameters completion proposal (RPCP) database.
+
+
+=== 1.15.1.2 beta pre-release (Mar/05/2005) ===
+- Bug(s) fixed:
+ - Small (and old) bug with painted symbols '(', '[', '{' inside the gutter was corrected: thanks ``Marco``!
+- A new folder named //res// with a single file (Tinn-R_img.bmp) was added to the Tinn-R program.
+- The Tinn-R binary is about 350 Kb smaller than version 1.15.1.1.
+- The //About// box was reworked.
+- The project combo box was reworked. It is not possible to drag it any more.
+- //RegEx// was reworked: it is now possible to paste clipboard and use carriage return in it.
+- It is now possible to place the //Tools// panel at right or left of the main window.
+- Two new hotkeys were added (not user-configurable):
+```
+<CTRL+Alt+Left>  : Tools align left;
+<CTRL+Alt+Right> : Tools align Right.
+```
+- It is possible to dock the R toolbar only at the opposite side of the //Tools// panel, not on the same side.
+
+
+=== 1.15.1.1 beta pre-release (Mar/01/2005) ===
+- A picture was added when opening the program. Thanks ``Carolina`` (my daughter) for basic art creation.
+- A new file was added to the project: Tinn-R_shortcuts.txt. It is possible to load the file from //Help/Tinn-R/Shortcuts//.
+- //Open dialog// for Open file and //Add file// to project now allow the selection of multiple files.
+- The database was reworked and a new information (location) was added.
+- Tab order of the search/replace interface was reworked.
+- Due to the growth of the code source, it is not possible any more to maintain Tinn-R code synchronized with the original Tinn project. So, Tinn-R is now a new open source project. The version numbers is thus changed. The new convention is: AA.BB.CC.DD S/B
+```
+That is,  AA : major version
+          BB : minor version
+          CC : release
+          DD : build
+        more : beta or pre-release version
+```
+- The status bar was reworked.
+- A new menu //Web// was added.
+- The //About// dialog box was reworked.
+- The menu //Project// was all reworked.
+- New panel named //Tools// (with two tabs: //Computer// and //Project//) was added. This feature will grow up to enhance the interaction with R interpreter (progressive inclusion of SciViews-R dock Window feature like the object explorer).
+- Was added a new hotkey (not user-configurable): ``CTRL+/`` (divide on the numeric keypad) show/hide the //Tools// panel.
+- Second version of the R parameters completion proposal (call-tip). It now works with a user-expandable database (DBase) and with a R server (DDE - Dynamic Data Exchange through tcltk and svIDE packages). That is, this version communicates with R to get R function arguments directly if a function is not defined in the database. We thus have: database (priority 1) and R server (priority 2). For using the R server, the package svIDE (SciViews bundle) must be loaded in the current R session.
+
+
+=== 0.0.9.4 r1.15 beta 2 (Feb/11/2005) ===
+- Bug(s) fixed:
+ - Small bug with ``CTRL+Y`` (delete entire line), ``CTRL+T`` (delete word right from cursor) and ``CTRL+SHIFT+Y`` (delete words from cursor to the end of line) that did not enable the save options, was corrected.
+- The position of the cursor is now preserved when using ``CTRL+*`` (multiply on the numeric keypad) to insert/replace text with parameters of the current R function.
+- Send line now works when the cursor is on the end the line.
+
+
+=== 0.0.9.3 r1.15 beta 1 (Feb/11/2005) ===
+- The problem with Tinn-R 0.0.9.3 r1.15 beta 1 (released 30 Jan 2005) that stopped working due to expiration of trial period for Delphi was solved.
+- The first version with the R parameters completion proposal (Call-tip):
+ + It was made with a user-expandable database (DBase), that is, this version does not communicate with R to guess R function arguments;
+ + The component used is named TDBF, it is free (open source), does not use BDE and it is not necessary to have the database server. The DB engine code is compiled right into the Tinn-R executable. TDBF is a native data access component for Delphi, BCB, Kylix and FreePascal. More information can be found [here https://sourceforge.net/projects/tdbf/].
+- A new hotkey (not user-configurable): ``CTRL+*`` (multiply on the numeric keypad) inserts/replaces text with parameters of the active function (a call-tip must be visible).
+- The //Application options// was reworked. It is now possible to set the basic application options for R Call-tip.
+
+
+=== 0.0.9.3 r1.14 (Feb/11/2005) ===
+- Bug(s) fixed:
+ - Some minors bugs were corrected and the buttons appearance was a little modified.
+ - Fixed a bug with menu //File/Recent files// not showing at startup.
+ - Fixed a bug which added twice the file extension. This bug was related to full name including the extension, like //myfile.r//, where Tinn-R recorded it as //myfile.r.r//.
+ - Fixed a bug when the document was saved, and you type '#', the save menu entry and button remained grayed.
+ - Fixed a bug with Pascal files extensions.
+ - Fixed a bug with shortcut of the menu //Edit/Select all//.
+- The problem with Tinn-R 0.0.9.3 r1.14 (released 30 Jan 2005) that stopped working due to expiration of trial period for Delphi was solved.
+- New interface/options for printing, it remembers latest choices/preferences.
+- //About// dialog box was reworked.
+- The program user interface was a little reworked.
+- Most of the interactive R tools do no require any more that files are saved with a valid S language extension (.r or .q).
+- The R highlight dictionary was updated:
+ + About five hundred of words were added;
+ + Fixed a bug with '_' in keywords like //.decode_package_version//.
+- This version was compiled with Delphi 7 (Delphi 5 was used for previous versions).
+- With Delphi 7, the defaults dialogs were re-established. So, psvDialogs is not used any more.
+- Menu //Format/Block/Uncomment/Firsts occurrence// was renamed to Uncomment First Occurrence.
+- Add menu //Help/Tinn-R/Changes on Line//.
+
+
+== 2004 (16 versions) ==
+=== 0.0.9.3 r1.14 beta 9 (Dec/04/2004) ===
+- Bug(s) fixed:
+ - Fixed a bug that caused R GUI window to shrink or expand to a certain size, whenever code was submitted to Rgui in MDI mode: Thanks ``Steven``!
+ - Small bug with the function SEND FILE fixed when the file is set READ ONLY.
+- For a while, it is strongly recommended to set the BACKGROUND COLOR of ALL SUPPORTED LANGUAGES to WHITE.
+- The defaults Delphi dialogs were replaced by a new, free and good suite of components called psvDialogs written by ``Serhiy Perevoznyk``. Thanks ``Serhiy``! So, the Dialogs are now more pretty.
+- Add menu //Format/Block/Uncomment first occurrence//.
+- Search/Replace was improved with the solution proposed for the 0.0.9.0 r1.09 issue. The user can now work in all windows (even horizontally or vertically splitted): Thanks the Tinn Team.
+- The user can now work in all window (even horizontally or vertically splitted) for comment/uncomment blocks.
+- The syntax selector on file load was reworked.
+- Added //C# highlighter// instead of that mocked up Java one I had been using like a fool.
+
+
+=== 0.0.9.2 r1.14 beta 8 (Oct/2004) ===
+- Menu //R\Show// and //Hide R Toolbar// was eliminated. This option is changed to //View\Toolbars\R// with others toolbars. It is a more logic place for this option.
+- Menu //Editor: line below and top// was replaced by //Editor: Current line to top//. This improves work alternate with //Send: Line to end page// and //Editor: current line to top//.
+- The send line code was improved.
+- The component SK donated by MJT Net was replaced by the sndKeys32.pas written by Ken Henderson and adapted for use in Tinn-R. This change impacts all send and controlling R function.
+
+
+=== 0.0.9.1 r1.14 beta 7 (Oct/2004) ===
+- Bug(s) fixed:
+ - Minor bug with menu //R/Controlling R// (enabled/disabled) was corrected.
+- Tinn and Tinn-R can now run together.
+
+
+=== 0.0.9.1 r1.14 beta 6 (Sep/2004) ===
+- Bug(s) fixed:
+ - Minors bugs with general appearance (LikeXP, unlike XP) was corrected.
+- Marco de Groot (Mattic Software), old Tinn developer, is the new co-author of the Tinn-R: Welcome Marco!
+- Backup and restore was reworked: the user can now choose the directory.
+- Tinn-R is now more user-friendly to run with R: better R open/save dialogs.
+- Save file interface was reworked: R files (*.r; *.q) is now the primary option.
+- Open file interface was reworked: the three major file extensions is now the firsts available:
+ + R files (*.r; *.q);
+ + Text Files (*.txt);
+ + All files (*.*).
+- Add menu //Help/FAQ//.
+- Delays in large files was corrected: Thank you Marco de Groot.
+- //About// was reworked: mails of all authors are now included.
+
+
+=== 0.0.9.0 r1.14 beta 5 (Sep/2004) ===
+- Bug(s) fixed:
+ - A small bug in resizing the gutter (respect to autoSize and bookmarks) was corrected.
+ - A bug with bracket colors was corrected: it eliminated the bracket background when the active line highlighting is set to off.
+- General stability was improved.
+- Appearance was relooked.
+
+
+=== 0.0.9.0 r1.14 beta 4 (Aug/2004) ===
+- A tooltip was missing in the //search in files// toolbar button.
+- New tools to save/restore configuration files for Tinn-R are now added.
+
+
+=== 0.0.9.0 r1.14 (Aug/2004) ===
+- Bug(s) fixed:
+ - A bug when R and a graph device are maximized and the latter had the focus is now fixed (nothing happened in this case when sending data from Tinn-R to R).
+```
+Note: Tinn-R 0.0.9.0 r1.13 is now frozen and goes through a wider beta test
+Tinn-R 0.0.9.0 r1.14 and over are considered development versions and it
+is possible they show some instabilities during its development
+```
+- Specific R hotkeys are now automatically activated/deactivated.
+- Hotkeys are now permanently set.
+- For everyday work, use Tinn-R 0.0.9.0 r1.13
+
+
+=== 0.0.9.0 r1.13 (Jul/2004) ===
+- Two new functions were added both in the R toolbar and the R menu: //Print content of selected variable// and //List names of selected variables//. Just experiment with these tools to figure out what they do (for instance, enter //iris// in a .R file edited in Tinn-R and try these two tools while this word is selected).
+- The icon for //Help on selected word// was changed, and the //Send file// icon in the R toolbar now has a transparent background.
+- The R highlight dictionary was updated (about a hundred of words were added).
+
+
+=== 0.0.9.0 r1.12 (Jun/2004) ===
+- Bracket matching is reworked back to a more classical presentation: match brackets are now presented in bold and in a contrasting color (i.e., red if symbols are in a different color, or blue if symbols are colored in red).
+- The prior content of the clipboard is now preserved in all //Send to R// functions.
+- The R console now completely cleaned when you use //Clear all// (previously, commands to clear the console where left at the command line).
+
+
+=== 0.0.9.0 r1.11 (Jun/2004) ===
+- Bug(s) fixed:
+ - Minor bug with match bracket was corrected.
+- On the menu //Options/Application options// it is now possible to indicate if R resources are visible or not (switch between plain Tinn and Tinn-R).
+- The menu //Tinn to R// was renamed //R//.
+- Menu //Tools// was reworked.  Tools/Initiate or Close preferred Rgui are now included in the //R// menu.
+- //Copy Formatted// was added to the pop-up menu.
+- Behavior of the R Toolbar was improved.
+- Automatic match brackets was reworked: Current bracket is shown surrounded by a red rectangle and previous match     brackets are shown surrounded by a background symbol color of the specific highlighter (user defined). Thus, if the active line is highlighted (Options/Application options) and the cursor is moved throughout a line of text with some brackets, it is now possible to identify which brackets have already been matched during the cursor move.
+
+
+=== 0.0.9.0 r1.10 (May/2004) ===
+- Bug(s) fixed:
+ - Bugs with Search/Search in files/[x] Search in directories was corrected.
+- The Window of the results of the Search/Search in files can now be moved.
+- Project interface was reformulated and pop-up menu is now available.
+
+
+=== 0.0.9.0 r1.09 (Mar/2004) ===
+- Bug(s) fixed:
+ - Minor bugs with ControlBar (on resize for a lesser size that the ControlBar, close application and start new) and View/Toolbar (checked/unchecked) menu was corrected.
+ - Minor bug (Save/Save as) with associated extensions was corrected.
+ - Minor bug with hotkeys was corrected.
+ - Minor bugs with project was corrected.
+ - Minor bug with tollbar of macro was corrected.
+- Comment/Uncomment block was reformulated. This now work like Tinn 0.0.9.0.
+- Two new hotkeys (not user configurable):
+```
+<CTRL+ADD> key (numeric keypad)
+will insert/replace text with the attribution symbol '->';
+
+<CTRL+SUBTRACT> key (numeric keypad)
+will insert/replace text with the attribution symbol '<-'.
+```
+- Search/Replace was improved. It is possible now to decide if the occurrence will be, or not, replaced.
+```
+Temporarily, until better solution, to work properly, if the window is
+horizontally split the Search/Replace must be  made in the bottom
+(main) window, because if it's on the top window (secondary), it doesn't
+question the confirmation to each substitution of the text occurrence.
+If window is verticaly split the Search/Replace must be made in the
+left window (the right window do not question the confirmation to each
+substitution of the occurrence). For both, any key will make the
+synchronization of the split windows.
+```
+- Tinn-R can now initiate (Tolls/Initiate ...) and close (Tolls/Close ...) preferred RGui. For the first the path of preferred RGui must be prior set (Options/Application options).
+- A new Tinn to R option was implemented //Help selected word//.
+- Interface (appearance and icons) was reformulated.
+- Tinn-R hotkeys interface was reformulated, it is possible now to choose the desired hotkeys to main actions.
+- On the menu //Options/Application options// it is possible to choose the appearance to Tinn-R like WinXP.
+- It is possible to get the positions of Tinn-R toolbars (preserved) when application exits, and restore the next time it is started.
+- On the (Edit/Copy formatted) it is possible native format to be copied and exported in RTF, HTML and TeX format.
+- Improvemments were made in highlighting.
+- It is possible now to open files of //Projects// with one mouse click.
+
+
+=== 0.0.8.9 r1.08 (Mar/2004) ===
+- Bug(s) fixed:
+ - Small bug with Comment/Uncomment block was corrected.
+- Tinn-R now also runs with R, SciViews-R and S-Plus (the last still not finalized but it is running if the window Commands or S-PLUS - [Commands] have the focus).
+
+
+=== 0.0.8.9 r1.07 (Feb/2004) ===
+- Was implemented the specific HotKeys (F1..F11) for all Tinn to R functions. If and while activated, they overlap to all the HotKeys of the Windows and any application running.
+- Tinn-R now generates the two files (Tinn.ini and Shortcuts.ini) on C:\Documents and Settings\//UserName//\Application Data (or Dados de aplicativos)\Tinn\.
+- Upgrade Tinn 0.0.8.8 to 0.0.8.9 as [changelog http://www.solarvoid.com/cgi-bin/viewcvs.cgi/TinnMDI/].
+- Made a few tweaks in  brackets highlighting from suggestions made by Marco.
+- jcfaria suggested a little fix to the File Search window. Russ put it in.
+- jcfaria suggested a change to the RegEx filter interface to check, to make sure the filter won't be blank before running it. Russ put that in.
+- Marco had a few changes for the open procedure. It checks to if the file is changed and allows the user to open the file or not.
+- fLineWdith has been commented out.
+- And Marco had  a few changes for the Search In Files code. Russ put that in, too.
+- Russ pulled out the bitmaps on a few buttons in a few dialogs as per Marco's suggestion to keep things unified.
+
+
+=== 0.0.8.8 r1.06 (Feb/2004) ===
+- Bug(s) fixed:
+ - Bug = Assertion failure (c:\arquivos de programas\borland\componentes\synedit\source\SynEditWordWrap.pas, line149)
+```
+Why and when?
+
+   if you create a new file and type:
+
+   }<ENTER>
+   and press <UP>  -> bug!
+
+This was corrected: thank you Marco Groot!
+```
+
+
+=== 0.0.8.8 r1.05 (Feb/2004) ===
+- Comment/uncomment block was implemented: Default symbol used for the comment/uncomment must be set in Options/Application options.
+```
+Comment block  : Format/Comment block   <ALT+C>.
+Uncomment block: Format/Uncomment block <ALT+Z>.
+```
+- Option of Format/Colunm was eliminated: It is better to use this options (when necessary) keeping down the key Alt. This options are set in Options/Editor Options/(x)Alt sets column modes.
+- ShortCuts to Print and Play macro were set the same = ``CTRL+P``:
+```
+F7: new shortcut to Record Macro
+F8: new shortcut to Play Macro.
+```

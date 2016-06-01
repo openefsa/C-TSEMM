@@ -1,0 +1,8 @@
+
+====================
+= Basics =[basic]
+This section provides the basics about the Tinn-R project.
+
+%!include: chapter_2/configuration.t2t
+%!include: chapter_2/card.t2t
+%!include: chapter_2/faq.t2t

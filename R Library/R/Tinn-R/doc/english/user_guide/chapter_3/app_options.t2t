@@ -1,0 +1,53 @@
+
+== Application options ==[working_app]
+Tinn-R interface is very flexible and user configurable. It is necessary time to know all available resources and to configure this out (according with your preferences) in a nice way. The default set of options might not be suitable for every user.
+
+The window //Application options// allows the user to set the major piece of user preferences related to the application. It must be clear from now on that the Tinn-R project is the sum of three main resources: the ``application`` per si, the ``editor`` and an additional ``tools``, the latest projected to allows the expansion of resources.
+
+The options visible in all pictures reflect a set of the project coordinator preferences.
+
+
+=== Main ===[working_app_main]
+[../../../res/app_main_general.png]
+[../../../res/app_main_appearance.png]
+[../../../res/app_main_dock.png]
+
+Since the options are auto-explicative, the table below gives some details only about the most difficult options to understand:
+|| Option                                   | Description |
+ | Remove extension for //Save as//         | All file extensions will be removed in the //Save as// Windows interface |
+ | Application colors (extensive text only) | For people who work extensive periods of time with computer/monitor, it is recommended dark colors (low level of radiation) for background and pale light (high level of radiation) to characters. The pictures of this user guide is like this |
+
+
+=== R ===[working_app_r]
+[../../../res/app_r_path.png]
+[../../../res/app_r_basic.png]
+[../../../res/app_r_resources.png]
+[../../../res/app_r_rgui_recognition.png]
+[../../../res/app_r_rgui_options.png]
+[../../../res/app_r_rterm_error.png]
+[../../../res/app_r_rterm_options.png]
+[../../../res/app_r_server.png]
+
+As you can see, these options allows a high level of customization with R environment.
+
+
+=== Processing ===[working_app_processing]
+There are resources related with conversion (Txt2tags and Deplate) and compilation (Miktex).
+
+
+==== Conversion ====[working_app_processing_conversion]
+[../../../res/app_processing_conversion_txt2tags.png]
+[../../../res/app_processing_conversion_deplate.png]
+[../../../res/app_processing_conversion_more.png]
+
+Tinn-R project makes it easy to work with these nice conversion tools: Txt2tags and Deplate.
+
+
+==== Latex ====[working_app_processing_latex]
+[../../../res/app_processing_latex_pdf.png]
+[../../../res/app_processing_latex_dvi.png]
+[../../../res/app_processing_latex_more.png]
+
+Tinn-R is not a specific editor to LaTeX, but has the basic resources allowing the user to use the main resources of this environment.
+
+

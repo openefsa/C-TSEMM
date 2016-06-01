@@ -1,0 +1,28 @@
+
+== Colors preference ==[working_colors]
+[../../../res/colors_preference.png]
+
+This interface allows you to customize the appearance and colors of the instances of the class //SynEdit// (Editor, IO and Log).
+
+The interface is simple and auto-explicative.
+
+Basically, make a choice between the set of highlighters available from the //Highlighters// list. The identifier of selected highlighter will be updated. It is possible to set only one foreground attribute each time. But, it is possible to set the background for all attributes of the selected highlighter and also the background of all attributes of all highlighters.
+
+It is possible also to set the color brackets and the active line background.
+
+**Observation:**
+
+Tinn-R has four multi-highlighters: //HTML complex//, //PHP complex//, //R complex// and //Sweave//, described below:
+```
+ 1. HTML complex = HTML & JavaScript
+ 2. PHP complex  = HTML & JavaScript & PHP
+ 3. R complex    = R & URI ('<<<' begin URI
+                            '>>>'   end URI)
+ 4. Sweave       = TeX & R ('>>=' begin R
+                            '@'     end R)
+
+ URI      : Uniform Resource Identifiers.
+ R complex: The main syntax is R, '<<<' and '>>>' are the tags which enable the user to insert a block of URI syntax.
+ Sweave   : The main syntax is TeX, '>>=' and '@' are the tags which enable the user to insert a block of R syntax.
+```
+**These highlighters haven't priorities when you set the syntax color preferences. Thus, if you change the colors' preferences of any of these multi-highlighters (//HTML complex//, //PHP complex//, //R complex// and //Sweave//) these settings will be valid only in the current Tinn-R session and will not be saved when Tinn-R is closed. So, if you want to make permanent changes, set the  preferences from all simple highlighters (//R//, //TeX//, //HTML//, //JavaScript//, //PHP// and //URI//)**.

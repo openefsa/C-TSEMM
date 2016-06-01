@@ -1,0 +1,156 @@
+
+== Tools interface ==[working_tools]
+This graphical interface was projected for allow access to Tinn-R resources and also to accommodate future growth of related news resources.
+
+Position: starting from version 2.1.1.1 (Oct/15/2008) this interface is dockable. It can be float or docked on the left, top, right, or bottom sides of the main interface.
+
+
+=== Misc ===[working_tools_misc]
+[../../../res/tools_misc_windowsexpl.png]
+[../../../res/tools_misc_workexpl.png]
+[../../../res/tools_misc_project.png]
+
+|| Tool          | Description |
+ | Windows expl. | //[See details ... #working_tools_misc_windowsexpl]// |
+ | Work expl.    | //[See details ... #working_tools_misc_workexpl]// |
+ | Project       | //[See details ... #working_tools_misc_project]// |
+
+
+==== Windows expl. ====[working_tools_misc_windowsexpl]
+- Allows manager favorites (add and remove);
+- Allows filter by file extension;
+- Has pop-up menus similar to Windows explorer;
+- Support drag and drop actions (it is possible to drag any file and drop it on the editor interface to be opened).
+
+
+==== Work expl. ====[working_tools_misc_workexpl]
+- Always shows the folder related to the latest file opened;
+- Does not have a pop-up menu;
+- Supports drag and drop actions. It is possible to drag any file and drop it in the editor interface that will be opened.
+
+
+==== Project ====[working_tools_misc_project]
+- Allows for project management using a graphical interface;
+- Supports drag and drop actions, ie, it is possible to drag the entire project, groups, or any file and then drop them into the editor interface that will be opened:
+ - Project: will open all files related to the current project;
+ - Group: will open all files for the selected group;
+ - File: will open the selected file.
+- It is possible through a pop-up menu to send an entire project, a selected group, or an individual file to the R environment.- Source file of project:
+ - It is possible to edit the project in text mode (with the button //Project: edit (as text file)// of the specific toolbar). After any change, save the text file (it contains the textual description of the project structure) and reload the file to the graphical interface (with the button //Project: reload (from text file)// of the specific toolbar).
+ - Any change in the graphical interface will be reflected in the text file for the project, after it is saved.
+ - The best way to work with project (graphical of textual mode) is dependent on the complexity of the actions and the user preference.  For single actions, we suggest that you use the graphical mode.  For complex actions, it is faster to use the textual mode with all editor resources.
+
+
+=== Markup ===[working_tools_markup]
+[../../../res/tools_markup_txt2tags_marks.png]
+[../../../res/tools_markup_latex_arrows.png]
+
+|| Tool     | Description |
+ | Txt2tags | Sets marks, macros and settings of Txt2tags conversor |
+ | Latex    | Sets LaTeX symbols settings in a customizable manner |
+
+
+==== Txt2tags ====
+Sets marks, macros, and settings for the Txt2tags conversor. A single click over any graphical will add it to the current editor.
+
+
+==== LaTeX ====
+Set of LaTeX symbols. A single click over any graphical object will add it to the current editor;
+
+The symbols, place and order of all symbols are customizable. To customize them, open the folder //latex// and edit //ini// path. At the end of the edition, update the interface using the button //Latex: reload symbols (from ini). Be careful when editing the symbols to maintain the name structure.  For example: ``Number_SymbolName.FileExtension``, ``001_alpha.gif``, ``002_beta.gif``. The number will be used to order symbols in the graphical interface, while the name will be used (if recognized) as a LaTeX symbol.
+
+
+=== Results ===[working_tools_results]
+|| Tool    | Description |
+ | Ini log | Displays useful results when starting Tinn-R |
+ | Search  | Interface for //Search// results associated with //Search in files// |
+
+
+==== Ini log ====
+[../../../res/tools_results_inilog.png]
+
+Displays useful results when starting Tinn-R.
+
+|| Topic                                           | Description |
+ | Path of executable and sources (origin)         | Lists executable files and resources |
+ | Path of ini files                               | Lists the path of all folders of the ini |
+ | Verification of necessary folder and files      | Lists the status of folders and files of ini |
+ | Tinn-R, bkp, colors, ini, syntax and syntax bkp | Lists the status of these folders |
+ | Custom (version)                                | Lists the status of this folder and files |
+ | Data (version)                                  | Lists the status of this folder and files |
+ | Latex (version)                                 | Lists the status of this folder and files |
+ | Shortcuts (version)                             | Lists the status of this folder and files |
+ | Unihighlighter (version)                        | Lists the status of this folder and files |
+ | Tmp                                             | Lists the status of this folder |
+
+**If you submit a bug report, please also send the results for the respective page by copying & pasting.**
+
+
+==== Search ====
+[../../../res/tools_results_search.png]
+
+Interface for //Search// results associated with //Search in files//.
+
+The results for //Search in files// action are displayed as a tree with all files. Double click the file to open it in the editor interface.
+
+
+=== Spell ===[working_tools_spell]
+[../../../res/tools_spell.png]
+
+|| Tool  | Description |
+ | Spell | Interface to speller |
+
+To enable spellchecking with Tinn-R it is necessary to install at least one dictionary of the list of [available at http://www.luziusschneider.com/Speller/English/index.htm]. It is also a good idea to install the dictionary manager. [See instructions ... #configuration_spellerinstalation].
+
+
+=== Database ===[working_tools_database]
+[../../../res/tools_database_shortcuts.png]
+[../../../res/tools_database_rcard.png]
+[../../../res/tools_database_rtip.png]
+[../../../res/tools_database_completion.png]
+
+|| Tool        | Description |
+ | Shortcuts   | A digital shortcuts interface based in a XML database |
+ | R card      | A digital and simple R card based in a XML database |
+ | R tip       | A digital and simple R tip based in a XML database |
+ | Completion  | A digital completion interface based in a XML database |
+
+The database uses the native XML engine provided by Borland. Each tab (//Shortcuts//, //R card//, //R tip// and //Completion//) has its own pop-up menus and toolbars.
+
+
+==== Shortcuts ====
+The //Shortcuts// interface allows the user to find out about the internal organization of Tinn-R and also to customize all shortcuts related to the applicative. It is our intention, in the near future, to add aditional keystrokes related to the editor and to the R hotkeys.
+
+
+==== R card ====
+The //R card// was based on two R cards published already: R/Rpad Reference Card by Tom Short and R reference card by Jonathan Baron.
+
+
+==== R tip ====
+The //R tip// was generated using resources of the SciViews bundle by Philippe Grosjean.
+
+
+==== Completion ====
+The //Completion// resource is very simple and allows high level of user customization related to edition. The old implementation of completion resource showed instability and was replaced. We hope that the users will like this new one.
+
+
+=== R ===[working_tools_r]
+[../../../res/tools_r_explorer.png]
+
+|| Tool     | Description |
+ | Explorer | Simple and functional graphical interface of objects of the R environment |
+
+
+==== R explorer ====
+
+A simple and functional graphical interface of objects of the R environment.
+
+This interface has its own pop-up menu, toolbar and three combo box. The pop-up menu and toolbar contain the most common actions related to an object explorer.
+
+The button //R explorer: refresh environment// send a instruction to R environment requesting the list of all loaded packages in the current session. The result is shown inside a graphical classified list. When one of these is selected, the graphical list (and structure) of the objects are shown.
+
+There are two options of filter: type of objects and any sequence of characters associated with the names of the objects.
+
+It is possible to remove visible objects of the user workspace (.GlobalEnv) using the key //Delete//. To do this, select a object and type //Delete//.
+
+A double click in any selected object will add this name to the editor. If the object is dragged to the editor interface, the textual description of the object is shown always in a new file. It is useful to know the sources of functions and to see data objects (vectors, frames, list, etc).

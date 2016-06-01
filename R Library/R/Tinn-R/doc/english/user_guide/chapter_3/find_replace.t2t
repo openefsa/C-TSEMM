@@ -1,0 +1,58 @@
+
+== Find and replace ==[working_findreplace]
+The dialogs for //Find//:
+
+[../../../res/find.png]
+
+and for //Replace//:
+
+[../../../res/replace.png]
+
+are very similar, so this session will just discuss the //Replace// dialog and will point out the changes when necessary.
+
+
+=== Find ===
+When you call up the //Find// dialog the //Find for// box will be prefilled with the word under the cursor. You can type over the entry if you are looking for another word. There is also a dropdown list of phrases previously searched.
+
+
+=== Replace (Replace dialog only) ===
+When you call up the //Replace// dialog, the //Replace with// box will be filled with the last string you entered in it. If this is the first time you have called the //Replace// dialog since starting Tinn-R then the Replace box will be empty. You can type over any text in box. There is also a dropdown list of strings previously used.
+
+
+==== Options ====
+: Case sensitive:
+When this option is set the search is done case sensitively. For instance, ``Ab``, ``AB`` and ``ab`` are all treated as different words whereas they are not if the option is not set.
+
+: Whole words only:
+When this option is set the system will only find complete words matching the search criteria. So, for example, if ``ab`` is the search string the system will not match occurrences of words like ``abc`` or ``cab``.
+
+: Regular expressions:
+[See regular expressions ... #working_regularexpressions]
+
+
+==== Direction ====
+The direction to search. This option is ignored if searching in selected text.
+
+: Forward:
+Search from the cursor position to the end of the file.
+
+: Backward:
+Search from the cursor position to the beginning of the file.
+
+
+==== Scope ====
+: Global:
+Search the entire file.
+
+: Selected Text:
+Search just the selected text.
+
+
+==== Origin ====
+: Global:
+Search from the beginning of the file.
+
+: From cursor:
+Search just from the position of the cursor.
+
+

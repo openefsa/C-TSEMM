@@ -1,0 +1,8 @@
+"","baseline","Scenario","difference"
+"Expected number years to detection","78","83","-5"
+"Lower Poisson CI number years to detection","45","50","-5"
+"Upper Poisson CI number years to detection","97","100","-3"
+"number of cases needed for detection","1","1","NA"
+"start and end ages of animals tested","48 - 72","48 - 72","NA"
+"rate of increase","0.1","0.1","NA"
+"split Method","avg 2002-2011","avg 2002-2011","NA"

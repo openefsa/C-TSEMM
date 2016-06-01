@@ -1,0 +1,19 @@
+
+====================
+= Menu description =[menu]
+This section provides information about the main menu for Tinn-R.
+
+%!include: chapter_4/file.t2t
+%!include: chapter_4/project.t2t
+%!include: chapter_4/edit.t2t
+%!include: chapter_4/format.t2t
+%!include: chapter_4/marks.t2t
+%!include: chapter_4/insert.t2t
+%!include: chapter_4/search.t2t
+%!include: chapter_4/options.t2t
+%!include: chapter_4/tools.t2t
+%!include: chapter_4/r.t2t
+%!include: chapter_4/view.t2t
+%!include: chapter_4/window.t2t
+%!include: chapter_4/web.t2t
+%!include: chapter_4/help.t2t

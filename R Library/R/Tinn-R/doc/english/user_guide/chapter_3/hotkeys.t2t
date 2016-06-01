@@ -1,0 +1,9 @@
+
+== Hotkeys (operational system) ==[working_hotkeys]
+[../../../res/hotkeys.png]
+
+The //Hotkeys (operational system)// allows the setting of the hotkeys related to the operational system. The difference between those hotkeys and //Shortcuts customization// is that the latter works only with the focus in Tinn-R, whereas the hotkeys works with the focus anywhere.
+
+The interface is auto-explicative. Basically you first make a choice from the //R/Hotkeys (operational system)// and set the desired Hotkey.
+
+The set of hotkeys will perform actions only if the option //Active// is checked. The objective of these options (//Inactive// and //Active//) is to avoid conflict with others applications allowing to enable/disable the set of hotkeys fast and easily.

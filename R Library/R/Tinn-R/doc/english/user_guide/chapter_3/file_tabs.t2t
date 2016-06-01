@@ -1,0 +1,9 @@
+
+== File tabs ==[working_filetabs]
+[../../../res/filetabs.png]
+
+The position of the file tabs can be changed by drag and drop. It allows to put the file tab in a desirable order making it suitable for the user interface.
+
+[../../../res/filetabs_menu.png]
+
+The file tabs has its own pop-up menu allowing fast control of the most common tasks.

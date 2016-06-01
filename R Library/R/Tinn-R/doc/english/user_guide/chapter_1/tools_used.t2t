@@ -1,0 +1,17 @@
+
+== Which tools were used to create this user guide? ==
+- Tinn-R was used to:
+ - Organize all source files under our project directory;
+ - Edit the Txt2tags source files;
+ - Manage the conversion and visualization of the final HTML code;
+- To manage external resources available within Tinn-R we used the following:
+ - Txt2tags, a python script to make the conversion from Txt2tags to HTML;
+ - Python interpreter;
+ - CSS to create the layout of the HTML content;
+- Pictures:
+ - [IrfanView http://www.irfanview.com/] was used to select areas of the figures created using print screen function.
+
+
+	That was all!
+
+This user guide can be easily converted to the following formats: HTML, XHTML, SGML, LaTeX, Lout, UNIX man page, Wikipedia, Google Code Wiki, DokuWiki, MoinMoin, MagicPoint (mgp), and PageMaker. Just use the Tinn-R GUI/Editor to do that.

@@ -1,0 +1,53 @@
+
+== What do you get by using Tinn-R? ==[overview_whatdoyouget]
+- The ability to communicate with the R environment by sending instructions, controling its processing, and receiving results:
+ - Rterm.exe
+ - Rgui.exe
+- Projects:
+ - Create project files to organize your work including one level of sub-folders and automatic file name sorting
+ - Easy project management in graphical and text modes
+- Work with files of unlimited length
+- Work on multiple documents at the same time, choosing between multiple-document interface (MDI) and tabbed document interface (TDI)
+- Single-document window splitting and window-splitting
+- Support to macros (volatile):
+ - Record
+ - Playback commonly used sequences
+- Search and replace not restricted to your active file, but also extendable to all open files, all project files, or any folder
+- View file differences with color highlighting
+- Syntax highlighting, which can be set by file type
+- Spell checking
+- Multiple undo/redo
+- Highlighted color syntax with print preview
+- Ability to select:
+ - Normal
+ - Column
+ - Lines
+- Ability to bookmark:
+ - Line
+ - Block
+- Line numbers
+- Special characters
+- Sort multiple variable types:
+ - String
+ - Data
+ - Number
+- Count:
+ - Character
+ - Words
+ - Spaces
+- ASCII chart
+- Export with highlight to clipboard:
+ - RTF
+ - HTML
+ - TeX
+- Matching bracket highlighting
+- Conversion tools:
+ - Txt2tags
+ - Deplate
+- LaTeX support:
+ - Edition
+ - Compilation
+ - Inverse DVI search.
+
+
+We are constantly on the move!

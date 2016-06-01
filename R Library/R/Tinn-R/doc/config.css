@@ -1,0 +1,198 @@
+/* Here are the global rules, used everywhere on the pages. */
+body
+{
+  background-color : #FFFFFFs;
+  color            : #444;
+  margin           : 10;
+  padding          : 10;
+  font-family      : sans-serif;
+  font-size        : 100%;   /* Needed to inherit the body font size*/
+  overflow         : scroll; /* Avoids dancing menu */
+  overflow-x       : auto;   /* IE: horizontal bar is soo large */
+}
+
+/* Links are underlined only when the cursor is over them */  
+a
+{
+  text-decoration : none;
+}
+
+a:link
+{
+	color       : #808080;
+  font-weight : none;
+  font-size   : 90%;
+}
+
+a:hover
+{
+  text-decoration : underline;
+}
+
+a:visited
+{
+  color     : #C0C0C0;
+  font-size : 90%;
+}
+
+/* That nice background on some words and code samples */
+code
+{
+  background-color : #F5F5DC;
+  font-size        : 120%;
+}
+
+pre
+{
+  background-color : #F5F5DC;
+  margin-left      : 0em;
+  margin-right     : 0em;
+  padding          : 5px;
+  font-size        : 120%;
+}
+
+/* Tables are used by: docs, sample */
+table
+{
+  font-size    : 90%; /* Needed to inherit the body font size*/
+  border-color : #D2B48C;
+}
+
+th
+{
+	text-align       : left;
+  margin-left      : 5em;
+	background-color : #FAEBD7;
+/*  padding          : .5em; */
+  border-color     : #ccc;
+  border-style     : solid;
+}
+
+td
+{
+  border-style : none;
+/*  padding      : .5em;*/
+}
+
+/***************************** HEADERS **************************** 
+/ Remember that headers are the first three lines of the source file.
+/ They are placed inside the #header DIV when using --css-sugar.
+/ So we can format it freely without messing other rules.
+/
+/ Yes, it is that yellow strip at the top. Note that the "Keep It
+/ Simple Stupid" text is an image referred as background.
+*/
+
+#header
+{
+  text-align                      : center;
+	margin-top                      : 30px;
+  margin-bottom                   : 20px;
+  /* padding-top                    : 10px; */
+  padding-bottom                  : 10px;
+  /* border                         :1px solid #ffe590; */
+  border-top                      : 1px solid #996;
+  border-right                    : 2px solid #996;
+  border-left                     : 1px solid #996;
+  background-color                : #CC9;
+  -webkit-border-top-left-radius  : 15px;
+  -webkit-border-top-right-radius : 15px;
+  -moz-border-radius-topleft      : 15px;
+  -moz-border-radius-topright     : 15px;
+  -khtml-border-top-left-radius   : 15px;
+  -khtml-border-top-right-radius  : 15px;
+  border-top-left-radius          : 15px;
+  border-top-right-radius         : 15px;
+}
+
+#header *
+{
+   margin: 5;
+}
+
+#header h3
+{
+  font-weight: normal;
+}
+
+/***************************** CONTENT **************************** 
+/ The page contents are placed inside the #body DIV when using
+/ the --css-sugar option. Don't confuse it with the <body> tag.
+/ I know it would be better to call it #content, but... too late.
+/
+/ Inside #body there are the sidebar and the page contents. The
+/ sidebar has its own DIV, but the contents doesn't. I could have
+/ made an extra DIV for it, but it is not strictly necessary. So
+/ some special care is needed to format both using the same container.
+*/
+
+#body
+{
+  margin      : 0;
+  padding     : 0 2em 2em 2em;
+  border-top  : 1px solid #6c6; /* Required: Fixes spacing bug */
+  line-height : 130%;
+  font-size   : 90%;
+  font-size   : 80%;            /* IE: Font becomes ugly with 90% */
+}
+
+/* Normal text is gray, bold is brown */
+#body b
+{
+  font-weight : normal;
+  color       : brown;
+}
+
+h1
+{
+  text-align                      : center;
+	margin-top                      : 30px;
+  margin-bottom                   : 20px;
+  padding-top                     : 10px;
+  padding-bottom                  : 10px;
+  /* border                         :1px solid #ffe590; */
+  border-top                      : 1px solid #996;
+  border-right                    : 2px solid #996;
+  border-left                     : 1px solid #996;
+  background-color                : #CC9;
+  -webkit-border-top-left-radius  : 15px;
+  -webkit-border-top-right-radius : 15px;
+  -moz-border-radius-topleft      : 15px;
+  -moz-border-radius-topright     : 15px;
+  -khtml-border-top-left-radius   : 15px;
+  -khtml-border-top-right-radius  : 15px;
+  border-top-left-radius          : 15px;
+  border-top-right-radius         : 15px;
+}
+
+#body h2
+{
+/*  padding-top : 1em; */
+  color       : #663;
+  font-size   : 180%;
+  font-weight : normal;
+}
+
+#body h3
+{
+/*  padding-top : 1em; */
+  color       : #663;
+  font-size   : 160%;
+  font-weight : normal;
+}
+
+#body h4
+{
+/*  padding-top : 1em; */
+  color       : #663;
+  font-size   : 140%;
+  font-weight : normal;
+}
+
+#body h5
+{
+/*  padding-top : 1em; */
+  color       : #663;
+  font-size   : 120%;
+  font-weight : normal;
+}

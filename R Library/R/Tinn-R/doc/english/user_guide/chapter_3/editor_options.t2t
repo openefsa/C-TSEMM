@@ -1,0 +1,72 @@
+
+== Editor options ==[working_editor]
+The //Editor options// window was adapted from the sources of the //SynEdit// component, mainly related to the general appearance and standard options. The set of options available complement the //Application options// and allows high level of customization.
+
+
+=== Display ===[working_editor_display]
+[../../../res/editor_display.png]
+
+
+==== General ====[working_editor_display_general]
+|| Option      | Description |
+ | Edge column | Will be showed as a vertical line in the editor and the default is 80 characters. Set it to 0 or a negative value (-1) to make the edge column not visible |
+ | Edge color  | Choice of the edge color |
+ | Tab width   | Set the number of characters that will be inserted when typing the //Tab// key |
+ | Extra lines | Set the width which each single line will be displayed  |
+ | Font        | Will open the Windows interface for choosing installed fonts |
+
+
+==== Gutter ====[working_editor_display_gutter]
+|| Option             | Description |
+ | Gutter color       | Will open the Windows interface to choice a color |
+ | Visible            | Visibility option |
+ | Autosize           | Autosize option |
+ | Show line number   | Show line number option |
+ | Start at zero      | Start at zero option |
+ | Show leading zeros | Show leading zeros option |
+ | Use gutter font    | Use gutter font option |
+
+
+=== Advanced options ===[working_editor_advanced]
+[../../../res/editor_advanced.png]
+
+
+==== Options ====[working_editor_advanced_options]
+The description of the SynEdit editor options are:
+|| Option                       | Description |
+ | Auto indent                  | Will indent the caret on new lines with the same amount of leading white space as the preceding line |
+ | Auto size scroll width       | Automatically resizes the MaxScrollWidth property when inserting text |
+ | Drag and drop editing        | Allows you to select a block of text and drag it within the document to another location |
+ | Alt sets column mode         | Holding down the <ALT> key will put the selection mode into columnar format |
+ | Maintain caret column        | When moving through lines w/o cursor past EOL, keeps the X position of the cursor |
+ | Want tabs                    | When active <TAB> and <SHIFT><TAB> act as block indent, unindent when text is selected |
+ | Smart tabs                   | When tabbing, the cursor will go to the next non-white space character of the previous line |
+ | Smart tab delete             | Similar to Smart Tabs, but when you delete characters |
+ | Enhance home key             | Enhances HOME key positioning, similar to visual studio |
+ | Enhance end Key              | Enhances END key positioning, similar to JDeveloper |
+ | Hide scrollbars as necessary | If enabled, then the scrollbars will only show when necessary. If you have ScrollPastEOL, then the horizontal bar will always be there (it uses MaxLength instead) |
+ | Disable scroll arrows        | Disables the scroll bar arrow buttons when you can't scroll in that direction any more |
+ | Half page scroll             | When scrolling with page-up and page-down commands, only scroll a half page at a time |
+ | Scroll by one less           | Forces scrolling to be one less |
+ | Scroll past end of file      | Allows the cursor to go past the end of file marker |
+ | Scroll past end of line      | Allows the cursor to go past the last character into the white space at the end of a line |
+ | Show scroll hint             | Shows a hint of the visible line numbers when scrolling vertically |
+ | Scroll hint follows mouse    | The scroll hint follows the mouse when scrolling vertically |
+ | Tabs to spaces               | Converts a tab character to a specified number of space characters |
+ | Trim trailing spaces         | Spaces at the end of lines will be trimmed and not saved |
+ | Group undo                   | When undoing/redoing actions, handle all continuous changes of the same kind in one call instead undoing/redoing each command separately |
+ | Right mouse moves cursor     | When clicking with the right mouse for a pop-up menu, move the cursor to that location |
+ | Show special chars           | Shows the special characters |
+
+
+==== Caret ====[working_editor_advanced_caret]
+The description of the SynEdit editor options are:
+|| Option          | Description |
+ | Insert caret    | A list with four options: Vertical line, Horizontal line, Half block and block |
+ | Overwrite caret | A list with options: Vertical line, Horizontal line, Half block and block |
+
+
+=== Keystrokes ===[working_editor_keystrokes]
+[../../../res/editor_keystrokes.png]
+
+This interface allows to change the default SynEdit keystrokes. It is possible to make new, edit or remove any ecAction (execute command action). A set of user friendly keystrokes gives high productivity leading with all instances of the main class //SynEdit//: Editor, IO and Log.

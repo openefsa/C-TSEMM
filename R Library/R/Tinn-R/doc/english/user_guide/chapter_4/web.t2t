@@ -1,0 +1,109 @@
+
+== Web ==[menu_web]
+[../../../res/menu_web.png]
+
+|| Option        | Description |
+ | R search      | //[See options ... #menu_web_rsearch]// |
+ | S search      | //[See options ... #menu_web_ssearch]// |
+ | R information | //[See options ... #menu_web_rinformation]// |
+ | R Gui's       | //[See options ... #menu_web_rguis]// |
+ | Tinn-R        | //[See options ... #menu_web_tinnr]// |
+ | Statistics    | //[See options ... #menu_web_statistics]// |
+ | Processing    | //[See options ... #menu_web_processing]// |
+
+
+=== R search ===[menu_web_rsearch]
+[../../../res/menu_web_rsearch.png]
+
+|| Option                          | Description |
+ | Selected text                   | //[See options ... #menu_web_rsearch_selected]// |
+ | Site search                     | Opens URI [R Site Search http://finzi.psych.upenn.edu/search.html] |
+ | Mailing list archives           | Opens URI [R mailing lists archive http://tolstoy.newcastle.edu.au/R/] |
+ | Help center                     | Opens URI [R Help Center http://www.stat.ucl.ac.be/ISdidactique/Rhelp/] |
+ | Help for R (Jonathan Baron)     | Opens URI [Help for R http://finzi.psych.upenn.edu/] |
+ | r-help mailing list information | Opens URI [r-help http://www.mail-archive.com/r-help@stat.math.ethz.ch/info.html] |
+ | Nabble - R forum                | Opens URI [R forum http://r.789695.n4.nabble.com/] |
+
+
+
+==== Selected text ====[menu_web_rsearch_selected]
+[../../../res/menu_web_rsearch_selected.png]
+
+|| Option      | Description |
+ | Site search | Opens URI [R Site Search http://finzi.psych.upenn.edu/search.html] and lists the results associated with the word under the cursor or selected text |
+ | Archives    | Opens URI [R mailing lists archive http://www.googlesyndicatedsearch.com/u/newcastlemaths?q=&sa=Google+Search] and lists the results associated with the word under the cursor or selected text |
+ | Google      | Opens URI [Google http://www.google.com/webhp?domains=r-project.org&sitesearch=r-project.org&btnG=Google+Search] and lists the results associated with the word under the cursor or selected text |
+
+
+=== S search ===[menu_web_ssearch]
+[../../../res/menu_web_ssearch.png]
+
+|| Option                | Description |
+ | Selected text         | //[See options ... #menu_web_search_selected]// |
+ | Mailing list archives | Opens URI [S-News Mailing List Archives http://www.biostat.wustl.edu/archives/html/s-news/] |
+
+
+==== Selected text ====[menu_web_ssearch_selected]
+[../../../res/menu_web_ssearch_selected.png]
+
+|| Option          | Description |
+ | Archives search | Opens URI [S-news archive search http://www.biostat.wustl.edu/archives/cgi-bin/namazu.cgi?query=&submit=Search&idxname=s-news] and lists the results associated with the word under the cursor or selected text |
+
+
+=== R information ===[menu_web_rinformation]
+[../../../res/menu_web_rinformation.png]
+
+|| Option       | Description |
+ | CRAN         | Opens URI [The Comprehensive R Archive Network http://cran.r-project.org/] |
+ | Web site     | Opens URI [The R Project for Statistical Computing http://www.r-project.org/] |
+ | News         | Opens URI [R News http://cran.r-project.org/doc/Rnews/] |
+ | R Wiki       | Opens URI [R Wiki http://wiki.r-project.org/rwiki/doku.php] |
+ | Bioconductor | Opens URI [Bioconductor project http://www.bioconductor.org/] |
+
+
+=== R Gui's ===[menu_web_rguis]
+[../../../res/menu_web_rguis.png]
+
+|| Option          | Description |
+ | Projects (CRAN) | Opens URI [R GUI Projects http://www.sciviews.org/_rgui/] |
+ | R Comander      | Opens URI [The R Commander: A Basic-Statistics GUI for R http://socserv.socsci.mcmaster.ca/jfox/Misc/Rcmdr/index.html] |
+ | Rpad            | Opens URI [Rpad home page http://www.rpad.org/Rpad/] |
+ | SciViews        | Opens URI [SciViews-R http://www.sciviews.org/SciViews-R/] |
+ | JGR             | Opens URI [JGR - Java GUI for R http://jgr.markushelbig.org/JGR.html] |
+
+
+=== Tinn-R ===[menu_web_tinnr]
+[../../../res/menu_web_tinnr.png]
+
+|| Option             | Description |
+ | SourceForge (main) | Opens URI [Sourceforge.net Tinn-R http://sourceforge.net/projects/tinn-r] |
+ | SciViews           | Opens URI [SciViews Tinn-R http://www.sciviews.org/Tinn-R/] |
+
+
+=== Statistics ===[menu_web_statistics]
+[../../../res/menu_web_statistics.png]
+
+|| Option                          | Description |
+ | Virtual laboratories            | //[See options ... #menu_web_statistics_virtuallabs]// |
+ | Journal of Statistical Software | Opens URI [Journal of Statistical Software http://www.jstatsoft.org/] |
+ | HyperStat Text Book             | Opens URI [HyperStat Text Book http://davidmlane.com/hyperstat/index.html] |
+ | Electronic Textbook StatSoft    | Opens URI [Electronic Textbook StatSoft http://www.statsoft.com/textbook/stathome.html] |
+
+
+==== Virtual laboratories ====[menu_web_statistics_virtuallabs]
+[../../../res/menu_web_statistics_virtuallabs.png]
+
+|| Option                                             | Description |
+ | Rice                                               | Opens URI [Rice Virtual Lab in Statistics http://onlinestatbook.com/rvls.html] |
+ | Statistical Java                                   | Opens URI [Statistical Java http://www.causeweb.org/repository/statjava/] |
+ | VESTAC                                             | Opens URI [Java Applets for Visualization of Statistical Concepts http://lstat.kuleuven.be/java/] |
+ | Virtual Laboratories in Probability and Statistics | Opens URI [Virtual Laboratories in Probability and Statistics http://www.math.uah.edu/stat/] |
+
+
+=== Processing ===[menu_web_processing]
+[../../../res/menu_web_processing.png]
+
+|| Option   | Description |
+ | MikTeX   | Opens URI [MiKTeX project page http://miktex.org/] |
+ | Txt2tags | Opens URI [Txt2tags ONE source, MULTI targets http://txt2tags.sourceforge.net/] |
+ | Deplate  | Opens URI [Sourceforge.net Deplate http://deplate.sourceforge.net/index.php] |
